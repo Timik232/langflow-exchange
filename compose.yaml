@@ -4,20 +4,23 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "7860:7860"
-      - "8000:8000"
+      - "${LANGFLOW_PORT}:${LANGFLOW_PORT}"
+      - "${LANGFLOW_MCP_PORT}:${LANGFLOW_MCP_PORT}"
     environment:
       - LANGFLOW_MCP_ENABLED=true
-      - LANGFLOW_MCP_PORT=8000
+      - LANGFLOW_MCP_PORT=${LANGFLOW_MCP_PORT}
       - LANGFLOW_HOST=0.0.0.0
-      - LANGFLOW_PORT=7860
+      - LANGFLOW_PORT=${LANGFLOW_PORT}
       - PYTHONPATH=/app
+      - LANGFLOW_CONFIG_DIR=/app/data
+      - LANGFLOW_SAVE_DB_IN_CONFIG_DIR=true # для тестового задания для удобства: в продакшене убрать
+      - LANGFLOW_LOAD_FLOWS_PATH=/app/flows
     volumes:
       - ./data:/app/data
       - ./flows:/app/flows
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7860"]
+      test: ["CMD", "curl", "-f", "http://localhost:${LANGFLOW_PORT}"]
       interval: 30s
       timeout: 10s
       retries: 3
