@@ -1,0 +1,66 @@
+[project]
+name = "langflow-project"
+version = "0.1.0"
+description = "Langflow project for currency conversion"
+license = { text = "MIT" }
+authors = [{ name = "Timik232" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gigachat>=0.1.42.post2",
+    "langflow>=1.6.3",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+]
+
+[tool.ruff]
+line-length = 95
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E","F","W","B","N","ANN","S","I","UP","RET","SIM","RUF","LOG","PLC","PERF","COM","PD"]
+ignore = ["E203", "W605", "PLR0913", "PLR0915", "PLR2004", "COM812",
+    "TRY003", "RET504", "S101", "ANN401", "S603", "RUF001", "RUF002"]
+
+[tool.ruff.lint.per-file-ignores]
+"docs/*" = ["ANN"]
+"vk_bot/*" = ["N999", "ANN001", "ANN201"]
+"training_model/*" = ["S105", "SIM108"]
+"legacy/*" = ["ALL"]
+"training_model/types.py" = ["UP007", "PYI036"]
+"tests/*" = ["ANN001"]
+
+[tool.black]
+line-length = 95
+target-version = ["py311", "py312", "py313"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+
+[tool.bandit]
+exclude_dirs = ["tests", "docs"]
+skips = ["B101", "B601", "B404", "B105", "B603", "B607"]
+
+[tool.bandit.assert_used]
+exclude = ["*test*.py", "*conftest*.py"]
+
+[tool.codespell]
+skip = "*.git,*.svg,*.pdf,*.pyc,*/_build/*,*/venv/*,*/node_modules/*"
+ignore-words-list = "ist,alist,hass,tha,ente"

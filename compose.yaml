@@ -1,0 +1,24 @@
+services:
+  langflow:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+      - "8000:8000"
+    environment:
+      - LANGFLOW_MCP_ENABLED=true
+      - LANGFLOW_MCP_PORT=8000
+      - LANGFLOW_HOST=0.0.0.0
+      - LANGFLOW_PORT=7860
+      - PYTHONPATH=/app
+    volumes:
+      - ./data:/app/data
+      - ./flows:/app/flows
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
