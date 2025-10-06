@@ -147,34 +147,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ConditionalRouter",
-            "id": "ConditionalRouter-Ecb8l",
-            "name": "false_result",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "TextOutput-QjPf7",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "reactflow__edge-ConditionalRouter-Ecb8l{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-Ecb8lœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}-TextOutput-QjPf7{œfieldNameœ:œinput_valueœ,œidœ:œTextOutput-QjPf7œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ConditionalRouter-Ecb8l",
-        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-Ecb8lœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "TextOutput-QjPf7",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œTextOutput-QjPf7œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "GetLatestRate",
             "id": "CustomComponent-JUDbW",
             "name": "params",
@@ -1834,8 +1806,8 @@
           "width": 320
         },
         "position": {
-          "x": 2074.421360299521,
-          "y": 891.0718009298386
+          "x": 2153.7049782900385,
+          "y": 641.5540774688352
         },
         "selected": false,
         "type": "genericNode"
@@ -2137,12 +2109,152 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-GcJgG",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Formats error code and message into JSON output",
+            "display_name": "Error JSON Formatter",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "error_code",
+              "error_message",
+              "additional_info"
+            ],
+            "frozen": false,
+            "icon": "alert-circle",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "JSON Output",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "build_json_output",
+                "name": "json_output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "additional_info": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Additional Info",
+                "dynamic": false,
+                "info": "Optional additional error details",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "additional_info",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom import Component\nfrom langflow.io import IntInput, StrInput, Output\nfrom langflow.schema import Message\nimport json\n\nclass ErrorJSONFormatter(Component):\n    display_name = \"Error JSON Formatter\"\n    description = \"Formats error code and message into JSON output\"\n    icon = \"alert-circle\"\n    name = \"ErrorJSONFormatter\"\n    \n    inputs = [\n        IntInput(\n            name=\"error_code\",\n            display_name=\"Error Code\",\n            info=\"HTTP status code or error code\",\n            value=500\n        ),\n        StrInput(\n            name=\"error_message\",\n            display_name=\"Error Message\",\n            info=\"Custom error message\",\n            value=\"API request failed\"\n        ),\n        StrInput(\n            name=\"additional_info\",\n            display_name=\"Additional Info\",\n            info=\"Optional additional error details\",\n        )\n    ]\n    \n    outputs = [\n        Output(\n            name=\"json_output\",\n            display_name=\"JSON Output\",\n            method=\"build_json_output\"\n        )\n    ]\n    \n    def build_json_output(self) -> Data:\n        \"\"\"Build formatted JSON error response as Data\"\"\"\n        return Data(data={\n        \"error\": True,\n        \"status_code\": self.error_code,\n        \"message\": self.error_message,\n        \"details\": self.additional_info if self.additional_info else None\n    })\n"
+              },
+              "error_code": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Error Code",
+                "dynamic": false,
+                "info": "HTTP status code or error code",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "error_code",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 500
+              },
+              "error_message": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Error Message",
+                "dynamic": false,
+                "info": "Custom error message",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "error_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "API request failed"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ErrorJSONFormatter"
+        },
+        "dragging": false,
+        "id": "CustomComponent-GcJgG",
+        "measured": {
+          "height": 383,
+          "width": 320
+        },
+        "position": {
+          "x": 1934.4161200911578,
+          "y": 989.1318481548499
+        },
+        "selected": false,
+        "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 937.5257776528347,
-      "y": -360.36125495068427,
-      "zoom": 0.8217346366999808
+      "x": -866.4145382972258,
+      "y": -318.04757222739534,
+      "zoom": 0.7383888276507092
     }
   },
   "description": "Get latest exchange rate for the currency",

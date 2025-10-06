@@ -8,4 +8,6 @@ RUN uv pip install gigachat>=0.1.42.post2
 
 COPY . .
 
-ENTRYPOINT ["uv", "run", "langflow", "run"]
+COPY entrypoint.sh /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
