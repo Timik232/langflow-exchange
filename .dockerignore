@@ -1,0 +1,27 @@
+# .dockerignore - Exclude dev artifacts and local venv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.github/
+*.egg-info/
+dist/
+build/
+*.log
+.vscode/
+.idea/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+node_modules/
+*.md
+README.md
+LICENSE
+Dockerfile
+docker-compose.yml
+.dockerignore

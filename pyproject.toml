@@ -7,9 +7,9 @@ authors = [{ name = "Timik232" }]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "composio-core>=0.7.15",
     "gigachat>=0.1.42.post2",
     "langflow>=1.6.3",
+    "psycopg>=3.2.10",
 ]
 
 [dependency-groups]

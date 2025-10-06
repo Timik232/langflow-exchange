@@ -192,7 +192,7 @@
             "frozen": false,
             "icon": "calculator",
             "key": "CalculatorComponent",
-            "last_updated": "2025-10-06T15:06:45.740Z",
+            "last_updated": "2025-10-06T19:01:41.662Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -828,7 +828,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-06T15:06:45.861Z",
+            "last_updated": "2025-10-06T19:01:41.741Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -1275,7 +1275,7 @@
             "frozen": false,
             "icon": "layout-template",
             "key": "URLComponent",
-            "last_updated": "2025-10-06T15:06:45.742Z",
+            "last_updated": "2025-10-06T19:01:41.664Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -2053,7 +2053,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "str",
-                "value": "Y2FiZTgzYjktZDZjOS00Y2I5LWE3NDItOTU2ODEyMGVlOTI1OmIxOWU5YTAyLTA3NTQtNDE3My1iMWIyLTA1NzNmMzE0NDM0NA=="
+                "value": ""
               },
               "input_message": {
                 "_input_type": "MessageTextInput",
@@ -2353,7 +2353,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "str",
-                "value": "Y2FiZTgzYjktZDZjOS00Y2I5LWE3NDItOTU2ODEyMGVlOTI1OmIxOWU5YTAyLTA3NTQtNDE3My1iMWIyLTA1NzNmMzE0NDM0NA=="
+                "value": ""
               },
               "handle_parsing_errors": {
                 "_input_type": "BoolInput",
@@ -2614,9 +2614,9 @@
       }
     ],
     "viewport": {
-      "x": 274.1730005808149,
-      "y": 206.82379802774585,
-      "zoom": 0.27294560518593936
+      "x": -449.9783801853048,
+      "y": -373.1330172280457,
+      "zoom": 0.692883820259138
     }
   },
   "description": "Financial agent",
