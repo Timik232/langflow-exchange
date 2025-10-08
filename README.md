@@ -1,207 +1,220 @@
 # Financial Assistant
 
-AI agent for currency analysis built with Langflow and GigaChat. The agent helps retrieve current and historical currency data and perform analytical calculations.
+AI-агент для анализа валют, созданный с использованием Langflow и GigaChat. Агент помогает получать текущие и исторические данные о валютах и выполнять аналитические расчёты.
 
-## ✨ Features
+## ✨ Возможности
 
-- 📊 Real-time currency exchange rates
-- 📈 Historical data analysis
-- 🧮 Basic analytical calculations
-- 🤖 Intelligent agent approach using GigaChat
-- 🔧 Extensible Langflow-based architecture
+- 📊 Курсы валют в реальном времени
+- 📈 Анализ исторических данных
+- 🧮 Базовые аналитические расчёты
+- 🤖 Интеллектуальный агентский подход с использованием GigaChat
+- 🔧 Расширяемая архитектура на базе Langflow
 
-## 🛠 Tech Stack
+## 🛠 Технологический стек
 
-- **Langflow** - visual framework for building AI agents
-- **GigaChat** - Russian language model
-- **PostgreSQL** - database for Langflow
-- **Docker & Docker Compose** - containerization
-- **ExchangeRate API** - currency data source
+- **Langflow** - визуальный фреймворк для создания AI-агентов
+- **GigaChat** - российская языковая модель
+- **PostgreSQL** - база данных для Langflow
+- **Docker & Docker Compose** - контейнеризация
+- **ExchangeRate API** - источник данных о валютах
 - **Python 3.11+**
 
-## 📋 Prerequisites
+## 📋 Требования
 
-- Docker and Docker Compose
-- Python 3.11 or higher (for local development)
-- API keys:
-  - [ExchangeRate API](https://www.exchangerate-api.com/) - for currency data
-  - [GigaChat API](https://developers.sber.ru/gigachat) - for language model
+- Docker и Docker Compose
+- Python 3.11 или выше (для локальной разработки)
+- API ключи:
+  - ExchangeRate API - для получения данных о валютах
+  - GigaChat API - для языковой модели
 
-## 🚀 Installation & Setup
+## 🚀 Установка и запуск
 
-### 1. Clone repository
+### 1. Клонирование репозитория
 
 ```bash
-git clone <repository-url>
-cd langflow-project
+git clone https://github.com/Timik232/langflow-exchange.git
+cd langflow-exchange
 ```
 
-### 2. Environment setup
+### 2. Настройка окружения
 
-Copy the example environment file:
+Скопируйте файл с примером переменных окружения:
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` and add your API keys:
+Отредактируйте `.env` и добавьте свои API ключи:
 
 ```env
-# API Keys
-EXCHANGERATE_API_KEY=your_exchangerate_api_key_here
-GIGA_API_KEY=your_gigachat_api_key_here
+# API ключи
+EXCHANGERATE_API_KEY=ваш_ключ_exchangerate_api
+GIGA_API_KEY=ваш_ключ_gigachat_api
 
-# Langflow Settings
+# Настройки Langflow
 LANGFLOW_PORT=7860
 LANGFLOW_MCP_PORT=8000
 
-# PostgreSQL Settings
+# Настройки PostgreSQL
 POSTGRES_USER=langflow
 POSTGRES_PASSWORD=langflow
 POSTGRES_DB=langflow
 ```
 
-### 3. Start project
+### 3. Запуск проекта
 
-Launch all services using Docker Compose:
+Запустите все сервисы через Docker Compose:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
-### 4. Access interface
+### 4. Доступ к интерфейсу
 
-After startup, Langflow will be available at:
+По умолчанию после запуска Langflow будет доступен по адресу:
 
 ```
 http://localhost:7860
 ```
 
-## 📁 Project Structure
+## 📁 Структура проекта
 
 ```
-langflow-project/
-├── flows/                      # Langflow flows
-│   ├── Financial agent.json    # Main financial agent
-│   └── get_latest_rate.json    # Currency rate fetching flow
-├── compose.yaml                # Docker Compose configuration
-├── Dockerfile                  # Docker image for Langflow
-├── pyproject.toml             # Python dependencies
-├── .env.example               # Example environment variables
-└── README.md                  # Documentation
+langflow-exchange/
+├──data/                          # Директория для дополнительных файлов
+│  └──converting.json             # Вспомогательный файл для ISO кодов
+├── flows/                        # Флоу Langflow
+│   ├── Financial agent.json      # Основной финансовый агент
+│   └── get_latest_rate.json      # Флоу для получения курсов валют
+├── compose.yaml                  # Конфигурация Docker Compose
+├── Dockerfile                    # Docker образ для Langflow
+├── pyproject.toml                # Зависимости Python
+├── .env.example                  # Пример переменных окружения
+└── README.md                     # Документация
 ```
 
-## ⚙️ Configuration
+## ⚙️ Конфигурация
 
-### Environment Variables
+### Переменные окружения
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `EXCHANGERATE_API_KEY` | API key for ExchangeRate API | - |
-| `GIGA_API_KEY` | API key for GigaChat | - |
-| `LANGFLOW_PORT` | Langflow web interface port | 7860 |
-| `LANGFLOW_MCP_PORT` | MCP server port | 8000 |
-| `POSTGRES_USER` | PostgreSQL user | langflow |
-| `POSTGRES_PASSWORD` | PostgreSQL password | langflow |
-| `POSTGRES_DB` | Database name | langflow |
+| Переменная | Описание | Значение по умолчанию |
+|------------|----------|----------------------|
+| `EXCHANGERATE_API_KEY` | API ключ для ExchangeRate API | - |
+| `GIGA_API_KEY` | API ключ для GigaChat | - |
+| `LANGFLOW_PORT` | Порт веб-интерфейса Langflow | 7860 |
+| `LANGFLOW_MCP_PORT` | Порт MCP сервера | 8000 |
+| `POSTGRES_USER` | Пользователь PostgreSQL | langflow |
+| `POSTGRES_PASSWORD` | Пароль PostgreSQL | langflow |
+| `POSTGRES_DB` | Имя базы данных | langflow |
 
-## 🎯 Available Flows
+## 🎯 Доступные флоу
 
 ### Financial agent.json
-Main agent for financial analysis. Includes:
-- GigaChat integration for query processing
-- Tools for retrieving currency rates
-- Calculator for computations
-- Agent logic for comprehensive analysis
+
+Основной агент для финансового анализа. Включает:
+
+- Интеграцию с GigaChat для обработки запросов
+- Инструменты для получения курсов валют
+- Калькулятор для вычислений
+- Агентскую логику для комплексного анализа
 
 ### get_latest_rate.json
-Specialized flow for fetching current currency rates via ExchangeRate API.
 
-## 💡 Usage
+Специализированный flow для получения актуальных курсов валют через ExchangeRate API.
 
-1. Open Langflow web interface: `http://localhost:7860`
-2. Select "Financial agent" flow from the list
-3. Run the flow and start interacting with the agent
-4. Example queries:
-   - "What is the current USD to RUB exchange rate?"
-   - "Show EUR trends for the last month"
-   - "Calculate how many dollars I get for 10000 rubles"
+## 💡 Использование
 
-## 🔧 Development
+1. Откройте веб-интерфейс Langflow:
+   ```
+   http://localhost:7860
+   ```
+2. Выберите флоу "Financial agent" из списка
+3. Запустите флоу и начните взаимодействие с агентом
+4. Примеры запросов:
+   - "Какой текущий курс USD к RUB?"
+   - "Рассчитай, сколько долларов я получу за 10000 рублей"
 
-### Local dependency installation
+## 🔧 Разработка
+
+### Локальная установка зависимостей
 
 ```bash
-# Install uv (if not already installed)
+# Установите uv (если ещё не установлен)
 pip install uv
 
-# Sync dependencies
+# Синхронизируйте зависимости
 uv sync
 
-# Install dev dependencies
+# Установите dev-зависимости
 uv sync --group dev
 ```
 
-### Run Langflow locally
+### Локальный запуск Langflow
+
+**Важно:** При локальном запуске необходимо вручную заменить API токены в файлах флоу (`flows/*.json`), так как переменные окружения автоматически не подставляются в компоненты флоу.
 
 ```bash
-uv run langflow run 
+uv run langflow run
 ```
 
-### Modifying flows
+После запуска:
 
-1. Open Langflow UI
-2. Edit existing flow or create new one
-3. Export changes to JSON
-4. Save file to `flows/` directory
+1. Откройте веб-интерфейс по адресу `http://localhost:7860`
+2. Импортируйте нужный флоу из директории `flows/`
+3. Вручную замените значения токенов в компонентах в finance agent flow и в get_current_rate:
+   - В компонентах GigaChat замените `GIGA_API_KEY` на ваш реальный ключ
+   - В компонентах ExchangeRate API замените `EXCHANGERATE_API_KEY` на ваш реальный ключ
+4. Сохраните изменения в флоу
 
-### 📊 Stopping & Cleanup
+## 📊 Остановка и очистка
 
-### Stop services
+### Остановка сервисов
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
-### Full cleanup (including data)
+### Полная очистка (включая данные)
 
 ```bash
-docker-compose down -v
+docker compose down -v
 ```
 
-## 📝 License
 
-This project is licensed under the MIT License. See `LICENSE` file for details.
+## 👤 Автор
 
-## 👤 Author
+[Тимур](https://github.com/Timik232)
 
-Timik232
+## ❓ Решение проблем
 
-## ❓ Troubleshooting
+### Порты уже используются
 
-### Ports already in use
+Если порты 7860 или 8000 уже заняты, измените их в `.env`.
 
-If ports 7860 or 8000 are already in use, change them in `.env`:
+### entrypoint.sh: no such file or directory
 
-```env
-LANGFLOW_PORT=8080
-LANGFLOW_MCP_PORT=8001
-```
+Убедитесь, что файл entrypoint.sh имеет LF окончание. Иногда бывает, что он автоматически заменяется на CRLF. 
 
-### API key issues
+### Проблемы с API ключами
 
-Make sure:
-- API keys are correctly copied to `.env`
-- No extra spaces or quotes
-- Keys are active and not expired
+Убедитесь, что:
 
-### Database won't start
+- API ключи правильно скопированы в `.env`
+- Отсутствуют лишние пробелы или кавычки
+- Ключи активны и не истекли
 
-```bash
-# Check logs
-docker-compose logs postgres
+### Проблемы с токенами в локальном запуске
 
-# Recreate container
-docker-compose down -v
-docker-compose up -d
-```
+При локальном запуске Langflow переменные окружения не подставляются автоматически в компоненты флоу. Необходимо:
+
+1. Открыть флоу в веб-интерфейсе
+2. Найти все компоненты, использующие API ключи
+3. Вручную заменить плейсхолдеры (`GIGA_API_KEY`, `EXCHANGERATE_API_KEY`) на реальные значения
+4. Сохранить флоу перед использованием
+
+## 🔗 Ссылки, которые использовались в решении
+
+- [Документация Langflow](https://docs.langflow.org/)
+- [Документация GigaChat API](https://developers.sber.ru/docs/ru/gigachat/api/overview)
+- [Документация ExchangeRate API](https://www.exchangerate-api.com/docs/overview)
+
