@@ -636,66 +636,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "MergerComponent",
-            "id": "MergerComponent-TBeqI",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "ChatOutput-cAs1I",
-            "inputTypes": [
-              "Data",
-              "DataFrame",
-              "Message"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__MergerComponent-TBeqI{œdataTypeœ:œMergerComponentœ,œidœ:œMergerComponent-TBeqIœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ChatOutput-cAs1I{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-cAs1Iœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "MergerComponent-TBeqI",
-        "sourceHandle": "{œdataTypeœ:œMergerComponentœ,œidœ:œMergerComponent-TBeqIœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "ChatOutput-cAs1I",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-cAs1Iœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ErrorJSONFormatter",
-            "id": "CustomComponent-GcJgG",
-            "name": "json_output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "ChatOutput-uvGzA",
-            "inputTypes": [
-              "Data",
-              "DataFrame",
-              "Message"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CustomComponent-GcJgG{œdataTypeœ:œErrorJSONFormatterœ,œidœ:œCustomComponent-GcJgGœ,œnameœ:œjson_outputœ,œoutput_typesœ:[œDataœ]}-ChatOutput-uvGzA{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-uvGzAœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CustomComponent-GcJgG",
-        "sourceHandle": "{œdataTypeœ:œErrorJSONFormatterœ,œidœ:œCustomComponent-GcJgGœ,œnameœ:œjson_outputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "ChatOutput-uvGzA",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-uvGzAœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "JSONFormatter",
             "id": "ErrorJSONFormatter-50k41",
             "name": "json_output",
@@ -834,6 +774,66 @@
         "sourceHandle": "{œdataTypeœ:œLoadJSONœ,œidœ:œCustomComponent-0wmohœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
         "target": "CustomComponent-UTHj3",
         "targetHandle": "{œfieldNameœ:œcurrency_dictœ,œidœ:œCustomComponent-UTHj3œ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "MergerComponent",
+            "id": "MergerComponent-TBeqI",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-cAs1I",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__MergerComponent-TBeqI{œdataTypeœ:œMergerComponentœ,œidœ:œMergerComponent-TBeqIœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ChatOutput-cAs1I{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-cAs1Iœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "MergerComponent-TBeqI",
+        "sourceHandle": "{œdataTypeœ:œMergerComponentœ,œidœ:œMergerComponent-TBeqIœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "ChatOutput-cAs1I",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-cAs1Iœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ErrorJSONFormatter",
+            "id": "CustomComponent-GcJgG",
+            "name": "json_output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-uvGzA",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-GcJgG{œdataTypeœ:œErrorJSONFormatterœ,œidœ:œCustomComponent-GcJgGœ,œnameœ:œjson_outputœ,œoutput_typesœ:[œDataœ]}-ChatOutput-uvGzA{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-uvGzAœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-GcJgG",
+        "sourceHandle": "{œdataTypeœ:œErrorJSONFormatterœ,œidœ:œCustomComponent-GcJgGœ,œnameœ:œjson_outputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "ChatOutput-uvGzA",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-uvGzAœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
@@ -1747,26 +1747,24 @@
               "Message"
             ],
             "beta": false,
-            "category": "input_output",
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Display a chat message in the Playground.",
-            "display_name": "Chat Output",
+            "description": "Display a chat message in the Playground with MCP support (no JSON wrapping).",
+            "display_name": "MCP Chat Output",
             "documentation": "https://docs.langflow.org/components-io#chat-output",
-            "edited": false,
+            "edited": true,
             "field_order": [
               "input_value",
               "should_store_message",
               "sender",
               "sender_name",
               "session_id",
-              "data_template"
+              "data_template",
+              "mcp_mode"
             ],
             "frozen": false,
             "icon": "MessagesSquare",
-            "key": "ChatOutput",
             "legacy": false,
-            "lf_version": "1.6.3",
             "metadata": {},
             "minimized": true,
             "output_types": [],
@@ -1776,8 +1774,11 @@
                 "cache": true,
                 "display_name": "Output Message",
                 "group_outputs": false,
+                "hidden": null,
                 "method": "message_response",
                 "name": "message",
+                "options": null,
+                "required_inputs": null,
                 "selected": "Message",
                 "tool_mode": true,
                 "types": [
@@ -1787,7 +1788,6 @@
               }
             ],
             "pinned": false,
-            "score": 0.007216440637271487,
             "template": {
               "_type": "Component",
               "code": {
@@ -1806,7 +1806,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n# НОВОЕ: флаг для MCP-режима (чтобы отключить сериализацию)\nfrom langflow.io import BoolInput as CustomBoolInput  # Используем StrInput/BoolInput\n\nclass MCPChatOutput(ChatComponent):  # Меняем имя класса для кастомного\n    display_name = \"MCP Chat Output\"\n    description = \"Display a chat message in the Playground with MCP support (no JSON wrapping).\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"MCPChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        # НОВОЕ: флаг для MCP (чтобы не сериализовать в JSON/text)\n        BoolInput(\n            name=\"mcp_mode\",\n            display_name=\"MCP Mode\",\n            info=\"Enable MCP: Preserve structuredContent without JSON wrapping.\",\n            value=False,  # По умолчанию off для UI\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # ИЗМЕНЕНИЕ: Проверяем MCP mode и тип input_value\n        if self.mcp_mode and isinstance(self.input_value, Data) and 'structuredContent' in self.input_value.data:\n            data_dict = self.input_value.data\n            # Копируем напрямую в Message без сериализации\n            message = Message(\n                text=data_dict.get('content', [{}])[0].get('text', '') if data_dict.get('content') else '',  # Краткий text из content[0]\n                content=data_dict.get('content', []),  # Сохраняем content как есть\n                structured_content=data_dict.get('structuredContent', {}),  # Сохраняем structuredContent\n            )\n        else:\n            # Стандартная логика\n            text = self.convert_to_string()\n            source, icon, display_name, source_id = self.get_properties_from_source_component()\n            if isinstance(self.input_value, Message):\n                message = self.input_value\n                message.text = text\n            else:\n                message = Message(text=text)\n\n        # Общие свойства\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store if needed (без изменений)\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    # ОСТАЛЬНОЕ БЕЗ ИЗМЕНЕНИЙ: _serialize_data, _validate_input, convert_to_string\n    # (они используются только в non-MCP режиме)\n    def _serialize_data(self, data: Data) -> str:\n        serializable_data = jsonable_encoder(data.data)\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        return \"``````\"\n\n    def _validate_input(self) -> None:\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
               },
               "data_template": {
                 "_input_type": "MessageTextInput",
@@ -1852,6 +1852,24 @@
                 "trace_as_metadata": true,
                 "type": "other",
                 "value": ""
+              },
+              "mcp_mode": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "MCP Mode",
+                "dynamic": false,
+                "info": "Enable MCP: Preserve structuredContent without JSON wrapping.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "mcp_mode",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
               },
               "sender": {
                 "_input_type": "DropdownInput",
@@ -1946,7 +1964,7 @@
             "tool_mode": false
           },
           "showNode": false,
-          "type": "ChatOutput"
+          "type": "MCPChatOutput"
         },
         "dragging": false,
         "id": "ChatOutput-6oRXJ",
@@ -2277,7 +2295,7 @@
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Форматирует информацию об ошибках и сообщении и выдаёт ответ в формате json",
+            "description": "Форматирует ошибки для MCP: text + structuredContent",
             "display_name": "Error JSON Formatter",
             "documentation": "",
             "edited": true,
@@ -2298,7 +2316,7 @@
               {
                 "allows_loop": false,
                 "cache": true,
-                "display_name": "JSON Output",
+                "display_name": "MCP Error Output",
                 "group_outputs": false,
                 "hidden": null,
                 "method": "build_json_output",
@@ -2321,7 +2339,7 @@
                 "advanced": false,
                 "display_name": "Additional Info",
                 "dynamic": false,
-                "info": "Optional additional error details",
+                "info": "Optional additional error details (text or JSON)",
                 "input_types": [
                   "str",
                   "Message"
@@ -2355,7 +2373,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from typing import Any\nfrom langflow.custom import Component\nfrom langflow.io import IntInput, StrInput, Output\nfrom langflow.schema import Message\nimport json\n\nclass ErrorJSONFormatter(Component):\n    display_name = \"Error JSON Formatter\"\n    description = \"Форматирует информацию об ошибках и сообщении и выдаёт ответ в формате json\"\n    icon = \"alert-circle\"\n    name = \"ErrorJSONFormatter\"\n    \n    inputs = [\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        StrInput(\n            name=\"error_code\",\n            display_name=\"Error Code\",\n            info=\"HTTP status code or error code\",\n            value='500',\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_message\",\n            display_name=\"Error Message\",\n            info=\"Custom error message\",\n            value=\"API request failed\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_type\",\n            display_name=\"Error Type\",\n            info=\"Type of the error\",\n            value=\"unsupported-code\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"additional_info\",\n            display_name=\"Additional Info\",\n            info=\"Optional additional error details\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        )\n    ]\n    \n    outputs = [\n        Output(\n            name=\"json_output\",\n            display_name=\"JSON Output\",\n            method=\"build_json_output\"\n        )\n    ]\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n    \n    def build_json_output(self) -> Data:\n        \"\"\"Build formatted JSON error response as Data\"\"\"\n        status_code = self._get_text(self.error_code)\n        if status_code == '200':\n            return Data(data={\"ok\": True})\n        else:\n            return Data(data={\n            \"ok\": False,\n            \"status_code\": status_code,\n            \"error_type\": self._get_text(self.error_type),\n            \"message\": self._get_text(self.error_message),\n            \"details\": self._get_text(self.additional_info) if self.additional_info else None\n        })\n"
+                "value": "from typing import Any\nfrom langflow.custom import Component\nfrom langflow.io import StrInput, Output\nfrom langflow.schema import Data, Message\nimport json\n\nclass ErrorJSONFormatter(Component):\n    display_name = \"Error JSON Formatter\"\n    description = \"Форматирует ошибки для MCP: text + structuredContent\"\n    icon = \"alert-circle\"\n    name = \"ErrorJSONFormatter\"\n\n    inputs = [\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        StrInput(\n            name=\"error_code\",\n            display_name=\"Error Code\",\n            info=\"HTTP status code or error code\",\n            value=\"500\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_message\",\n            display_name=\"Error Message\",\n            info=\"Custom error message\",\n            value=\"API request failed\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_type\",\n            display_name=\"Error Type\",\n            info=\"Type of the error\",\n            value=\"unsupported-code\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"additional_info\",\n            display_name=\"Additional Info\",\n            info=\"Optional additional error details (text or JSON)\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"json_output\",\n            display_name=\"MCP Error Output\",\n            method=\"build_json_output\"\n        )\n    ]\n\n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n    def _parse_optional_json(self, text_value: str):\n        if not text_value:\n            return None\n        try:\n            return json.loads(text_value)\n        except Exception:\n            return text_value  \n\n    def build_json_output(self) -> Data:\n        code = self._get_text(self.error_code).strip()\n        is_ok = code == \"200\"\n\n        details_value = self._parse_optional_json(self._get_text(self.additional_info) if self.additional_info else \"\")\n\n        structured = {\n            \"ok\": is_ok,\n            \"status_code\": code,\n            \"error_type\": self._get_text(self.error_type) if not is_ok else \"\",\n            \"message\": self._get_text(self.error_message),\n            \"details\": details_value\n        }\n\n        if is_ok:\n            text_msg = self._get_text(self.error_message) or \"OK\"\n            return Data(\n                data={\n                    \"content\": [{ \"type\": \"text\", \"text\": text_msg }],\n                    \"structuredContent\": structured\n                }\n            )\n        else:\n            et = self._get_text(self.error_type)\n            em = self._get_text(self.error_message)\n            text_msg = f\"Error {code}: {et or 'unknown'} — {em}\".strip()\n            return Data(\n                data={\n                    \"content\": [{ \"type\": \"text\", \"text\": text_msg }],\n                    \"structuredContent\": structured\n                }\n            )\n"
               },
               "error_code": {
                 "_input_type": "StrInput",
@@ -2818,7 +2836,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "# from langflow.field_typing import Data\nfrom typing import Dict, Any, List\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.io import MessageTextInput, Output, StrInput, DataInput\nfrom langflow.schema import Data\n\n\nclass CheckCurrency(Component):\n    display_name = \"Check Currency\"\n    description = \"Validates base and target currency codes against an allow\"\n    icon = \"check\"\n    name = \"CheckCurrency\"\n\n    inputs = [\n        DataInput(\n            name=\"currency_dict\",\n            display_name=\"Allowed Codes (Data)\",\n            info=\"JSON Data from file with currency\",\n            input_types=[\"Data\"],\n        ),\n        StrInput(\n            name=\"base_currency\",\n            display_name=\"Base Currency\",\n            info=\"ISO 4217 code, e.g., USD\",\n            value=\"USD\",\n            input_types=[\"str\", \"Message\"], \n        ),\n        StrInput(\n            name=\"target_currency\",\n            display_name=\"Target Currency\",\n            info=\"ISO 4217 code, e.g., RUB\",\n            value=\"RUB\",\n            input_types=[\"str\", \"Message\"],\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Result (Data)\", name=\"output\", method=\"build_output\"),\n    ]\n    \n    def _normalize(self, s: Any) -> str:\n        return self._get_text(s).strip().upper()\n    \n    def _get_keys(self) -> List[str]:\n        \"\"\"\n        Возвращает список допустимых кодов в верхнем регистре.\n        \"\"\"\n        payload = self.currency_dict.data if hasattr(self.currency_dict, \"data\") else self.currency_dict\n        if not isinstance(payload, dict):\n            return []\n        \n        result = []\n        for key in payload.keys():\n            if isinstance(key, str):\n                normalized_key = self._normalize(key)\n                result.append(normalized_key)\n                \n        return result\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n\n    def build_output(self) -> Data:\n        base = self._normalize(self.base_currency)\n        target = self._normalize(self.target_currency)\n        allowed_keys = self._get_keys()\n        errors = []\n        if not base:\n            errors.append({\"type\": \"missing-base\", \"message\": \"Требуется base_currency\"})\n        if not target:\n            errors.append({\"type\": \"missing-target\", \"message\": \"Требуется target_currency\"})\n        if base and base not in allowed_keys:\n            errors.append({\"type\": \"unsupported-code\", \"message\": f\"Base Валюта не поддерживается: {base}\"})\n        if target and target not in allowed_keys:\n            errors.append({\"type\": \"unsupported-code\", \"message\": f\"target валюта не поддерживается: {target}\"})\n        \n        if errors:\n            payload = {\n                \"ok\": False,\n                \"error_type\": errors[0][\"type\"],\n                \"message\": \"Не была найдена одна из валют.\",\n                \"details\": errors,\n            }\n            result = Data(data=payload)\n            self.status = result\n            return result\n\n        payload = {\n            \"ok\": True,\n        }\n        result = Data(data=payload)\n        self.status = result\n        return result\n\n"
+                "value": "# from langflow.field_typing import Data\nfrom typing import Dict, Any, List\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.io import MessageTextInput, Output, StrInput, DataInput\nfrom langflow.schema import Data\n\n\nclass CheckCurrency(Component):\n    display_name = \"Check Currency\"\n    description = \"Validates base and target currency codes against an allow\"\n    icon = \"check\"\n    name = \"CheckCurrency\"\n\n    inputs = [\n        DataInput(\n            name=\"currency_dict\",\n            display_name=\"Allowed Codes (Data)\",\n            info=\"JSON Data from file with currency\",\n            input_types=[\"Data\"],\n        ),\n        StrInput(\n            name=\"base_currency\",\n            display_name=\"Base Currency\",\n            info=\"ISO 4217 code, e.g., USD\",\n            value=\"USD\",\n            input_types=[\"str\", \"Message\"], \n        ),\n        StrInput(\n            name=\"target_currency\",\n            display_name=\"Target Currency\",\n            info=\"ISO 4217 code, e.g., RUB\",\n            value=\"RUB\",\n            input_types=[\"str\", \"Message\"],\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Result (Data)\", name=\"output\", method=\"build_output\"),\n    ]\n    \n    def _normalize(self, s: Any) -> str:\n        return self._get_text(s).strip().upper()\n    \n    def _get_keys(self) -> List[str]:\n        \"\"\"\n        Возвращает список допустимых кодов в верхнем регистре.\n        \"\"\"\n        payload = self.currency_dict.data if hasattr(self.currency_dict, \"data\") else self.currency_dict\n        if not isinstance(payload, dict):\n            return []\n        \n        result = []\n        for key in payload.keys():\n            if isinstance(key, str):\n                normalized_key = self._normalize(key)\n                result.append(normalized_key)\n                \n        return result\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n\n    def build_output(self) -> Data:\n        base = self._normalize(self.base_currency)\n        target = self._normalize(self.target_currency)\n        allowed_keys = self._get_keys()\n        errors = []\n        if not base:\n            errors.append({\"type\": \"missing-base\", \"message\": \"Требуется base_currency\"})\n        if not target:\n            errors.append({\"type\": \"missing-target\", \"message\": \"Требуется target_currency\"})\n        if base and base not in allowed_keys:\n            errors.append({\"type\": \"unsupported-code\", \"message\": f\"Base Валюта не поддерживается: {base}\"})\n        if target and target not in allowed_keys:\n            errors.append({\"type\": \"unsupported-code\", \"message\": f\"target валюта не поддерживается: {target}\"})\n        \n        if errors:\n            structured = {\n            \"ok\": False,\n            \"error_type\": errors[0][\"type\"],\n            \"message\": \"Не была найдена одна из валют.\",\n            \"details\": errors,\n            }\n            text_msg = f\"{structured['message']} ({structured['error_type']})\"\n\n            return Data(\n                data={\n                    \"content\": [{ \"type\": \"text\", \"text\": text_msg }],\n                    \"structuredContent\": structured\n                }\n            )\n\n        payload = {\n            \"ok\": True,\n        }\n        result = Data(data=payload)\n        self.status = result\n        return result\n\n"
               },
               "currency_dict": {
                 "_input_type": "DataInput",
@@ -3254,7 +3272,7 @@
           "x": -1054.4690299414665,
           "y": 59.66394357243844
         },
-        "selected": true,
+        "selected": false,
         "type": "genericNode"
       },
       {
@@ -3558,7 +3576,7 @@
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Форматирует информацию с mcp server и выдаёт ответ в формате json",
+            "description": "Форматирует ответ для MCP: text + structuredContent",
             "display_name": "JSON Formatter",
             "documentation": "",
             "edited": true,
@@ -3580,7 +3598,7 @@
               {
                 "allows_loop": false,
                 "cache": true,
-                "display_name": "JSON Output",
+                "display_name": "MCP Formatted Output",
                 "group_outputs": false,
                 "hidden": null,
                 "method": "build_json_output",
@@ -3603,7 +3621,7 @@
                 "advanced": false,
                 "display_name": "Additional Info",
                 "dynamic": false,
-                "info": "Optional additional error details",
+                "info": "Optional details (JSON string or text)",
                 "input_types": [
                   "str",
                   "Message"
@@ -3637,14 +3655,14 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from typing import Any\nfrom langflow.custom import Component\nfrom langflow.io import IntInput, StrInput, Output\nfrom langflow.schema import Message\nimport json\n\nclass JSONFormatter(Component):\n    display_name = \"JSON Formatter\"\n    description = \"Форматирует информацию с mcp server и выдаёт ответ в формате json\"\n    icon = \"alert-circle\"\n    name = \"JSONFormatter\"\n    \n    inputs = [\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        StrInput(\n            name=\"status_code\",\n            display_name=\"Status Code\",\n            info=\"HTTP status code or error code\",\n            value='500',\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"message\",\n            display_name=\"Error Message\",\n            info=\"Message with the payload\",\n            value=\"API request failed\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_type\",\n            display_name=\"Error Type\",\n            info=\"Type of the error\",\n            value=\"\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        ),\n        StrInput(\n            name=\"additional_info\",\n            display_name=\"Additional Info\",\n            info=\"Optional additional error details\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        )\n    ]\n    \n    outputs = [\n        Output(\n            name=\"json_output\",\n            display_name=\"JSON Output\",\n            method=\"build_json_output\"\n        )\n    ]\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n    \n    def build_json_output(self) -> Data:\n        \"\"\"Build formatted JSON error response as Data\"\"\"\n        status_code = self._get_text(self.status_code)\n        if status_code == '200':\n            return Data(data={\n            \"ok\": True,\n            \"status_code\": self._get_text(self.status_code),\n            \"error_type\": self._get_text(self.error_type),\n            \"message\": self._get_text(self.message),\n            \"details\": self._get_text(self.additional_info) if self.additional_info else None\n            })\n        else:\n            return Data(data={\"ok\": False})\n        \n"
+                "value": "from typing import Any\nfrom langflow.custom import Component\nfrom langflow.io import StrInput, Output\nfrom langflow.schema import Data, Message\n\nclass JSONFormatter(Component):\n    display_name = \"JSON Formatter\"\n    description = \"Форматирует ответ для MCP: text + structuredContent\"\n    icon = \"alert-circle\"\n    name = \"JSONFormatter\"\n\n    inputs = [\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        StrInput(\n            name=\"status_code\",\n            display_name=\"Status Code\",\n            info=\"HTTP status code or error code\",\n            value=\"200\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"message\",\n            display_name=\"Message\",\n            info=\"Human-readable message\",\n            value=\"Курс доллара к рублю: 82.203\",\n            input_types=[\"str\", \"Message\"]\n        ),\n        StrInput(\n            name=\"error_type\",\n            display_name=\"Error Type\",\n            info=\"Type of the error (empty for success)\",\n            value=\"\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        ),\n        StrInput(\n            name=\"additional_info\",\n            display_name=\"Additional Info\",\n            info=\"Optional details (JSON string or text)\",\n            input_types=[\"str\", \"Message\"],\n            required=False\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"json_output\",\n            display_name=\"MCP Formatted Output\",\n            method=\"build_json_output\"\n        )\n    ]\n\n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n    def build_json_output(self) -> Data:\n        status_code = self._get_text(self.status_code).strip()\n        ok = status_code == \"200\"\n\n        structured = {\n            \"ok\": ok,\n            \"status_code\": status_code,\n            \"error_type\": self._get_text(self.error_type),\n            \"message\": self._get_text(self.message),\n            \"details\": self._get_text(self.additional_info) if self.additional_info else None,\n        }\n\n        if ok:\n            text_msg = self._get_text(self.message)\n        else:\n            et = self._get_text(self.error_type)\n            info = self._get_text(self.additional_info) if self.additional_info else \"\"\n            text_msg = f\"Error {status_code}: {et or 'unknown error'}. {info}\".strip()\n\n        return Data(\n            data={\n                \"content\": [\n                    { \"type\": \"text\", \"text\": text_msg }\n                ],\n                \"structuredContent\": structured\n            }\n        )\n"
               },
               "error_type": {
                 "_input_type": "StrInput",
                 "advanced": false,
                 "display_name": "Error Type",
                 "dynamic": false,
-                "info": "Type of the error",
+                "info": "Type of the error (empty for success)",
                 "input_types": [
                   "str",
                   "Message"
@@ -3688,9 +3706,9 @@
               "message": {
                 "_input_type": "StrInput",
                 "advanced": false,
-                "display_name": "Error Message",
+                "display_name": "Message",
                 "dynamic": false,
-                "info": "Message with the payload",
+                "info": "Human-readable message",
                 "input_types": [
                   "str",
                   "Message"
@@ -4844,9 +4862,9 @@
       }
     ],
     "viewport": {
-      "x": 1375.916249594526,
-      "y": 192.0979968331999,
-      "zoom": 0.634635443009902
+      "x": -807.3439636636699,
+      "y": -479.7629321154061,
+      "zoom": 0.5555543643275466
     }
   },
   "description": "Get latest exchange rate for the currency",
