@@ -37,6 +37,7 @@ services:
     volumes:
       - ./flows:/app/flows
       - langflow-data:/var/lib/langflow
+      - ./data:/app/data/:ro
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:${LANGFLOW_PORT}"]
