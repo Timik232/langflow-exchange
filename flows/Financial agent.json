@@ -1419,7 +1419,7 @@
             "frozen": false,
             "icon": "calculator",
             "key": "CalculatorComponent",
-            "last_updated": "2025-10-09T08:09:37.122Z",
+            "last_updated": "2025-10-10T07:39:55.077Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -2057,7 +2057,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.422Z",
+            "last_updated": "2025-10-10T07:39:55.649Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -2325,7 +2325,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "int",
-                "value": 100
+                "value": 2
               },
               "output_schema": {
                 "_input_type": "TableInput",
@@ -2528,7 +2528,7 @@
             "frozen": false,
             "icon": "layout-template",
             "key": "URLComponent",
-            "last_updated": "2025-10-09T08:09:37.123Z",
+            "last_updated": "2025-10-10T07:39:55.078Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -5928,7 +5928,7 @@
             ],
             "frozen": false,
             "icon": "document",
-            "last_updated": "2025-10-09T08:09:37.124Z",
+            "last_updated": "2025-10-10T07:39:55.079Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -6093,7 +6093,7 @@
             "frozen": false,
             "icon": "Mcp",
             "key": "mcp_exchange_api_usage",
-            "last_updated": "2025-10-09T08:09:37.124Z",
+            "last_updated": "2025-10-10T07:39:55.079Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "mcpServerName": "exchange_api_usage",
@@ -6230,6 +6230,18 @@
                 "value": [
                   {
                     "args": {},
+                    "description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_name": "get_historical_rate",
+                    "name": "get_historical_rate",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "get_historical_rate"
+                    ]
+                  },
+                  {
+                    "args": {},
                     "description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
                     "display_description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
                     "display_name": "get_latest_rate",
@@ -6277,7 +6289,7 @@
         "dragging": false,
         "id": "MCP-vhryL",
         "measured": {
-          "height": 283,
+          "height": 311,
           "width": 320
         },
         "position": {
@@ -6412,7 +6424,7 @@
             ],
             "frozen": false,
             "icon": "document",
-            "last_updated": "2025-10-09T08:09:37.125Z",
+            "last_updated": "2025-10-10T07:39:55.080Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -6852,7 +6864,7 @@
             "frozen": false,
             "icon": "calculator",
             "key": "CalculatorComponent",
-            "last_updated": "2025-10-09T08:09:37.126Z",
+            "last_updated": "2025-10-10T07:39:55.081Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -7776,7 +7788,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.127Z",
+            "last_updated": "2025-10-10T07:39:55.081Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -8217,7 +8229,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.128Z",
+            "last_updated": "2025-10-10T07:39:55.083Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -8665,7 +8677,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.424Z",
+            "last_updated": "2025-10-10T07:39:55.651Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -8910,7 +8922,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "int",
-                "value": 100
+                "value": 1
               },
               "output_schema": {
                 "_input_type": "TableInput",
@@ -9159,7 +9171,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.426Z",
+            "last_updated": "2025-10-10T07:39:55.654Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -9404,7 +9416,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "int",
-                "value": 100
+                "value": 1
               },
               "output_schema": {
                 "_input_type": "TableInput",
@@ -11326,7 +11338,7 @@
             "frozen": false,
             "icon": "Mcp",
             "key": "mcp_exchange_api_usage",
-            "last_updated": "2025-10-09T08:09:37.129Z",
+            "last_updated": "2025-10-10T07:39:55.084Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "mcpServerName": "exchange_api_usage",
@@ -11463,6 +11475,18 @@
                 "value": [
                   {
                     "args": {},
+                    "description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_name": "get_historical_rate",
+                    "name": "get_historical_rate",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "get_historical_rate"
+                    ]
+                  },
+                  {
+                    "args": {},
                     "description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
                     "display_description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
                     "display_name": "get_latest_rate",
@@ -11509,7 +11533,7 @@
         },
         "id": "MCP-bmiCV",
         "measured": {
-          "height": 283,
+          "height": 311,
           "width": 320
         },
         "position": {
@@ -11558,7 +11582,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-09T08:09:37.423Z",
+            "last_updated": "2025-10-10T07:39:55.656Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -11803,7 +11827,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "int",
-                "value": 100
+                "value": 0
               },
               "output_schema": {
                 "_input_type": "TableInput",
