@@ -1002,227 +1002,69 @@
         "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-3ZCGmœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
         "target": "CustomComponent-UuzJ9",
         "targetHandle": "{œfieldNameœ:œamountœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CBRHistoricalConverter",
+            "id": "CustomComponent-UuzJ9",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "payload",
+            "id": "CustomComponent-IdtOy",
+            "inputTypes": [
+              "Data",
+              "str",
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-UuzJ9{œdataTypeœ:œCBRHistoricalConverterœ,œidœ:œCustomComponent-UuzJ9œ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-IdtOy{œfieldNameœ:œpayloadœ,œidœ:œCustomComponent-IdtOyœ,œinputTypesœ:[œDataœ,œstrœ,œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-UuzJ9",
+        "sourceHandle": "{œdataTypeœ:œCBRHistoricalConverterœ,œidœ:œCustomComponent-UuzJ9œ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-IdtOy",
+        "targetHandle": "{œfieldNameœ:œpayloadœ,œidœ:œCustomComponent-IdtOyœ,œinputTypesœ:[œDataœ,œstrœ,œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CBRMessageFormatter",
+            "id": "CustomComponent-IdtOy",
+            "name": "output",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-TKTFg",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-IdtOy{œdataTypeœ:œCBRMessageFormatterœ,œidœ:œCustomComponent-IdtOyœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-TKTFg{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-TKTFgœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-IdtOy",
+        "sourceHandle": "{œdataTypeœ:œCBRMessageFormatterœ,œidœ:œCustomComponent-IdtOyœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-TKTFg",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-TKTFgœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
-      {
-        "data": {
-          "id": "ChatOutput-ZT4Ok",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Display a chat message in the Playground.",
-            "display_name": "Chat Output",
-            "documentation": "https://docs.langflow.org/components-io#chat-output",
-            "edited": false,
-            "field_order": [
-              "input_value",
-              "should_store_message",
-              "sender",
-              "sender_name",
-              "session_id",
-              "data_template"
-            ],
-            "frozen": false,
-            "icon": "MessagesSquare",
-            "legacy": false,
-            "metadata": {},
-            "minimized": true,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Output Message",
-                "group_outputs": false,
-                "method": "message_response",
-                "name": "message",
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
-              },
-              "data_template": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Data Template",
-                "dynamic": false,
-                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "data_template",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "{text}"
-              },
-              "input_value": {
-                "_input_type": "HandleInput",
-                "advanced": false,
-                "display_name": "Inputs",
-                "dynamic": false,
-                "info": "Message to be passed as output.",
-                "input_types": [
-                  "Data",
-                  "DataFrame",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "input_value",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "sender": {
-                "_input_type": "DropdownInput",
-                "advanced": true,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Sender Type",
-                "dynamic": false,
-                "external_options": {},
-                "info": "Type of sender.",
-                "name": "sender",
-                "options": [
-                  "Machine",
-                  "User"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "Machine"
-              },
-              "sender_name": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Sender Name",
-                "dynamic": false,
-                "info": "Name of the sender.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "sender_name",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "AI"
-              },
-              "session_id": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Session ID",
-                "dynamic": false,
-                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "session_id",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "should_store_message": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Store Messages",
-                "dynamic": false,
-                "info": "Store the message in the history.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "should_store_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": false,
-          "type": "ChatOutput"
-        },
-        "dragging": false,
-        "id": "ChatOutput-ZT4Ok",
-        "measured": {
-          "height": 48,
-          "width": 192
-        },
-        "position": {
-          "x": 3088.9260365588857,
-          "y": -190.34358231961545
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
       {
         "data": {
           "id": "GetLatestRate-xeIPj",
@@ -1296,7 +1138,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "1.0"
+                "value": "2"
               },
               "base_currency": {
                 "_input_type": "MessageTextInput",
@@ -1452,604 +1294,6 @@
       },
       {
         "data": {
-          "id": "APIRequest-KB608",
-          "node": {
-            "base_classes": [
-              "Data"
-            ],
-            "beta": false,
-            "category": "data",
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Make HTTP requests using URL or cURL commands.",
-            "display_name": "API Request",
-            "documentation": "https://docs.langflow.org/components-data#api-request",
-            "edited": false,
-            "field_order": [
-              "url_input",
-              "curl_input",
-              "method",
-              "mode",
-              "query_params",
-              "body",
-              "headers",
-              "timeout",
-              "follow_redirects",
-              "save_to_file",
-              "include_httpx_metadata"
-            ],
-            "frozen": false,
-            "icon": "Globe",
-            "key": "APIRequest",
-            "legacy": false,
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "API Response",
-                "group_outputs": false,
-                "method": "make_api_request",
-                "name": "data",
-                "selected": "Data",
-                "tool_mode": true,
-                "types": [
-                  "Data"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "score": 0.007568328950209746,
-            "template": {
-              "_type": "Component",
-              "body": {
-                "_input_type": "TableInput",
-                "advanced": true,
-                "display_name": "Body",
-                "dynamic": false,
-                "info": "The body to send with the request as a dictionary (for POST, PATCH, PUT).",
-                "input_types": [
-                  "Data"
-                ],
-                "is_list": true,
-                "list_add_label": "Add More",
-                "name": "body",
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "table_icon": "Table",
-                "table_schema": {
-                  "columns": [
-                    {
-                      "default": "None",
-                      "description": "Parameter name",
-                      "disable_edit": false,
-                      "display_name": "Key",
-                      "edit_mode": "popover",
-                      "filterable": true,
-                      "formatter": "text",
-                      "hidden": false,
-                      "name": "key",
-                      "sortable": true,
-                      "type": "str"
-                    },
-                    {
-                      "default": "None",
-                      "description": "Parameter value",
-                      "disable_edit": false,
-                      "display_name": "Value",
-                      "edit_mode": "popover",
-                      "filterable": true,
-                      "hidden": false,
-                      "name": "value",
-                      "sortable": true
-                    }
-                  ]
-                },
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "trigger_icon": "Table",
-                "trigger_text": "Open table",
-                "type": "table",
-                "value": []
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "import json\nimport re\nimport tempfile\nfrom datetime import datetime, timezone\nfrom pathlib import Path\nfrom typing import Any\nfrom urllib.parse import parse_qsl, urlencode, urlparse, urlunparse\n\nimport aiofiles\nimport aiofiles.os as aiofiles_os\nimport httpx\nimport validators\n\nfrom langflow.base.curl.parse import parse_context\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.inputs.inputs import TabInput\nfrom langflow.io import (\n    BoolInput,\n    DataInput,\n    DropdownInput,\n    IntInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n    TableInput,\n)\nfrom langflow.schema.data import Data\nfrom langflow.schema.dotdict import dotdict\nfrom langflow.services.deps import get_settings_service\nfrom langflow.utils.component_utils import set_current_fields, set_field_advanced, set_field_display\n\n# Define fields for each mode\nMODE_FIELDS = {\n    \"URL\": [\n        \"url_input\",\n        \"method\",\n    ],\n    \"cURL\": [\"curl_input\"],\n}\n\n# Fields that should always be visible\nDEFAULT_FIELDS = [\"mode\"]\n\n\nclass APIRequestComponent(Component):\n    display_name = \"API Request\"\n    description = \"Make HTTP requests using URL or cURL commands.\"\n    documentation: str = \"https://docs.langflow.org/components-data#api-request\"\n    icon = \"Globe\"\n    name = \"APIRequest\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"url_input\",\n            display_name=\"URL\",\n            info=\"Enter the URL for the request.\",\n            advanced=False,\n            tool_mode=True,\n        ),\n        MultilineInput(\n            name=\"curl_input\",\n            display_name=\"cURL\",\n            info=(\n                \"Paste a curl command to populate the fields. \"\n                \"This will fill in the dictionary fields for headers and body.\"\n            ),\n            real_time_refresh=True,\n            tool_mode=True,\n            advanced=True,\n            show=False,\n        ),\n        DropdownInput(\n            name=\"method\",\n            display_name=\"Method\",\n            options=[\"GET\", \"POST\", \"PATCH\", \"PUT\", \"DELETE\"],\n            value=\"GET\",\n            info=\"The HTTP method to use.\",\n            real_time_refresh=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"URL\", \"cURL\"],\n            value=\"URL\",\n            info=\"Enable cURL mode to populate fields from a cURL command.\",\n            real_time_refresh=True,\n        ),\n        DataInput(\n            name=\"query_params\",\n            display_name=\"Query Parameters\",\n            info=\"The query parameters to append to the URL.\",\n            advanced=True,\n        ),\n        TableInput(\n            name=\"body\",\n            display_name=\"Body\",\n            info=\"The body to send with the request as a dictionary (for POST, PATCH, PUT).\",\n            table_schema=[\n                {\n                    \"name\": \"key\",\n                    \"display_name\": \"Key\",\n                    \"type\": \"str\",\n                    \"description\": \"Parameter name\",\n                },\n                {\n                    \"name\": \"value\",\n                    \"display_name\": \"Value\",\n                    \"description\": \"Parameter value\",\n                },\n            ],\n            value=[],\n            input_types=[\"Data\"],\n            advanced=True,\n            real_time_refresh=True,\n        ),\n        TableInput(\n            name=\"headers\",\n            display_name=\"Headers\",\n            info=\"The headers to send with the request\",\n            table_schema=[\n                {\n                    \"name\": \"key\",\n                    \"display_name\": \"Header\",\n                    \"type\": \"str\",\n                    \"description\": \"Header name\",\n                },\n                {\n                    \"name\": \"value\",\n                    \"display_name\": \"Value\",\n                    \"type\": \"str\",\n                    \"description\": \"Header value\",\n                },\n            ],\n            value=[{\"key\": \"User-Agent\", \"value\": get_settings_service().settings.user_agent}],\n            advanced=True,\n            input_types=[\"Data\"],\n            real_time_refresh=True,\n        ),\n        IntInput(\n            name=\"timeout\",\n            display_name=\"Timeout\",\n            value=30,\n            info=\"The timeout to use for the request.\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"follow_redirects\",\n            display_name=\"Follow Redirects\",\n            value=True,\n            info=\"Whether to follow http redirects.\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"save_to_file\",\n            display_name=\"Save to File\",\n            value=False,\n            info=\"Save the API response to a temporary file\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"include_httpx_metadata\",\n            display_name=\"Include HTTPx Metadata\",\n            value=False,\n            info=(\n                \"Include properties such as headers, status_code, response_headers, \"\n                \"and redirection_history in the output.\"\n            ),\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"API Response\", name=\"data\", method=\"make_api_request\"),\n    ]\n\n    def _parse_json_value(self, value: Any) -> Any:\n        \"\"\"Parse a value that might be a JSON string.\"\"\"\n        if not isinstance(value, str):\n            return value\n\n        try:\n            parsed = json.loads(value)\n        except json.JSONDecodeError:\n            return value\n        else:\n            return parsed\n\n    def _process_body(self, body: Any) -> dict:\n        \"\"\"Process the body input into a valid dictionary.\"\"\"\n        if body is None:\n            return {}\n        if hasattr(body, \"data\"):\n            body = body.data\n        if isinstance(body, dict):\n            return self._process_dict_body(body)\n        if isinstance(body, str):\n            return self._process_string_body(body)\n        if isinstance(body, list):\n            return self._process_list_body(body)\n        return {}\n\n    def _process_dict_body(self, body: dict) -> dict:\n        \"\"\"Process dictionary body by parsing JSON values.\"\"\"\n        return {k: self._parse_json_value(v) for k, v in body.items()}\n\n    def _process_string_body(self, body: str) -> dict:\n        \"\"\"Process string body by attempting JSON parse.\"\"\"\n        try:\n            return self._process_body(json.loads(body))\n        except json.JSONDecodeError:\n            return {\"data\": body}\n\n    def _process_list_body(self, body: list) -> dict:\n        \"\"\"Process list body by converting to key-value dictionary.\"\"\"\n        processed_dict = {}\n        try:\n            for item in body:\n                # Unwrap Data objects\n                current_item = item\n                if hasattr(item, \"data\"):\n                    unwrapped_data = item.data\n                    # If the unwrapped data is a dict but not key-value format, use it directly\n                    if isinstance(unwrapped_data, dict) and not self._is_valid_key_value_item(unwrapped_data):\n                        return unwrapped_data\n                    current_item = unwrapped_data\n                if not self._is_valid_key_value_item(current_item):\n                    continue\n                key = current_item[\"key\"]\n                value = self._parse_json_value(current_item[\"value\"])\n                processed_dict[key] = value\n        except (KeyError, TypeError, ValueError) as e:\n            self.log(f\"Failed to process body list: {e}\")\n            return {}\n        return processed_dict\n\n    def _is_valid_key_value_item(self, item: Any) -> bool:\n        \"\"\"Check if an item is a valid key-value dictionary.\"\"\"\n        return isinstance(item, dict) and \"key\" in item and \"value\" in item\n\n    def parse_curl(self, curl: str, build_config: dotdict) -> dotdict:\n        \"\"\"Parse a cURL command and update build configuration.\"\"\"\n        try:\n            parsed = parse_context(curl)\n\n            # Update basic configuration\n            url = parsed.url\n            # Normalize URL before setting it\n            url = self._normalize_url(url)\n\n            build_config[\"url_input\"][\"value\"] = url\n            build_config[\"method\"][\"value\"] = parsed.method.upper()\n\n            # Process headers\n            headers_list = [{\"key\": k, \"value\": v} for k, v in parsed.headers.items()]\n            build_config[\"headers\"][\"value\"] = headers_list\n\n            # Process body data\n            if not parsed.data:\n                build_config[\"body\"][\"value\"] = []\n            elif parsed.data:\n                try:\n                    json_data = json.loads(parsed.data)\n                    if isinstance(json_data, dict):\n                        body_list = [\n                            {\"key\": k, \"value\": json.dumps(v) if isinstance(v, dict | list) else str(v)}\n                            for k, v in json_data.items()\n                        ]\n                        build_config[\"body\"][\"value\"] = body_list\n                    else:\n                        build_config[\"body\"][\"value\"] = [{\"key\": \"data\", \"value\": json.dumps(json_data)}]\n                except json.JSONDecodeError:\n                    build_config[\"body\"][\"value\"] = [{\"key\": \"data\", \"value\": parsed.data}]\n\n        except Exception as exc:\n            msg = f\"Error parsing curl: {exc}\"\n            self.log(msg)\n            raise ValueError(msg) from exc\n\n        return build_config\n\n    def _normalize_url(self, url: str) -> str:\n        \"\"\"Normalize URL by adding https:// if no protocol is specified.\"\"\"\n        if not url or not isinstance(url, str):\n            msg = \"URL cannot be empty\"\n            raise ValueError(msg)\n\n        url = url.strip()\n        if url.startswith((\"http://\", \"https://\")):\n            return url\n        return f\"https://{url}\"\n\n    async def make_request(\n        self,\n        client: httpx.AsyncClient,\n        method: str,\n        url: str,\n        headers: dict | None = None,\n        body: Any = None,\n        timeout: int = 5,\n        *,\n        follow_redirects: bool = True,\n        save_to_file: bool = False,\n        include_httpx_metadata: bool = False,\n    ) -> Data:\n        method = method.upper()\n        if method not in {\"GET\", \"POST\", \"PATCH\", \"PUT\", \"DELETE\"}:\n            msg = f\"Unsupported method: {method}\"\n            raise ValueError(msg)\n\n        processed_body = self._process_body(body)\n        redirection_history = []\n\n        try:\n            # Prepare request parameters\n            request_params = {\n                \"method\": method,\n                \"url\": url,\n                \"headers\": headers,\n                \"json\": processed_body,\n                \"timeout\": timeout,\n                \"follow_redirects\": follow_redirects,\n            }\n            response = await client.request(**request_params)\n\n            redirection_history = [\n                {\n                    \"url\": redirect.headers.get(\"Location\", str(redirect.url)),\n                    \"status_code\": redirect.status_code,\n                }\n                for redirect in response.history\n            ]\n\n            is_binary, file_path = await self._response_info(response, with_file_path=save_to_file)\n            response_headers = self._headers_to_dict(response.headers)\n\n            # Base metadata\n            metadata = {\n                \"source\": url,\n                \"status_code\": response.status_code,\n                \"response_headers\": response_headers,\n            }\n\n            if redirection_history:\n                metadata[\"redirection_history\"] = redirection_history\n\n            if save_to_file:\n                mode = \"wb\" if is_binary else \"w\"\n                encoding = response.encoding if mode == \"w\" else None\n                if file_path:\n                    await aiofiles_os.makedirs(file_path.parent, exist_ok=True)\n                    if is_binary:\n                        async with aiofiles.open(file_path, \"wb\") as f:\n                            await f.write(response.content)\n                            await f.flush()\n                    else:\n                        async with aiofiles.open(file_path, \"w\", encoding=encoding) as f:\n                            await f.write(response.text)\n                            await f.flush()\n                    metadata[\"file_path\"] = str(file_path)\n\n                if include_httpx_metadata:\n                    metadata.update({\"headers\": headers})\n                return Data(data=metadata)\n\n            # Handle response content\n            if is_binary:\n                result = response.content\n            else:\n                try:\n                    result = response.json()\n                except json.JSONDecodeError:\n                    self.log(\"Failed to decode JSON response\")\n                    result = response.text.encode(\"utf-8\")\n\n            metadata[\"result\"] = result\n\n            if include_httpx_metadata:\n                metadata.update({\"headers\": headers})\n\n            return Data(data=metadata)\n        except (httpx.HTTPError, httpx.RequestError, httpx.TimeoutException) as exc:\n            self.log(f\"Error making request to {url}\")\n            return Data(\n                data={\n                    \"source\": url,\n                    \"headers\": headers,\n                    \"status_code\": 500,\n                    \"error\": str(exc),\n                    **({\"redirection_history\": redirection_history} if redirection_history else {}),\n                },\n            )\n\n    def add_query_params(self, url: str, params: dict) -> str:\n        \"\"\"Add query parameters to URL efficiently.\"\"\"\n        if not params:\n            return url\n        url_parts = list(urlparse(url))\n        query = dict(parse_qsl(url_parts[4]))\n        query.update(params)\n        url_parts[4] = urlencode(query)\n        return urlunparse(url_parts)\n\n    def _headers_to_dict(self, headers: httpx.Headers) -> dict[str, str]:\n        \"\"\"Convert HTTP headers to a dictionary with lowercased keys.\"\"\"\n        return {k.lower(): v for k, v in headers.items()}\n\n    def _process_headers(self, headers: Any) -> dict:\n        \"\"\"Process the headers input into a valid dictionary.\"\"\"\n        if headers is None:\n            return {}\n        if isinstance(headers, dict):\n            return headers\n        if isinstance(headers, list):\n            return {item[\"key\"]: item[\"value\"] for item in headers if self._is_valid_key_value_item(item)}\n        return {}\n\n    async def make_api_request(self) -> Data:\n        \"\"\"Make HTTP request with optimized parameter handling.\"\"\"\n        method = self.method\n        url = self.url_input.strip() if isinstance(self.url_input, str) else \"\"\n        headers = self.headers or {}\n        body = self.body or {}\n        timeout = self.timeout\n        follow_redirects = self.follow_redirects\n        save_to_file = self.save_to_file\n        include_httpx_metadata = self.include_httpx_metadata\n\n        # if self.mode == \"cURL\" and self.curl_input:\n        #     self._build_config = self.parse_curl(self.curl_input, dotdict())\n        #     # After parsing curl, get the normalized URL\n        #     url = self._build_config[\"url_input\"][\"value\"]\n\n        # Normalize URL before validation\n        url = self._normalize_url(url)\n\n        # Validate URL\n        if not validators.url(url):\n            msg = f\"Invalid URL provided: {url}\"\n            raise ValueError(msg)\n\n        # Process query parameters\n        if isinstance(self.query_params, str):\n            query_params = dict(parse_qsl(self.query_params))\n        else:\n            query_params = self.query_params.data if self.query_params else {}\n\n        # Process headers and body\n        headers = self._process_headers(headers)\n        body = self._process_body(body)\n        url = self.add_query_params(url, query_params)\n\n        async with httpx.AsyncClient() as client:\n            result = await self.make_request(\n                client,\n                method,\n                url,\n                headers,\n                body,\n                timeout,\n                follow_redirects=follow_redirects,\n                save_to_file=save_to_file,\n                include_httpx_metadata=include_httpx_metadata,\n            )\n        self.status = result\n        return result\n\n    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None) -> dotdict:\n        \"\"\"Update the build config based on the selected mode.\"\"\"\n        if field_name != \"mode\":\n            if field_name == \"curl_input\" and self.mode == \"cURL\" and self.curl_input:\n                return self.parse_curl(self.curl_input, build_config)\n            return build_config\n\n        # print(f\"Current mode: {field_value}\")\n        if field_value == \"cURL\":\n            set_field_display(build_config, \"curl_input\", value=True)\n            if build_config[\"curl_input\"][\"value\"]:\n                build_config = self.parse_curl(build_config[\"curl_input\"][\"value\"], build_config)\n        else:\n            set_field_display(build_config, \"curl_input\", value=False)\n\n        return set_current_fields(\n            build_config=build_config,\n            action_fields=MODE_FIELDS,\n            selected_action=field_value,\n            default_fields=DEFAULT_FIELDS,\n            func=set_field_advanced,\n            default_value=True,\n        )\n\n    async def _response_info(\n        self, response: httpx.Response, *, with_file_path: bool = False\n    ) -> tuple[bool, Path | None]:\n        \"\"\"Determine the file path and whether the response content is binary.\n\n        Args:\n            response (Response): The HTTP response object.\n            with_file_path (bool): Whether to save the response content to a file.\n\n        Returns:\n            Tuple[bool, Path | None]:\n                A tuple containing a boolean indicating if the content is binary and the full file path (if applicable).\n        \"\"\"\n        content_type = response.headers.get(\"Content-Type\", \"\")\n        is_binary = \"application/octet-stream\" in content_type or \"application/binary\" in content_type\n\n        if not with_file_path:\n            return is_binary, None\n\n        component_temp_dir = Path(tempfile.gettempdir()) / self.__class__.__name__\n\n        # Create directory asynchronously\n        await aiofiles_os.makedirs(component_temp_dir, exist_ok=True)\n\n        filename = None\n        if \"Content-Disposition\" in response.headers:\n            content_disposition = response.headers[\"Content-Disposition\"]\n            filename_match = re.search(r'filename=\"(.+?)\"', content_disposition)\n            if filename_match:\n                extracted_filename = filename_match.group(1)\n                filename = extracted_filename\n\n        # Step 3: Infer file extension or use part of the request URL if no filename\n        if not filename:\n            # Extract the last segment of the URL path\n            url_path = urlparse(str(response.request.url) if response.request else \"\").path\n            base_name = Path(url_path).name  # Get the last segment of the path\n            if not base_name:  # If the path ends with a slash or is empty\n                base_name = \"response\"\n\n            # Infer file extension\n            content_type_to_extension = {\n                \"text/plain\": \".txt\",\n                \"application/json\": \".json\",\n                \"image/jpeg\": \".jpg\",\n                \"image/png\": \".png\",\n                \"application/octet-stream\": \".bin\",\n            }\n            extension = content_type_to_extension.get(content_type, \".bin\" if is_binary else \".txt\")\n            filename = f\"{base_name}{extension}\"\n\n        # Step 4: Define the full file path\n        file_path = component_temp_dir / filename\n\n        # Step 5: Check if file exists asynchronously and handle accordingly\n        try:\n            # Try to create the file exclusively (x mode) to check existence\n            async with aiofiles.open(file_path, \"x\") as _:\n                pass  # File created successfully, we can use this path\n        except FileExistsError:\n            # If file exists, append a timestamp to the filename\n            timestamp = datetime.now(timezone.utc).strftime(\"%Y%m%d%H%M%S%f\")\n            file_path = component_temp_dir / f\"{timestamp}-{filename}\"\n\n        return is_binary, file_path\n"
-              },
-              "curl_input": {
-                "_input_type": "MultilineInput",
-                "advanced": true,
-                "copy_field": false,
-                "display_name": "cURL",
-                "dynamic": false,
-                "info": "Paste a curl command to populate the fields. This will fill in the dictionary fields for headers and body.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "multiline": true,
-                "name": "curl_input",
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": false,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "follow_redirects": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Follow Redirects",
-                "dynamic": false,
-                "info": "Whether to follow http redirects.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "follow_redirects",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              },
-              "headers": {
-                "_input_type": "TableInput",
-                "advanced": true,
-                "display_name": "Headers",
-                "dynamic": false,
-                "info": "The headers to send with the request",
-                "input_types": [
-                  "Data"
-                ],
-                "is_list": true,
-                "list_add_label": "Add More",
-                "name": "headers",
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "table_icon": "Table",
-                "table_schema": {
-                  "columns": [
-                    {
-                      "default": "None",
-                      "description": "Header name",
-                      "disable_edit": false,
-                      "display_name": "Header",
-                      "edit_mode": "popover",
-                      "filterable": true,
-                      "formatter": "text",
-                      "hidden": false,
-                      "name": "key",
-                      "sortable": true,
-                      "type": "str"
-                    },
-                    {
-                      "default": "None",
-                      "description": "Header value",
-                      "disable_edit": false,
-                      "display_name": "Value",
-                      "edit_mode": "popover",
-                      "filterable": true,
-                      "formatter": "text",
-                      "hidden": false,
-                      "name": "value",
-                      "sortable": true,
-                      "type": "str"
-                    }
-                  ]
-                },
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "trigger_icon": "Table",
-                "trigger_text": "Open table",
-                "type": "table",
-                "value": [
-                  {
-                    "key": "User-Agent",
-                    "value": "langflow"
-                  }
-                ]
-              },
-              "include_httpx_metadata": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Include HTTPx Metadata",
-                "dynamic": false,
-                "info": "Include properties such as headers, status_code, response_headers, and redirection_history in the output.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "include_httpx_metadata",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": false
-              },
-              "method": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Method",
-                "dynamic": false,
-                "external_options": {},
-                "info": "The HTTP method to use.",
-                "name": "method",
-                "options": [
-                  "GET",
-                  "POST",
-                  "PATCH",
-                  "PUT",
-                  "DELETE"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "GET"
-              },
-              "mode": {
-                "_input_type": "TabInput",
-                "advanced": false,
-                "display_name": "Mode",
-                "dynamic": false,
-                "info": "Enable cURL mode to populate fields from a cURL command.",
-                "name": "mode",
-                "options": [
-                  "URL",
-                  "cURL"
-                ],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "tab",
-                "value": "URL"
-              },
-              "query_params": {
-                "_input_type": "DataInput",
-                "advanced": true,
-                "display_name": "Query Parameters",
-                "dynamic": false,
-                "info": "The query parameters to append to the URL.",
-                "input_types": [
-                  "Data"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "query_params",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "save_to_file": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Save to File",
-                "dynamic": false,
-                "info": "Save the API response to a temporary file",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "save_to_file",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": false
-              },
-              "timeout": {
-                "_input_type": "IntInput",
-                "advanced": true,
-                "display_name": "Timeout",
-                "dynamic": false,
-                "info": "The timeout to use for the request.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "timeout",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "int",
-                "value": 30
-              },
-              "url_input": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "URL",
-                "dynamic": false,
-                "info": "Enter the URL for the request.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "url_input",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "APIRequest"
-        },
-        "dragging": false,
-        "id": "APIRequest-KB608",
-        "measured": {
-          "height": 381,
-          "width": 320
-        },
-        "position": {
-          "x": 2719.4264005409113,
-          "y": -409.63873898736085
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "Prompt Template-TbcYR",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {
-              "template": [
-                "EXCHANGERATE_API_KEY",
-                "base"
-              ]
-            },
-            "description": "Create a prompt template with dynamic variables.",
-            "display_name": "Prompt Template",
-            "documentation": "https://docs.langflow.org/components-prompts",
-            "edited": true,
-            "field_order": [
-              "template",
-              "if_else_input",
-              "tool_placeholder"
-            ],
-            "frozen": false,
-            "icon": "braces",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Prompt",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "build_prompt",
-                "name": "prompt",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "priority": 0,
-            "template": {
-              "EXCHANGERATE_API_KEY": {
-                "advanced": false,
-                "display_name": "EXCHANGERATE_API_KEY",
-                "dynamic": false,
-                "field_type": "str",
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "EXCHANGERATE_API_KEY",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "type": "str",
-                "value": ""
-              },
-              "_type": "Component",
-              "base": {
-                "advanced": false,
-                "display_name": "base",
-                "dynamic": false,
-                "field_type": "str",
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "base",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "type": "str",
-                "value": ""
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from langflow.base.prompts.api_utils import process_prompt_template\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.inputs.inputs import DefaultPromptField\nfrom langflow.io import MessageTextInput, Output, PromptInput\nfrom langflow.schema.message import Message\nfrom langflow.template.utils import update_template_values\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt Template\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    documentation: str = \"https://docs.langflow.org/components-prompts\"\n    icon = \"braces\"\n    trace_type = \"prompt\"\n    name = \"Prompt Template\"\n    priority = 0  # Set priority to 0 to make it appear first\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    async def build_prompt(self) -> Message:\n        prompt = Message.from_template(**self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        custom_fields = frontend_node[\"custom_fields\"]\n        frontend_node_template = frontend_node[\"template\"]\n        _ = process_prompt_template(\n            template=prompt_template,\n            name=\"template\",\n            custom_fields=custom_fields,\n            frontend_node_template=frontend_node_template,\n        )\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        # Kept it duplicated for backwards compatibility\n        _ = process_prompt_template(\n            template=template,\n            name=\"template\",\n            custom_fields=frontend_node[\"custom_fields\"],\n            frontend_node_template=frontend_node[\"template\"],\n        )\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
-              },
-              "if_else_input": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "If-else input",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "if_else_input",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "template": {
-                "_input_type": "PromptInput",
-                "advanced": false,
-                "display_name": "Template",
-                "dynamic": false,
-                "info": "",
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "template",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "type": "prompt",
-                "value": "https://v6.exchangerate-api.com/v6/{EXCHANGERATE_API_KEY}/latest/{base}"
-              },
-              "tool_placeholder": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Tool Placeholder",
-                "dynamic": false,
-                "info": "A placeholder input for tool mode.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "tool_placeholder",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "Prompt Template"
-        },
-        "dragging": false,
-        "id": "Prompt Template-TbcYR",
-        "measured": {
-          "height": 467,
-          "width": 320
-        },
-        "position": {
-          "x": 2319.1874638382724,
-          "y": -561.05453889877
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
           "id": "CustomComponent-UuzJ9",
           "node": {
             "base_classes": [
@@ -2166,7 +1410,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict, Optional\r\nimport requests\r\nfrom datetime import date, timedelta\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    StrInput,\r\n    IntInput,\r\n    FloatInput,\r\n    BoolInput,\r\n    MessageTextInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\n\r\n\r\ndef _to_float(x: Optional[str | float | int]) -> Optional[float]:\r\n    if x is None:\r\n        return None\r\n    try:\r\n        return float(str(x).replace(\",\", \".\").strip())\r\n    except Exception:\r\n        return None\r\n\r\n\r\nclass CBRHistoricalConverter(Component):\r\n    display_name = \"CBR GetCursOnDate Converter\"\r\n    description = \"Курс ЦБ РФ на дату и конвертация base→target через кросс‑курс.\"\r\n    documentation = \"https://www.cbr.ru/development/dws/\"\r\n    icon = \"Currencies\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        StrInput(name=\"if_else_input_2\", display_name=\"If-else input_2\", input_types=[\"str\", \"Message\"]),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\", value=\"10\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\", value=\"1\"),\r\n        MessageTextInput(name=\"year\", display_name=\"Year\", value=\"2025\"),\r\n        MessageTextInput(name=\"base_currency\", display_name=\"Base ISO (e.g., EUR)\", value=\"EUR\"),\r\n        MessageTextInput(name=\"target_currency\", display_name=\"Target ISO (e.g., USD)\", value=\"RUB\"),\r\n        MessageTextInput(name=\"amount\", display_name=\"Amount\", value=\"1.0\"),\r\n        BoolInput(name=\"fallback_previous\", display_name=\"Fallback previous day\", value=True),\r\n        IntInput(name=\"fallback_days\", display_name=\"Max fallback days\", value=7),\r\n        FloatInput(name=\"timeout_sec\", display_name=\"Timeout (s)\", value=30.0),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Result\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    def _log(self, msg: str, name: str = \"CBR-JSON\"):\r\n        try:\r\n            self.log(msg, name)\r\n        except Exception:\r\n            pass\r\n\r\n    def _json_get_curs_on_date(self, when: date, timeout: float) -> Dict[str, Dict[str, Any]]:\r\n        y, m, d = when.year, when.month, when.day\r\n        url = f\"https://www.cbr-xml-daily.ru/archive/{y:04d}/{m:02d}/{d:02d}/daily_json.js\"\r\n        self._log(f\"GET {url} timeout={timeout}s\")\r\n        r = requests.get(url, timeout=timeout)\r\n        self._log(f\"HTTP {r.status_code} CT={r.headers.get('Content-Type')}\")\r\n        if r.status_code != 200:\r\n            return {}\r\n        js = r.json()\r\n        val = js.get(\"Valute\") or {}\r\n        rows: Dict[str, Dict[str, Any]] = {}\r\n        for code, rec in val.items():\r\n            nominal = _to_float(rec.get(\"Nominal\")) or 1.0\r\n            value = _to_float(rec.get(\"Value\"))\r\n            unit = (value / nominal) if (value is not None and nominal) else None\r\n            if code and unit:\r\n                rows[str(code).upper()] = {\r\n                    \"name\": rec.get(\"Name\") or \"\",\r\n                    \"nominal\": nominal,\r\n                    \"rate_per_nominal\": value,\r\n                    \"rate_per_unit\": unit,\r\n                }\r\n        self._log(f\"Collected {len(rows)} codes; sample={list(rows.keys())[:8]}\")\r\n        return rows\r\n\r\n    def _find_unit_rate_rub(self, mapping: Dict[str, Dict[str, Any]], iso_code: str) -> Optional[float]:\r\n        iso = iso_code.strip().upper()\r\n        if iso == \"RUB\":\r\n            return 1.0\r\n        row = mapping.get(iso)\r\n        return None if row is None else row.get(\"rate_per_unit\")\r\n\r\n    def build_output(self) -> Data:\r\n        # read inputs\r\n        y, m, d = int(self.year), int(self.month), int(self.day)\r\n        base = (self.base_currency or \"EUR\").strip().upper()\r\n        target = (self.target_currency or \"RUB\").strip().upper()\r\n        amount = float(self.amount or 1.0)\r\n        timeout = float(self.timeout_sec or 30.0)\r\n        max_back = max(0, int(self.fallback_days or 0))\r\n        use_back = bool(self.fallback_previous)\r\n\r\n        when = date(y, m, d)\r\n        matched = when\r\n\r\n        mapping = self._json_get_curs_on_date(when, timeout)\r\n\r\n        # fallback to previous available day if not found\r\n        steps = 0\r\n        while (base != \"RUB\" and base not in mapping) or (target != \"RUB\" and target not in mapping):\r\n            if not use_back or steps >= max_back:\r\n                break\r\n            matched = matched - timedelta(days=1)\r\n            self._log(f\"Fallback step {steps+1} → {matched.isoformat()}\")\r\n            mapping = self._json_get_curs_on_date(matched, timeout)\r\n            steps += 1\r\n\r\n        base_rub = self._find_unit_rate_rub(mapping, base)\r\n        target_rub = self._find_unit_rate_rub(mapping, target)\r\n\r\n        if base_rub is None or target_rub is None:\r\n            return Data(\r\n                data={\r\n                    \"error\": \"rate_not_found\",\r\n                    \"date_requested\": when.isoformat(),\r\n                    \"matched_date\": matched.isoformat(),\r\n                    \"base\": base,\r\n                    \"target\": target,\r\n                    \"have_base\": base in mapping or base == \"RUB\",\r\n                    \"have_target\": target in mapping or target == \"RUB\",\r\n                    \"codes\": list(mapping.keys()),\r\n                },\r\n                text=f\"Cannot find rates for {base}->{target} on {when} (matched {matched})\",\r\n            )\r\n\r\n        rate = base_rub / target_rub  # target per 1 base\r\n        converted = amount * rate\r\n\r\n        return Data(\r\n            data={\r\n                \"date_requested\": when.isoformat(),\r\n                \"matched_date\": matched.isoformat(),\r\n                \"base\": base,\r\n                \"target\": target,\r\n                \"amount\": amount,\r\n                \"rate\": rate,\r\n                \"converted_amount\": converted,\r\n                \"source\": \"cbr-xml-daily:daily_json.js\",\r\n            },\r\n            text=f\"{amount:.2f} {base} = {converted:.4f} {target} (rate {rate:.6f} on {matched})\",\r\n        )\r\n"
+                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict, Optional\r\nimport requests\r\nfrom datetime import date, timedelta\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    StrInput,\r\n    IntInput,\r\n    FloatInput,\r\n    BoolInput,\r\n    MessageTextInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\n\r\n\r\ndef _to_float(x: Optional[str | float | int]) -> Optional[float]:\r\n    if x is None:\r\n        return None\r\n    try:\r\n        return float(str(x).replace(\",\", \".\").strip())\r\n    except Exception:\r\n        return None\r\n\r\n\r\nclass CBRHistoricalConverter(Component):\r\n    display_name = \"CBR GetCursOnDate Converter\"\r\n    description = \"Курс ЦБ РФ на дату и конвертация base→target через кросс‑курс.\"\r\n    documentation = \"https://www.cbr.ru/development/dws/\"\r\n    icon = \"Currencies\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        StrInput(name=\"if_else_input_2\", display_name=\"If-else input_2\", input_types=[\"str\", \"Message\"]),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\", value=\"10\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\", value=\"1\"),\r\n        MessageTextInput(name=\"year\", display_name=\"Year\", value=\"2025\"),\r\n        MessageTextInput(name=\"base_currency\", display_name=\"Base ISO (e.g., EUR)\", value=\"EUR\"),\r\n        MessageTextInput(name=\"target_currency\", display_name=\"Target ISO (e.g., USD)\", value=\"RUB\"),\r\n        MessageTextInput(name=\"amount\", display_name=\"Amount\", value=\"1.0\"),\r\n        BoolInput(name=\"fallback_previous\", display_name=\"Fallback previous day\", value=True),\r\n        IntInput(name=\"fallback_days\", display_name=\"Max fallback days\", value=7),\r\n        FloatInput(name=\"timeout_sec\", display_name=\"Timeout (s)\", value=30.0),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Result\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    def _log(self, msg: str, name: str = \"CBR-JSON\"):\r\n        try:\r\n            self.log(msg, name)\r\n        except Exception:\r\n            pass\r\n\r\n    def _json_get_curs_on_date(self, when: date, timeout: float) -> Dict[str, Dict[str, Any]]:\r\n        y, m, d = when.year, when.month, when.day\r\n        url = f\"https://www.cbr-xml-daily.ru/archive/{y:04d}/{m:02d}/{d:02d}/daily_json.js\"\r\n        try:\r\n            self._log(f\"GET {url} timeout={timeout}s\")\r\n            r = requests.get(url, timeout=timeout)\r\n            self._log(f\"HTTP {r.status_code} CT={r.headers.get('Content-Type')}\")\r\n            if r.status_code != 200:\r\n                return {}\r\n            js = r.json()\r\n        except Exception as e:\r\n            self._log(f\"JSON fetch/parse error: {e}\")\r\n            return {}\r\n        val = js.get(\"Valute\") or {}\r\n        rows: Dict[str, Dict[str, Any]] = {}\r\n        for code, rec in val.items():\r\n            nominal = _to_float(rec.get(\"Nominal\")) or 1.0\r\n            value = _to_float(rec.get(\"Value\"))\r\n            unit = (value / nominal) if (value is not None and nominal) else None\r\n            if code and unit:\r\n                rows[str(code).upper()] = {\r\n                    \"name\": rec.get(\"Name\") or \"\",\r\n                    \"nominal\": nominal,\r\n                    \"rate_per_nominal\": value,\r\n                    \"rate_per_unit\": unit,\r\n                }\r\n        self._log(f\"Collected {len(rows)} codes; sample={list(rows.keys())[:8]}\")\r\n        return rows\r\n\r\n    def _find_unit_rate_rub(self, mapping: Dict[str, Dict[str, Any]], iso_code: str) -> Optional[float]:\r\n        iso = iso_code.strip().upper()\r\n        if iso == \"RUB\":\r\n            return 1.0\r\n        row = mapping.get(iso)\r\n        return None if row is None else row.get(\"rate_per_unit\")\r\n\r\n    def build_output(self) -> Data:\r\n        # read inputs\r\n        y, m, d = int(self.year), int(self.month), int(self.day)\r\n        base = (self.base_currency or \"EUR\").strip().upper()\r\n        target = (self.target_currency or \"RUB\").strip().upper()\r\n        amount = float(self.amount or 1.0)\r\n        timeout = float(self.timeout_sec or 30.0)\r\n        max_back = max(0, int(self.fallback_days or 0))\r\n        use_back = bool(self.fallback_previous)\r\n\r\n        when = date(y, m, d)\r\n        matched = when\r\n\r\n        mapping = self._json_get_curs_on_date(when, timeout)\r\n\r\n        # fallback to previous available day if not found\r\n        steps = 0\r\n        while (base != \"RUB\" and base not in mapping) or (target != \"RUB\" and target not in mapping):\r\n            if not use_back or steps >= max_back:\r\n                break\r\n            matched = matched - timedelta(days=1)\r\n            self._log(f\"Fallback step {steps+1} → {matched.isoformat()}\")\r\n            mapping = self._json_get_curs_on_date(matched, timeout)\r\n            steps += 1\r\n\r\n        base_rub = self._find_unit_rate_rub(mapping, base)\r\n        target_rub = self._find_unit_rate_rub(mapping, target)\r\n\r\n        if base_rub is None or target_rub is None:\r\n            return Data(\r\n                data={\r\n                    \"error\": \"rate_not_found\",\r\n                    \"date_requested\": when.isoformat(),\r\n                    \"matched_date\": matched.isoformat(),\r\n                    \"base\": base,\r\n                    \"target\": target,\r\n                    \"have_base\": base in mapping or base == \"RUB\",\r\n                    \"have_target\": target in mapping or target == \"RUB\",\r\n                    \"codes\": list(mapping.keys()),\r\n                },\r\n                text=f\"Cannot find rates for {base}->{target} on {when} (matched {matched})\",\r\n            )\r\n\r\n        rate = base_rub / target_rub  # target per 1 base\r\n        converted = amount * rate\r\n\r\n        return Data(\r\n            data={\r\n                \"date_requested\": when.isoformat(),\r\n                \"matched_date\": matched.isoformat(),\r\n                \"base\": base,\r\n                \"target\": target,\r\n                \"amount\": amount,\r\n                \"rate\": rate,\r\n                \"converted_amount\": converted,\r\n                \"source\": \"cbr-xml-daily:daily_json.js\",\r\n            },\r\n            text=f\"{amount:.2f} {base} = {converted:.4f} {target} (rate {rate:.6f} on {matched})\",\r\n        )\r\n"
               },
               "day": {
                 "_input_type": "MessageTextInput",
@@ -2377,7 +1621,7 @@
           "x": 2049.920853465756,
           "y": 943.6067778976092
         },
-        "selected": true,
+        "selected": false,
         "type": "genericNode"
       },
       {
@@ -6342,12 +5586,379 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-IdtOy",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Формирует единую строку для Chat Output: успех или ошибка с датами запроса и котировки.",
+            "display_name": "CBR Message Formatter",
+            "documentation": "https://www.cbr-xml-daily.ru/",
+            "edited": true,
+            "field_order": [
+              "payload",
+              "include_source",
+              "error_prefix"
+            ],
+            "frozen": false,
+            "icon": "Message",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "build_output",
+                "name": "output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict\r\nimport json\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    StrInput,\r\n    MessageTextInput,\r\n    BoolInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\n\r\n\r\nclass CBRMessageFormatter(Component):\r\n    display_name = \"CBR Message Formatter\"\r\n    description = \"Формирует единую строку для Chat Output: успех или ошибка с датами запроса и котировки.\"\r\n    documentation = \"https://www.cbr-xml-daily.ru/\"\r\n    icon = \"Message\"\r\n\r\n    inputs = [\r\n        StrInput(\r\n            name=\"payload\",\r\n            display_name=\"Payload from previous node\",\r\n            input_types=[\"Data\", \"str\", \"Message\"],\r\n        ),\r\n        BoolInput(name=\"include_source\", display_name=\"Include source\", value=True, advanced=True),\r\n        MessageTextInput(name=\"error_prefix\", display_name=\"Error prefix\", value=\"Ошибка\", advanced=True),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Message\", name=\"output\", method=\"build_output\", type=\"Message\"),\r\n    ]\r\n\r\n    # --- helpers ---\r\n    def _as_dict(self, obj: Any) -> Dict[str, Any]:\r\n        if isinstance(obj, Data):\r\n            return obj.data or {}\r\n        if hasattr(obj, \"data\") and isinstance(getattr(obj, \"data\"), dict):\r\n            return getattr(obj, \"data\") or {}\r\n        if isinstance(obj, dict):\r\n            return obj\r\n        if isinstance(obj, str):\r\n            s = obj.strip()\r\n            if s.startswith(\"{\") and s.endswith(\"}\"):\r\n                try:\r\n                    return json.loads(s)\r\n                except Exception:\r\n                    return {}\r\n            return {}\r\n        # Fallback\r\n        return {}\r\n\r\n    def build_output(self) -> Message:\r\n        raw = getattr(self, \"payload\", None)\r\n        data = self._as_dict(raw)\r\n\r\n        # Extract common fields with safe defaults\r\n        date_requested = data.get(\"date_requested\") or data.get(\"requested_date\") or \"unknown\"\r\n        matched_date = data.get(\"matched_date\") or data.get(\"matched\") or \"unknown\"\r\n        base = (data.get(\"base\") or \"UNKNOWN\").upper()\r\n        target = (data.get(\"target\") or \"UNKNOWN\").upper()\r\n        amount = data.get(\"amount\")\r\n        rate = data.get(\"rate\")\r\n        converted = data.get(\"converted_amount\")\r\n        error = data.get(\"error\")\r\n        have_base = data.get(\"have_base\")\r\n        have_target = data.get(\"have_target\")\r\n        codes = data.get(\"codes\") or []\r\n        source = data.get(\"source\") or \"unknown\"\r\n\r\n        include_source = bool(getattr(self, \"include_source\", True))\r\n        error_prefix = getattr(self, \"error_prefix\", \"Ошибка\")\r\n\r\n        # Error / empty cases\r\n        is_empty = not bool(data)\r\n        is_rate_missing = (error is not None) or (rate is None) or (converted is None)\r\n\r\n        if is_empty or is_rate_missing:\r\n            # Build diagnostic string\r\n            diag_parts = []\r\n            diag_parts.append(f\"запрошенная дата: {date_requested}\")\r\n            diag_parts.append(f\"дата котировки: {matched_date}\")\r\n            diag_parts.append(f\"пара: {base}->{target}\")\r\n            if have_base is not None and have_target is not None:\r\n                diag_parts.append(f\"have_base={have_base}, have_target={have_target}\")\r\n            if codes:\r\n                # Show only a small sample to keep message short\r\n                sample = codes[:8]\r\n                diag_parts.append(f\"codes_sample={sample}\")\r\n            if include_source and source:\r\n                diag_parts.append(f\"источник: {source}\")\r\n\r\n            reason = f\"{error}\" if error else \"rate_not_found\"\r\n            return f\"{error_prefix}: не удалось получить курс ({reason}); \" + \"; \".join(diag_parts)\r\n\r\n        # Success case\r\n        try:\r\n            amount_f = float(amount) if amount is not None else None\r\n            rate_f = float(rate) if rate is not None else None\r\n            converted_f = float(converted) if converted is not None else None\r\n        except Exception:\r\n            # Fallback to generic error if casting failed\r\n            reason = \"format_error\"\r\n            return f\"{error_prefix}: не удалось сформировать ответ ({reason}); запрошенная дата: {date_requested}; дата котировки: {matched_date}; пара: {base}->{target}\"\r\n\r\n        # Format numbers\r\n        amount_str = f\"{amount_f:.2f}\" if amount_f is not None else \"N/A\"\r\n        rate_str = f\"{rate_f:.6f}\" if rate_f is not None else \"N/A\"\r\n        converted_str = f\"{converted_f:.4f}\" if converted_f is not None else \"N/A\"\r\n        \r\n        # Final success message with explicit dates\r\n        msg = (\r\n            f\"{amount_str} {base} = {converted_str} {target} \"\r\n            f\"(курс {rate_str}); \"\r\n            f\"запрошенная дата: {date_requested}; \"\r\n            f\"дата котировки: {matched_date}\"\r\n        )\r\n        if date_requested != matched_date:\r\n            msg += \"; внимание: запрошенная дата отличается от даты котировки: на запрошенную дату нет информации о курсе валют\"\r\n        if include_source and source:\r\n            msg += f\"; источник: {source}\"\r\n        return Message(text=msg)\r\n"
+              },
+              "error_prefix": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Error prefix",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "error_prefix",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ошибка"
+              },
+              "include_source": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Include source",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "include_source",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "payload": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Payload from previous node",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Data",
+                  "str",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "payload",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "CBRMessageFormatter"
+        },
+        "dragging": false,
+        "id": "CustomComponent-IdtOy",
+        "measured": {
+          "height": 277,
+          "width": 320
+        },
+        "position": {
+          "x": 2706.0611153731315,
+          "y": 1538.589773339669
+        },
+        "selected": true,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-TKTFg",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Chat Output",
+            "documentation": "https://docs.langflow.org/components-io#chat-output",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "data_template"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Message",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Inputs",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": false,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "id": "ChatOutput-TKTFg",
+        "measured": {
+          "height": 48,
+          "width": 192
+        },
+        "position": {
+          "x": 3202.0298326344105,
+          "y": 1709.4464916232914
+        },
+        "selected": false,
+        "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": -8.53423276364947,
-      "y": -303.6559599357074,
-      "zoom": 0.7113371316516993
+      "x": -1517.3936384340482,
+      "y": -824.9181447510314,
+      "zoom": 0.9386149724409191
     }
   },
   "description": "Получение исторического курса валют",
