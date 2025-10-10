@@ -745,91 +745,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "GetEnvVar",
-            "id": "GetEnvVar-MOLs0",
-            "name": "env_var_value",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "api_key",
-            "id": "CustomComponent-a7XqP",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__GetEnvVar-MOLs0{œdataTypeœ:œGetEnvVarœ,œidœ:œGetEnvVar-MOLs0œ,œnameœ:œenv_var_valueœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-a7XqP{œfieldNameœ:œapi_keyœ,œidœ:œCustomComponent-a7XqPœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "GetEnvVar-MOLs0",
-        "sourceHandle": "{œdataTypeœ:œGetEnvVarœ,œidœ:œGetEnvVar-MOLs0œ,œnameœ:œenv_var_valueœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-a7XqP",
-        "targetHandle": "{œfieldNameœ:œapi_keyœ,œidœ:œCustomComponent-a7XqPœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "GetEnvVar",
-            "id": "GetEnvVar-MOLs0",
-            "name": "env_var_value",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "giga_api",
-            "id": "CustomComponent-b9MHk",
-            "inputTypes": [
-              "str",
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__GetEnvVar-MOLs0{œdataTypeœ:œGetEnvVarœ,œidœ:œGetEnvVar-MOLs0œ,œnameœ:œenv_var_valueœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-b9MHk{œfieldNameœ:œgiga_apiœ,œidœ:œCustomComponent-b9MHkœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "GetEnvVar-MOLs0",
-        "sourceHandle": "{œdataTypeœ:œGetEnvVarœ,œidœ:œGetEnvVar-MOLs0œ,œnameœ:œenv_var_valueœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-b9MHk",
-        "targetHandle": "{œfieldNameœ:œgiga_apiœ,œidœ:œCustomComponent-b9MHkœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "LMStudioModel",
-            "id": "LMStudioModel-EMZot",
-            "name": "model_output",
-            "output_types": [
-              "LanguageModel"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "agent_llm",
-            "id": "Agent-7lhwV",
-            "inputTypes": [
-              "LanguageModel"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__LMStudioModel-EMZot{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-7lhwV{œfieldNameœ:œagent_llmœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "LMStudioModel-EMZot",
-        "sourceHandle": "{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
-        "target": "Agent-7lhwV",
-        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "TextInput",
             "id": "TextInput-mpa55",
             "name": "text",
@@ -1003,62 +918,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "LMStudioModel",
-            "id": "LMStudioModel-EMZot",
-            "name": "model_output",
-            "output_types": [
-              "LanguageModel"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "agent_llm",
-            "id": "Agent-335BC",
-            "inputTypes": [
-              "LanguageModel"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__LMStudioModel-EMZot{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-335BC{œfieldNameœ:œagent_llmœ,œidœ:œAgent-335BCœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "LMStudioModel-EMZot",
-        "sourceHandle": "{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
-        "target": "Agent-335BC",
-        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-335BCœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "LMStudioModel",
-            "id": "LMStudioModel-EMZot",
-            "name": "model_output",
-            "output_types": [
-              "LanguageModel"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "agent_llm",
-            "id": "Agent-EfU1P",
-            "inputTypes": [
-              "LanguageModel"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__LMStudioModel-EMZot{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-EfU1P{œfieldNameœ:œagent_llmœ,œidœ:œAgent-EfU1Pœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "LMStudioModel-EMZot",
-        "sourceHandle": "{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
-        "target": "Agent-EfU1P",
-        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-EfU1Pœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "GigaChatAgent",
             "id": "GigaChatAgent-Qrt6s",
             "name": "component_as_tool",
@@ -1137,34 +996,6 @@
         "sourceHandle": "{œdataTypeœ:œMCPœ,œidœ:œMCP-bmiCVœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
         "target": "GigaChatAgent-Qrt6s",
         "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œGigaChatAgent-Qrt6sœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "LMStudioModel",
-            "id": "LMStudioModel-EMZot",
-            "name": "model_output",
-            "output_types": [
-              "LanguageModel"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "agent_llm",
-            "id": "Agent-KMmfB",
-            "inputTypes": [
-              "LanguageModel"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__LMStudioModel-EMZot{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-KMmfB{œfieldNameœ:œagent_llmœ,œidœ:œAgent-KMmfBœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "LMStudioModel-EMZot",
-        "sourceHandle": "{œdataTypeœ:œLMStudioModelœ,œidœ:œLMStudioModel-EMZotœ,œnameœ:œmodel_outputœ,œoutput_typesœ:[œLanguageModelœ]}",
-        "target": "Agent-KMmfB",
-        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-KMmfBœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -1395,6 +1226,202 @@
         "sourceHandle": "{œdataTypeœ:œTextInputœ,œidœ:œTextInput-Rmdg0œ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}",
         "target": "CustomComponent-EjJP2",
         "targetHandle": "{œfieldNameœ:œmarkerœ,œidœ:œCustomComponent-EjJP2œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-sHSk5",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-7lhwV",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__Agent-sHSk5{œdataTypeœ:œAgentœ,œidœ:œAgent-sHSk5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-Agent-7lhwV{œfieldNameœ:œtoolsœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "Agent-sHSk5",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-sHSk5œ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-7lhwV",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "MCP",
+            "id": "MCP-hjuwn",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-sHSk5",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__MCP-hjuwn{œdataTypeœ:œMCPœ,œidœ:œMCP-hjuwnœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-Agent-sHSk5{œfieldNameœ:œtoolsœ,œidœ:œAgent-sHSk5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "MCP-hjuwn",
+        "sourceHandle": "{œdataTypeœ:œMCPœ,œidœ:œMCP-hjuwnœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-sHSk5",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-sHSk5œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "APIModel",
+            "id": "CustomComponent-Y6wzv",
+            "name": "model",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "agent_llm",
+            "id": "Agent-7lhwV",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-Y6wzv{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-7lhwV{œfieldNameœ:œagent_llmœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-Y6wzv",
+        "sourceHandle": "{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "Agent-7lhwV",
+        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-7lhwVœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "APIModel",
+            "id": "CustomComponent-Y6wzv",
+            "name": "model",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "agent_llm",
+            "id": "Agent-335BC",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-Y6wzv{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-335BC{œfieldNameœ:œagent_llmœ,œidœ:œAgent-335BCœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-Y6wzv",
+        "sourceHandle": "{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "Agent-335BC",
+        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-335BCœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "APIModel",
+            "id": "CustomComponent-Y6wzv",
+            "name": "model",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "agent_llm",
+            "id": "Agent-EfU1P",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-Y6wzv{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-EfU1P{œfieldNameœ:œagent_llmœ,œidœ:œAgent-EfU1Pœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-Y6wzv",
+        "sourceHandle": "{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "Agent-EfU1P",
+        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-EfU1Pœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "APIModel",
+            "id": "CustomComponent-Y6wzv",
+            "name": "model",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "agent_llm",
+            "id": "Agent-KMmfB",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-Y6wzv{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-KMmfB{œfieldNameœ:œagent_llmœ,œidœ:œAgent-KMmfBœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-Y6wzv",
+        "sourceHandle": "{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "Agent-KMmfB",
+        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-KMmfBœ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "APIModel",
+            "id": "CustomComponent-Y6wzv",
+            "name": "model",
+            "output_types": [
+              "LanguageModel"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "agent_llm",
+            "id": "Agent-sHSk5",
+            "inputTypes": [
+              "LanguageModel"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__CustomComponent-Y6wzv{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}-Agent-sHSk5{œfieldNameœ:œagent_llmœ,œidœ:œAgent-sHSk5œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "CustomComponent-Y6wzv",
+        "sourceHandle": "{œdataTypeœ:œAPIModelœ,œidœ:œCustomComponent-Y6wzvœ,œnameœ:œmodelœ,œoutput_typesœ:[œLanguageModelœ]}",
+        "target": "Agent-sHSk5",
+        "targetHandle": "{œfieldNameœ:œagent_llmœ,œidœ:œAgent-sHSk5œ,œinputTypesœ:[œLanguageModelœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
@@ -1419,7 +1446,7 @@
             "frozen": false,
             "icon": "calculator",
             "key": "CalculatorComponent",
-            "last_updated": "2025-10-10T07:39:55.077Z",
+            "last_updated": "2025-10-10T14:16:12.238Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -2057,7 +2084,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.649Z",
+            "last_updated": "2025-10-10T14:16:12.681Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -2435,7 +2462,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "Ты — финансовый ассистент, специализирующийся на анализе курсов валют. Твоя задача — помогать пользователям получать актуальные и исторические курсы, рассчитывать разницы и конвертировать суммы. Все ответы и коммуникации с пользователем должны быть строго на русском языке, четкими, краткими и информативными, с указанием единиц (например, \"рублей\", \"долларов\") и округлением до двух знаков после запятой. Прежде чем выдать ответ, обдумай шаг за шагом, какие инструменты необходимо вызывать для ответа.  Чтобы получить актуальный курс валют, обращайся к Exchange_Currency_Agent для этого. НИКОГДА не пытайся дать ответ на курс валют исходя только из собственных знаний.  Если необходимо провести вычисления, то обращайся к агенту для вычислений Calculator_agent, не пытайся считать самостоятельно без него. Вычисления проводить без Calculator_Agent запрещено. Если просят курс одной валюты к другой, то после получения ответа от агента можно выдать ответ. Если нужно перевести одну валюту в другую, например, 100 рублей в доллары, то после этапа с получением курса ОБЯЗАТЕЛЬНО обратись к агенту для осуществления расчётов. Передавай ему полную информацию: курс валют и необходимое действие. Если какой-то информации не хватает для выполнения запроса, запроси её у пользователя.\nПеред отправкой ответа пользователю ВСЕГДА вызывай validator agent, передавая ему и запрос пользователя, и твой подготовленный ответ для пользователя, чтобы он проверил, выполнил ли ты запрос. Если он скажет, что не выполнил, то сделай то, что скажет валидатор.  Пример для валидатора нужны поля:\n  \"input_value\": \"какова текущая стоимость 100 рублей в долларах США\",\n  \"response_to_user\": \" 100 российских рублей равны примерно $1.08 в американских долларах.\"\nСмотри список инструментов, чтобы выяснить, как вызывать validator agent\nЕсли валидатор ответил: \"Запрос выполнен корректно\", то выдавай пользователю ответ на его вопрос лаконично, без системной информации и промежуточных шагов. Ответ пользователя ВСЕГДА начинай с фразы Ответ: \nЕсли валидатор считает, что задача не выполнена, то выполни повторно, учитывая сообщение валидатора. \n"
+                "value": "Ты — финансовый ассистент, специализирующийся на анализе курсов валют. Твоя задача — помогать пользователям получать актуальные и исторические курсы, рассчитывать разницы и конвертировать суммы. Все ответы и коммуникации с пользователем должны быть строго на русском языке, четкими, краткими и информативными, с указанием единиц (например, \"рублей\", \"долларов\") и округлением до двух знаков после запятой. Прежде чем выдать ответ, обдумай шаг за шагом, какие инструменты необходимо вызывать для ответа.  Чтобы получить актуальный курс валют, обращайся к Exchange_Currency_Agent для этого. НИКОГДА не пытайся дать ответ на курс валют исходя только из собственных знаний.  Если необходимо провести вычисления, то обращайся к агенту для вычислений Calculator_agent, не пытайся считать самостоятельно без него. Вычисления проводить без Calculator_Agent запрещено. Если просят курс одной валюты к другой, то после получения ответа от агента можно выдать ответ. Если нужно перевести одну валюту в другую, например, 100 рублей в доллары, то после этапа с получением курса ОБЯЗАТЕЛЬНО обратись к агенту для осуществления расчётов. Передавай ему полную информацию: курс валют и необходимое действие.  Если нужно получить исторический курс валют, например, какой курс был в январе 2025 года, то обращайся к get_history_rate агенту.\nЕсли какой-то информации не хватает для выполнения запроса, запроси её у пользователя.\nПеред отправкой ответа пользователю ВСЕГДА вызывай validator agent, передавая ему и запрос пользователя, и твой подготовленный ответ для пользователя, чтобы он проверил, выполнил ли ты запрос. Если он скажет, что не выполнил, то сделай то, что скажет валидатор.  Пример для валидатора нужны поля:\n  \"input_value\": \"какова текущая стоимость 100 рублей в долларах США\",\n  \"response_to_user\": \" 100 российских рублей равны примерно $1.08 в американских долларах.\"\nСмотри список инструментов, чтобы выяснить, как вызывать validator agent\nЕсли валидатор ответил: \"Запрос выполнен корректно\", то выдавай пользователю ответ на его вопрос лаконично, без системной информации и промежуточных шагов. Ответ пользователя ВСЕГДА начинай с фразы Ответ: \nЕсли валидатор считает, что задача не выполнена, то выполни повторно, учитывая сообщение валидатора. \n"
               },
               "tools": {
                 "_input_type": "HandleInput",
@@ -2528,7 +2555,7 @@
             "frozen": false,
             "icon": "layout-template",
             "key": "URLComponent",
-            "last_updated": "2025-10-10T07:39:55.078Z",
+            "last_updated": "2025-10-10T14:16:12.239Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -3007,7 +3034,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "http://172.29.48.1:1234/v1"
+                "value": "http://host.docker.internal:1234/v1"
               },
               "code": {
                 "advanced": true,
@@ -3183,7 +3210,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "Ты классификатор для финансового ассистента, специализирующегося на анализе курсов валют. Если пользователь задаёт вопрос, связанный с получением актуального и исторического курса валют, с рассчётом  разницы, конвертацией валют или с финансами, то классифицируй вход как РАЗРЕШЕНО.Если пользователь задаёт вопрос, не связанный с этой темой, то классифицируй как ЗАПРЕЩЕНО."
+                "value": ""
               },
               "temperature": {
                 "_input_type": "FloatInput",
@@ -3217,8 +3244,8 @@
           "width": 320
         },
         "position": {
-          "x": -776.4528530383274,
-          "y": 108.72773712008821
+          "x": 755.5471469616716,
+          "y": -9.272262879911725
         },
         "selected": false,
         "type": "genericNode"
@@ -5928,7 +5955,7 @@
             ],
             "frozen": false,
             "icon": "document",
-            "last_updated": "2025-10-10T07:39:55.079Z",
+            "last_updated": "2025-10-10T14:16:12.241Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -6093,7 +6120,7 @@
             "frozen": false,
             "icon": "Mcp",
             "key": "mcp_exchange_api_usage",
-            "last_updated": "2025-10-10T07:39:55.079Z",
+            "last_updated": "2025-10-10T13:07:35.716Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "mcpServerName": "exchange_api_usage",
@@ -6235,7 +6262,7 @@
                     "display_name": "get_historical_rate",
                     "name": "get_historical_rate",
                     "readonly": false,
-                    "status": true,
+                    "status": false,
                     "tags": [
                       "get_historical_rate"
                     ]
@@ -6273,7 +6300,7 @@
                     "display_name": "financial_agent",
                     "name": "financial_agent",
                     "readonly": false,
-                    "status": true,
+                    "status": false,
                     "tags": [
                       "financial_agent"
                     ]
@@ -6289,7 +6316,7 @@
         "dragging": false,
         "id": "MCP-vhryL",
         "measured": {
-          "height": 311,
+          "height": 283,
           "width": 320
         },
         "position": {
@@ -6424,7 +6451,7 @@
             ],
             "frozen": false,
             "icon": "document",
-            "last_updated": "2025-10-10T07:39:55.080Z",
+            "last_updated": "2025-10-10T14:16:12.246Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -6864,7 +6891,7 @@
             "frozen": false,
             "icon": "calculator",
             "key": "CalculatorComponent",
-            "last_updated": "2025-10-10T07:39:55.081Z",
+            "last_updated": "2025-10-10T14:16:12.246Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -7017,35 +7044,6 @@
         },
         "selected": false,
         "type": "noteNode"
-      },
-      {
-        "data": {
-          "id": "note-kafSI",
-          "node": {
-            "description": "# Gate-classifier-clarifier\n",
-            "display_name": "",
-            "documentation": "",
-            "template": {
-              "backgroundColor": "neutral"
-            }
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 324,
-        "id": "note-kafSI",
-        "measured": {
-          "height": 324,
-          "width": 324
-        },
-        "position": {
-          "x": 961.3297527151449,
-          "y": 4057.2678400000327
-        },
-        "resizing": false,
-        "selected": false,
-        "type": "noteNode",
-        "width": 324
       },
       {
         "data": {
@@ -7788,7 +7786,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.081Z",
+            "last_updated": "2025-10-10T14:16:12.247Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -8229,7 +8227,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.083Z",
+            "last_updated": "2025-10-10T14:16:12.248Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -8677,7 +8675,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.651Z",
+            "last_updated": "2025-10-10T14:16:12.669Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -9171,7 +9169,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.654Z",
+            "last_updated": "2025-10-10T14:16:12.671Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -9628,340 +9626,6 @@
       },
       {
         "data": {
-          "id": "CustomComponent-a7XqP",
-          "node": {
-            "base_classes": [
-              "LanguageModel",
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Подключение GigaChat через OpenAI-совместимый прокси (например, gpt2giga/gigachat-adapter).",
-            "display_name": "GigaChat (OpenAI-compatible)",
-            "documentation": "",
-            "edited": true,
-            "field_order": [
-              "input_value",
-              "system_message",
-              "stream",
-              "max_tokens",
-              "model_kwargs",
-              "model_name",
-              "base_url",
-              "api_key",
-              "temperature",
-              "seed"
-            ],
-            "frozen": false,
-            "icon": "GigaChat",
-            "last_updated": "2025-10-08T14:34:24.640Z",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {
-              "keywords": [
-                "model",
-                "llm",
-                "language model",
-                "large language model"
-              ]
-            },
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Model Response",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "text_response",
-                "name": "text_output",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              },
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Language Model",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "build_model",
-                "name": "model_output",
-                "options": null,
-                "required_inputs": null,
-                "selected": "LanguageModel",
-                "tool_mode": true,
-                "types": [
-                  "LanguageModel"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "api_key": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "API Key (Proxy)",
-                "dynamic": false,
-                "info": "Ключ прокси (формат OpenAI Bearer).",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "api_key",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "base_url": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "Base URL",
-                "dynamic": false,
-                "info": "OpenAI-совместимый эндпоинт прокси, например 'http://localhost:8000/v1'.",
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "base_url",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "https://gigachat.devices.sberbank.ru/api/v1"
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from typing import Any\r\nfrom urllib.parse import urljoin\r\n\r\nimport httpx\r\nfrom langchain_openai import ChatOpenAI\r\nfrom typing_extensions import override\r\n\r\nfrom langflow.base.models.model import LCModelComponent\r\nfrom langflow.field_typing import LanguageModel\r\nfrom langflow.field_typing.range_spec import RangeSpec\r\nfrom langflow.inputs.inputs import (\r\n    DictInput,\r\n    DropdownInput,\r\n    FloatInput,\r\n    IntInput,\r\n    SecretStrInput,\r\n    StrInput,\r\n)\r\n\r\n\r\nclass GigaChatOpenAIModelComponent(LCModelComponent):\r\n    display_name = \"GigaChat (OpenAI-compatible)\"\r\n    description = \"Подключение GigaChat через OpenAI-совместимый прокси (например, gpt2giga/gigachat-adapter).\"\r\n    icon = \"GigaChat\"\r\n    name = \"GigaChatOpenAIModel\"\r\n\r\n    @override\r\n    async def update_build_config(self, build_config: dict, field_value: Any, field_name: str | None = None):\r\n        # Обновляем список моделей из /v1/models, если прокси его поддерживает\r\n        if field_name == \"base_url\" or field_name == \"model_name\":\r\n            base_url_dict = build_config.get(\"base_url\", {})\r\n            base_url_load_from_db = base_url_dict.get(\"load_from_db\", False)\r\n            base_url_value = base_url_dict.get(\"value\")\r\n            if base_url_load_from_db:\r\n                base_url_value = await self.get_variables(base_url_value, field_name)\r\n            elif not base_url_value:\r\n                base_url_value = \"http://localhost:8000/v1\"\r\n            try:\r\n                options = await self._fetch_models(base_url_value)\r\n            except Exception:\r\n                # Фоллбек: если /v1/models не реализован прокси\r\n                options = [\"GigaChat-2\", \"GigaChat-2-Pro\", \"GigaChat-2-Max\"]\r\n            build_config[\"model_name\"][\"options\"] = options\r\n        return build_config\r\n\r\n    @staticmethod\r\n    async def _fetch_models(base_url_value: str) -> list[str]:\r\n        url = urljoin(base_url_value.rstrip(\"/\") + \"/\", \"models\")\r\n        async with httpx.AsyncClient(timeout=10) as client:\r\n            resp = await client.get(url)\r\n            resp.raise_for_status()\r\n            data = resp.json()\r\n            return [m[\"id\"] for m in data.get(\"data\", [])]\r\n\r\n    inputs = [\r\n        *LCModelComponent._base_inputs,\r\n        IntInput(\r\n            name=\"max_tokens\",\r\n            display_name=\"Max Tokens\",\r\n            advanced=True,\r\n            info=\"0 — без ограничения (зависит от прокси/бэкенда).\",\r\n            range_spec=RangeSpec(min=0, max=128000),\r\n        ),\r\n        DictInput(name=\"model_kwargs\", display_name=\"Model Kwargs\", advanced=True),\r\n        DropdownInput(\r\n            name=\"model_name\",\r\n            display_name=\"Model Name\",\r\n            advanced=False,\r\n            refresh_button=True,\r\n        ),\r\n        StrInput(\r\n            name=\"base_url\",\r\n            display_name=\"Base URL\",\r\n            advanced=False,\r\n            info=\"OpenAI-совместимый эндпоинт прокси, например 'http://localhost:8000/v1'.\",\r\n            value=\"http://localhost:8000/v1\",\r\n        ),\r\n        MessageTextInput(\r\n            name=\"api_key\",\r\n            display_name=\"API Key (Proxy)\",\r\n            info=\"Ключ прокси (формат OpenAI Bearer).\",\r\n            advanced=False,\r\n            value=\"OPENAI_COMPATIBLE_API_KEY\",\r\n        ),\r\n        FloatInput(\r\n            name=\"temperature\",\r\n            display_name=\"Temperature\",\r\n            value=0.1,\r\n            advanced=True,\r\n        ),\r\n        IntInput(\r\n            name=\"seed\",\r\n            display_name=\"Seed\",\r\n            info=\"Контроль воспроизводимости, если поддерживается прокси.\",\r\n            advanced=True,\r\n            value=1,\r\n        ),\r\n    ]\r\n\r\n    def build_model(self) -> LanguageModel:  # type: ignore[type-var]\r\n        return ChatOpenAI(\r\n            model=self.model_name,\r\n            base_url=self.base_url or \"http://localhost:8000/v1\",\r\n            api_key=self.api_key,\r\n            temperature=self.temperature if self.temperature is not None else 0.1,\r\n            max_tokens=self.max_tokens or None,\r\n            seed=self.seed,\r\n            model_kwargs=self.model_kwargs or {},\r\n        )\r\n\r\n    def _get_exception_message(self, e: Exception):\r\n        try:\r\n            from openai import BadRequestError\r\n        except ImportError:\r\n            return None\r\n        if isinstance(e, BadRequestError):\r\n            message = getattr(e, \"body\", {}).get(\"message\")\r\n            if message:\r\n                return message\r\n        return None\r\n"
-              },
-              "input_value": {
-                "_input_type": "MessageInput",
-                "advanced": false,
-                "display_name": "Input",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "input_value",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "Hello, World!"
-              },
-              "max_tokens": {
-                "_input_type": "IntInput",
-                "advanced": true,
-                "display_name": "Max Tokens",
-                "dynamic": false,
-                "info": "0 — без ограничения (зависит от прокси/бэкенда).",
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "max_tokens",
-                "placeholder": "",
-                "range_spec": {
-                  "max": 128000,
-                  "min": 0,
-                  "step": 0.1,
-                  "step_type": "float"
-                },
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "int",
-                "value": 500
-              },
-              "model_kwargs": {
-                "_input_type": "DictInput",
-                "advanced": true,
-                "display_name": "Model Kwargs",
-                "dynamic": false,
-                "info": "",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "model_kwargs",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "type": "dict",
-                "value": {}
-              },
-              "model_name": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Model Name",
-                "dynamic": false,
-                "external_options": {},
-                "info": "",
-                "load_from_db": false,
-                "name": "model_name",
-                "options": [
-                  "GigaChat-2",
-                  "GigaChat-2-Pro",
-                  "GigaChat-2-Max"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "refresh_button": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "GigaChat-2"
-              },
-              "seed": {
-                "_input_type": "IntInput",
-                "advanced": true,
-                "display_name": "Seed",
-                "dynamic": false,
-                "info": "Контроль воспроизводимости, если поддерживается прокси.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "seed",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "int",
-                "value": 1
-              },
-              "stream": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Stream",
-                "dynamic": false,
-                "info": "Stream the response from the model. Streaming works only in Chat.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "stream",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": false
-              },
-              "system_message": {
-                "_input_type": "MultilineInput",
-                "advanced": false,
-                "copy_field": false,
-                "display_name": "System Message",
-                "dynamic": false,
-                "info": "System message to pass to the model.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "multiline": true,
-                "name": "system_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "temperature": {
-                "_input_type": "FloatInput",
-                "advanced": true,
-                "display_name": "Temperature",
-                "dynamic": false,
-                "info": "",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "temperature",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "float",
-                "value": 0.1
-              }
-            },
-            "tool_mode": false
-          },
-          "selected_output": "model_output",
-          "showNode": true,
-          "type": "GigaChatOpenAIModel"
-        },
-        "dragging": false,
-        "id": "CustomComponent-a7XqP",
-        "measured": {
-          "height": 563,
-          "width": 320
-        },
-        "position": {
-          "x": -990.8525217341589,
-          "y": 547.6569592218782
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
           "id": "TextOutput-N1pIs",
           "node": {
             "base_classes": [
@@ -10064,291 +9728,6 @@
         "position": {
           "x": 2779.009728168416,
           "y": 1296.711113700561
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "note-f87cQ",
-          "node": {
-            "description": "Error building Component Agent:\nThis function requires a .bind_tools method be implemented on the LLM.\n\nИ в случае возвращения gigachat, и в случае openai формата\n\nЧерез language model gigachat тоже не захотел использовать инструменты. Поэтому итоговое решение оставил с lm studio\n\nГигачат заработал только как отдельное llm  и как агент с инструментами, но только пока не используются другие агенты в качестве инструментов. ",
-            "display_name": "",
-            "documentation": "",
-            "template": {
-              "backgroundColor": "neutral"
-            }
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 403,
-        "id": "note-f87cQ",
-        "measured": {
-          "height": 403,
-          "width": 331
-        },
-        "position": {
-          "x": -1348.0217671260841,
-          "y": 588.2183608595657
-        },
-        "resizing": false,
-        "selected": false,
-        "type": "noteNode",
-        "width": 331
-      },
-      {
-        "data": {
-          "id": "CustomComponent-b9MHk",
-          "node": {
-            "base_classes": [
-              "LanguageModel"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "LLM from Sber.",
-            "display_name": "GigaChat Model",
-            "documentation": "http://docs.langflow.org/components/custom",
-            "edited": true,
-            "field_order": [
-              "input_message",
-              "giga_api",
-              "model_name",
-              "scope",
-              "system_prompt",
-              "temperature",
-              "max_tokens"
-            ],
-            "frozen": false,
-            "icon": "custom_components",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Output",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "build_output",
-                "name": "output",
-                "options": null,
-                "required_inputs": null,
-                "selected": "LanguageModel",
-                "tool_mode": true,
-                "types": [
-                  "LanguageModel"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from typing import Any\nfrom langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output, SecretStrInput, DropdownInput, StrInput\nfrom langchain_community.llms import GigaChat\nfrom langflow.schema import Data\nfrom langflow.field_typing import LanguageModel\n\n\nclass GChatModel(Component):\n    display_name = \"GigaChat Model\"\n    description = \"LLM from Sber.\"\n    documentation: str = \"http://docs.langflow.org/components/custom\"\n    icon = \"custom_components\"\n\n    model_list = ['GigaChat-2', 'GigaChat-2-Pro', 'GigaChat-2-Max']\n    scope_list = ['GIGACHAT_API_PERS', 'GIGACHAT_API_CORP', 'GIGACHAT_API_B2B']\n\n    inputs = [\n        MessageTextInput(name=\"input_message\", display_name=\"Input Message\"),\n        StrInput(name=\"giga_api\", display_name=\"GigaChat API Key\", input_types=[\"str\", \"Message\"]),\n        DropdownInput(name=\"model_name\", display_name=\"Model\", options=model_list),\n        DropdownInput(name=\"scope\", display_name=\"Scope\", options=scope_list, value=\"GIGACHAT_API_PERS\"),\n        MessageTextInput(\n            name=\"system_prompt\",\n            display_name=\"System Prompt\",\n            value=\"Ты — умный и профессиональный ассистент. Отвечай понятно и структурированно.\"\n        ),\n        MessageTextInput(\n            name=\"temperature\",\n            display_name=\"Temperature\",\n            value=\"0.1\"\n        ),\n        MessageTextInput(\n            name=\"max_tokens\",\n            display_name=\"Max Tokens\",\n            value=\"500\"\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Output\", name=\"output\", method=\"build_output\", type=\"Data\"),\n    ]\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n    def build_output(self) -> LanguageModel:\n        temperature = float(self.temperature)\n        max_tokens = int(self.max_tokens)\n        giga_api = self._get_text(self.giga_api)\n        llm = GigaChat(\n            verify_ssl_certs=False,\n            model=self.model_name,\n            credentials=giga_api,\n            scope=self.scope,\n            temperature=temperature,\n            max_tokens=max_tokens\n        )\n        return llm"
-              },
-              "giga_api": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "GigaChat API Key",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "giga_api",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "input_message": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Input Message",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "input_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "max_tokens": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Max Tokens",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "max_tokens",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "500"
-              },
-              "model_name": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Model",
-                "dynamic": false,
-                "external_options": {},
-                "info": "",
-                "name": "model_name",
-                "options": [
-                  "GigaChat-2",
-                  "GigaChat-2-Pro",
-                  "GigaChat-2-Max"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "GigaChat-2"
-              },
-              "scope": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Scope",
-                "dynamic": false,
-                "external_options": {},
-                "info": "",
-                "name": "scope",
-                "options": [
-                  "GIGACHAT_API_PERS",
-                  "GIGACHAT_API_CORP",
-                  "GIGACHAT_API_B2B"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "GIGACHAT_API_PERS"
-              },
-              "system_prompt": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "System Prompt",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "system_prompt",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "Ты — умный и профессиональный ассистент. Отвечай понятно и структурированно."
-              },
-              "temperature": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Temperature",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "temperature",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "0.1"
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "GChatModel"
-        },
-        "dragging": false,
-        "id": "CustomComponent-b9MHk",
-        "measured": {
-          "height": 695,
-          "width": 320
-        },
-        "position": {
-          "x": -1798.7894208611406,
-          "y": 420.26342814369184
         },
         "selected": false,
         "type": "genericNode"
@@ -11338,7 +10717,7 @@
             "frozen": false,
             "icon": "Mcp",
             "key": "mcp_exchange_api_usage",
-            "last_updated": "2025-10-10T07:39:55.084Z",
+            "last_updated": "2025-10-10T13:07:35.723Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "mcpServerName": "exchange_api_usage",
@@ -11582,7 +10961,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2025-10-10T07:39:55.656Z",
+            "last_updated": "2025-10-10T14:16:12.666Z",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -12031,8 +11410,8 @@
           "width": 320
         },
         "position": {
-          "x": 3125.1776929813395,
-          "y": -47.80882425385259
+          "x": 3064.2966801664966,
+          "y": -113.2846304886834
         },
         "selected": false,
         "type": "genericNode"
@@ -12782,12 +12161,1206 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Agent-sHSk5",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Агент для получения исторического курса валют",
+            "display_name": "Get History Rate Agent",
+            "documentation": "https://docs.langflow.org/agents",
+            "edited": true,
+            "field_order": [
+              "agent_llm",
+              "max_tokens",
+              "model_kwargs",
+              "model_name",
+              "openai_api_base",
+              "api_key",
+              "temperature",
+              "seed",
+              "max_retries",
+              "timeout",
+              "system_prompt",
+              "n_messages",
+              "format_instructions",
+              "output_schema",
+              "tools",
+              "input_value",
+              "handle_parsing_errors",
+              "verbose",
+              "max_iterations",
+              "agent_description",
+              "add_current_date_tool"
+            ],
+            "frozen": false,
+            "icon": "bot",
+            "last_updated": "2025-10-10T14:16:12.668Z",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "add_current_date_tool": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Current Date",
+                "dynamic": false,
+                "info": "If true, will add a tool to the agent that returns the current date.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_current_date_tool",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "agent_description": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Agent Description [Deprecated]",
+                "dynamic": false,
+                "info": "The description of the agent. This is only used when in Tool Mode. Defaults to 'A helpful assistant with access to the following tools:' and tools are added dynamically. This feature is deprecated and will be removed in future versions.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "agent_description",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "A helpful assistant with access to the following tools:"
+              },
+              "agent_llm": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Language Model",
+                "dynamic": false,
+                "external_options": {
+                  "fields": {
+                    "data": {
+                      "node": {
+                        "display_name": "Connect other models",
+                        "icon": "CornerDownLeft",
+                        "name": "connect_other_models"
+                      }
+                    }
+                  }
+                },
+                "info": "The provider of the language model that the agent will use to generate responses.",
+                "input_types": [
+                  "LanguageModel"
+                ],
+                "name": "agent_llm",
+                "options": [
+                  "Anthropic",
+                  "Google Generative AI",
+                  "OpenAI"
+                ],
+                "options_metadata": [
+                  {
+                    "icon": "Anthropic"
+                  },
+                  {
+                    "icon": "GoogleGenerativeAI"
+                  },
+                  {
+                    "icon": "OpenAI"
+                  }
+                ],
+                "placeholder": "Awaiting model input.",
+                "real_time_refresh": true,
+                "refresh_button": false,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nimport re\n\nfrom langchain_core.tools import StructuredTool\nfrom pydantic import ValidationError\n\nfrom langflow.base.agents.agent import LCToolsAgentComponent\nfrom langflow.base.agents.events import ExceptionWithMessageError\nfrom langflow.base.models.model_input_constants import (\n    ALL_PROVIDER_FIELDS,\n    MODEL_DYNAMIC_UPDATE_FIELDS,\n    MODEL_PROVIDERS_DICT,\n    MODELS_METADATA,\n)\nfrom langflow.base.models.model_utils import get_model_name\nfrom langflow.components.helpers.current_date import CurrentDateComponent\nfrom langflow.components.helpers.memory import MemoryComponent\nfrom langflow.components.langchain_utilities.tool_calling import (\n    ToolCallingAgentComponent,\n)\nfrom langflow.custom.custom_component.component import _get_component_toolkit\nfrom langflow.custom.utils import update_component_build_config\nfrom langflow.field_typing import Tool\nfrom langflow.helpers.base_model import build_model_from_schema\nfrom langflow.io import (\n    BoolInput,\n    DropdownInput,\n    IntInput,\n    MultilineInput,\n    Output,\n    TableInput,\n)\nfrom langflow.logging import logger\nfrom langflow.schema.data import Data\nfrom langflow.schema.dotdict import dotdict\nfrom langflow.schema.message import Message\nfrom langflow.schema.table import EditMode\n\n\ndef set_advanced_true(component_input):\n    component_input.advanced = True\n    return component_input\n\n\nMODEL_PROVIDERS_LIST = [\"Anthropic\", \"Google Generative AI\", \"OpenAI\"]\n\n\nclass AgentHistoryComponent(ToolCallingAgentComponent):\n    display_name: str = \"Get History Rate Agent\"\n    description: str = \"Агент для получения исторического курса валют\"\n    documentation: str = \"https://docs.langflow.org/agents\"\n    icon = \"bot\"\n    beta = False\n    name = \"Agent\"\n\n    memory_inputs = [set_advanced_true(component_input) for component_input in MemoryComponent().inputs]\n\n    # Filter out json_mode from OpenAI inputs since we handle structured output differently\n    openai_inputs_filtered = [\n        input_field\n        for input_field in MODEL_PROVIDERS_DICT[\"OpenAI\"][\"inputs\"]\n        if not (hasattr(input_field, \"name\") and input_field.name == \"json_mode\")\n    ]\n\n    inputs = [\n        DropdownInput(\n            name=\"agent_llm\",\n            display_name=\"Model Provider\",\n            info=\"The provider of the language model that the agent will use to generate responses.\",\n            options=[*MODEL_PROVIDERS_LIST],\n            value=\"OpenAI\",\n            real_time_refresh=True,\n            refresh_button=False,\n            input_types=[],\n            options_metadata=[MODELS_METADATA[key] for key in MODEL_PROVIDERS_LIST],\n            external_options={\n                \"fields\": {\n                    \"data\": {\n                        \"node\": {\n                            \"name\": \"connect_other_models\",\n                            \"display_name\": \"Connect other models\",\n                            \"icon\": \"CornerDownLeft\",\n                        }\n                    }\n                },\n            },\n        ),\n        *openai_inputs_filtered,\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Agent Instructions\",\n            info=\"System Prompt: Initial instructions and context provided to guide the agent's behavior.\",\n            value=\"You are a helpful assistant that can use tools to answer questions and perform tasks.\",\n            advanced=False,\n        ),\n        IntInput(\n            name=\"n_messages\",\n            display_name=\"Number of Chat History Messages\",\n            value=100,\n            info=\"Number of chat history messages to retrieve.\",\n            advanced=True,\n            show=True,\n        ),\n        MultilineInput(\n            name=\"format_instructions\",\n            display_name=\"Output Format Instructions\",\n            info=\"Generic Template for structured output formatting. Valid only with Structured response.\",\n            value=(\n                \"You are an AI that extracts structured JSON objects from unstructured text. \"\n                \"Use a predefined schema with expected types (str, int, float, bool, dict). \"\n                \"Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. \"\n                \"Fill missing or ambiguous values with defaults: null for missing values. \"\n                \"Remove exact duplicates but keep variations that have different field values. \"\n                \"Always return valid JSON in the expected format, never throw errors. \"\n                \"If multiple objects can be extracted, return them all in the structured format.\"\n            ),\n            advanced=True,\n        ),\n        TableInput(\n            name=\"output_schema\",\n            display_name=\"Output Schema\",\n            info=(\n                \"Schema Validation: Define the structure and data types for structured output. \"\n                \"No validation if no output schema.\"\n            ),\n            advanced=True,\n            required=False,\n            value=[],\n            table_schema=[\n                {\n                    \"name\": \"name\",\n                    \"display_name\": \"Name\",\n                    \"type\": \"str\",\n                    \"description\": \"Specify the name of the output field.\",\n                    \"default\": \"field\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n                {\n                    \"name\": \"description\",\n                    \"display_name\": \"Description\",\n                    \"type\": \"str\",\n                    \"description\": \"Describe the purpose of the output field.\",\n                    \"default\": \"description of field\",\n                    \"edit_mode\": EditMode.POPOVER,\n                },\n                {\n                    \"name\": \"type\",\n                    \"display_name\": \"Type\",\n                    \"type\": \"str\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate the data type of the output field (e.g., str, int, float, bool, dict).\"),\n                    \"options\": [\"str\", \"int\", \"float\", \"bool\", \"dict\"],\n                    \"default\": \"str\",\n                },\n                {\n                    \"name\": \"multiple\",\n                    \"display_name\": \"As List\",\n                    \"type\": \"boolean\",\n                    \"description\": \"Set to True if this output field should be a list of the specified type.\",\n                    \"default\": \"False\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n            ],\n        ),\n        *LCToolsAgentComponent._base_inputs,\n        # removed memory inputs from agent component\n        # *memory_inputs,\n        BoolInput(\n            name=\"add_current_date_tool\",\n            display_name=\"Current Date\",\n            advanced=True,\n            info=\"If true, will add a tool to the agent that returns the current date.\",\n            value=True,\n        ),\n    ]\n    outputs = [\n        Output(name=\"response\", display_name=\"Response\", method=\"message_response\"),\n    ]\n\n    async def get_agent_requirements(self):\n        \"\"\"Get the agent requirements for the agent.\"\"\"\n        llm_model, display_name = await self.get_llm()\n        if llm_model is None:\n            msg = \"No language model selected. Please choose a model to proceed.\"\n            raise ValueError(msg)\n        self.model_name = get_model_name(llm_model, display_name=display_name)\n\n        # Get memory data\n        self.chat_history = await self.get_memory_data()\n        if isinstance(self.chat_history, Message):\n            self.chat_history = [self.chat_history]\n\n        # Add current date tool if enabled\n        if self.add_current_date_tool:\n            if not isinstance(self.tools, list):  # type: ignore[has-type]\n                self.tools = []\n            current_date_tool = (await CurrentDateComponent(**self.get_base_args()).to_toolkit()).pop(0)\n            if not isinstance(current_date_tool, StructuredTool):\n                msg = \"CurrentDateComponent must be converted to a StructuredTool\"\n                raise TypeError(msg)\n            self.tools.append(current_date_tool)\n        return llm_model, self.chat_history, self.tools\n\n    async def message_response(self) -> Message:\n        try:\n            llm_model, self.chat_history, self.tools = await self.get_agent_requirements()\n            # Set up and run agent\n            self.set(\n                llm=llm_model,\n                tools=self.tools or [],\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=self.system_prompt,\n            )\n            agent = self.create_agent_runnable()\n            result = await self.run_agent(agent)\n\n            # Store result for potential JSON output\n            self._agent_result = result\n\n        except (ValueError, TypeError, KeyError) as e:\n            await logger.aerror(f\"{type(e).__name__}: {e!s}\")\n            raise\n        except ExceptionWithMessageError as e:\n            await logger.aerror(f\"ExceptionWithMessageError occurred: {e}\")\n            raise\n        # Avoid catching blind Exception; let truly unexpected exceptions propagate\n        except Exception as e:\n            await logger.aerror(f\"Unexpected error: {e!s}\")\n            raise\n        else:\n            return result\n\n    def _preprocess_schema(self, schema):\n        \"\"\"Preprocess schema to ensure correct data types for build_model_from_schema.\"\"\"\n        processed_schema = []\n        for field in schema:\n            processed_field = {\n                \"name\": str(field.get(\"name\", \"field\")),\n                \"type\": str(field.get(\"type\", \"str\")),\n                \"description\": str(field.get(\"description\", \"\")),\n                \"multiple\": field.get(\"multiple\", False),\n            }\n            # Ensure multiple is handled correctly\n            if isinstance(processed_field[\"multiple\"], str):\n                processed_field[\"multiple\"] = processed_field[\"multiple\"].lower() in [\n                    \"true\",\n                    \"1\",\n                    \"t\",\n                    \"y\",\n                    \"yes\",\n                ]\n            processed_schema.append(processed_field)\n        return processed_schema\n\n    async def build_structured_output_base(self, content: str):\n        \"\"\"Build structured output with optional BaseModel validation.\"\"\"\n        json_pattern = r\"\\{.*\\}\"\n        schema_error_msg = \"Try setting an output schema\"\n\n        # Try to parse content as JSON first\n        json_data = None\n        try:\n            json_data = json.loads(content)\n        except json.JSONDecodeError:\n            json_match = re.search(json_pattern, content, re.DOTALL)\n            if json_match:\n                try:\n                    json_data = json.loads(json_match.group())\n                except json.JSONDecodeError:\n                    return {\"content\": content, \"error\": schema_error_msg}\n            else:\n                return {\"content\": content, \"error\": schema_error_msg}\n\n        # If no output schema provided, return parsed JSON without validation\n        if not hasattr(self, \"output_schema\") or not self.output_schema or len(self.output_schema) == 0:\n            return json_data\n\n        # Use BaseModel validation with schema\n        try:\n            processed_schema = self._preprocess_schema(self.output_schema)\n            output_model = build_model_from_schema(processed_schema)\n\n            # Validate against the schema\n            if isinstance(json_data, list):\n                # Multiple objects\n                validated_objects = []\n                for item in json_data:\n                    try:\n                        validated_obj = output_model.model_validate(item)\n                        validated_objects.append(validated_obj.model_dump())\n                    except ValidationError as e:\n                        await logger.aerror(f\"Validation error for item: {e}\")\n                        # Include invalid items with error info\n                        validated_objects.append({\"data\": item, \"validation_error\": str(e)})\n                return validated_objects\n\n            # Single object\n            try:\n                validated_obj = output_model.model_validate(json_data)\n                return [validated_obj.model_dump()]  # Return as list for consistency\n            except ValidationError as e:\n                await logger.aerror(f\"Validation error: {e}\")\n                return [{\"data\": json_data, \"validation_error\": str(e)}]\n\n        except (TypeError, ValueError) as e:\n            await logger.aerror(f\"Error building structured output: {e}\")\n            # Fallback to parsed JSON without validation\n            return json_data\n\n    async def json_response(self) -> Data:\n        \"\"\"Convert agent response to structured JSON Data output with schema validation.\"\"\"\n        # Always use structured chat agent for JSON response mode for better JSON formatting\n        try:\n            system_components = []\n\n            # 1. Agent Instructions (system_prompt)\n            agent_instructions = getattr(self, \"system_prompt\", \"\") or \"\"\n            if agent_instructions:\n                system_components.append(f\"{agent_instructions}\")\n\n            # 2. Format Instructions\n            format_instructions = getattr(self, \"format_instructions\", \"\") or \"\"\n            if format_instructions:\n                system_components.append(f\"Format instructions: {format_instructions}\")\n\n            # 3. Schema Information from BaseModel\n            if hasattr(self, \"output_schema\") and self.output_schema and len(self.output_schema) > 0:\n                try:\n                    processed_schema = self._preprocess_schema(self.output_schema)\n                    output_model = build_model_from_schema(processed_schema)\n                    schema_dict = output_model.model_json_schema()\n                    schema_info = (\n                        \"You are given some text that may include format instructions, \"\n                        \"explanations, or other content alongside a JSON schema.\\n\\n\"\n                        \"Your task:\\n\"\n                        \"- Extract only the JSON schema.\\n\"\n                        \"- Return it as valid JSON.\\n\"\n                        \"- Do not include format instructions, explanations, or extra text.\\n\\n\"\n                        \"Input:\\n\"\n                        f\"{json.dumps(schema_dict, indent=2)}\\n\\n\"\n                        \"Output (only JSON schema):\"\n                    )\n                    system_components.append(schema_info)\n                except (ValidationError, ValueError, TypeError, KeyError) as e:\n                    await logger.aerror(f\"Could not build schema for prompt: {e}\", exc_info=True)\n\n            # Combine all components\n            combined_instructions = \"\\n\\n\".join(system_components) if system_components else \"\"\n            llm_model, self.chat_history, self.tools = await self.get_agent_requirements()\n            self.set(\n                llm=llm_model,\n                tools=self.tools or [],\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=combined_instructions,\n            )\n\n            # Create and run structured chat agent\n            try:\n                structured_agent = self.create_agent_runnable()\n            except (NotImplementedError, ValueError, TypeError) as e:\n                await logger.aerror(f\"Error with structured chat agent: {e}\")\n                raise\n            try:\n                result = await self.run_agent(structured_agent)\n            except (\n                ExceptionWithMessageError,\n                ValueError,\n                TypeError,\n                RuntimeError,\n            ) as e:\n                await logger.aerror(f\"Error with structured agent result: {e}\")\n                raise\n            # Extract content from structured agent result\n            if hasattr(result, \"content\"):\n                content = result.content\n            elif hasattr(result, \"text\"):\n                content = result.text\n            else:\n                content = str(result)\n\n        except (\n            ExceptionWithMessageError,\n            ValueError,\n            TypeError,\n            NotImplementedError,\n            AttributeError,\n        ) as e:\n            await logger.aerror(f\"Error with structured chat agent: {e}\")\n            # Fallback to regular agent\n            content_str = \"No content returned from agent\"\n            return Data(data={\"content\": content_str, \"error\": str(e)})\n\n        # Process with structured output validation\n        try:\n            structured_output = await self.build_structured_output_base(content)\n\n            # Handle different output formats\n            if isinstance(structured_output, list) and structured_output:\n                if len(structured_output) == 1:\n                    return Data(data=structured_output[0])\n                return Data(data={\"results\": structured_output})\n            if isinstance(structured_output, dict):\n                return Data(data=structured_output)\n            return Data(data={\"content\": content})\n\n        except (ValueError, TypeError) as e:\n            await logger.aerror(f\"Error in structured output processing: {e}\")\n            return Data(data={\"content\": content, \"error\": str(e)})\n\n    async def get_memory_data(self):\n        # TODO: This is a temporary fix to avoid message duplication. We should develop a function for this.\n        messages = (\n            await MemoryComponent(**self.get_base_args())\n            .set(\n                session_id=self.graph.session_id,\n                order=\"Ascending\",\n                n_messages=self.n_messages,\n            )\n            .retrieve_messages()\n        )\n        return [\n            message for message in messages if getattr(message, \"id\", None) != getattr(self.input_value, \"id\", None)\n        ]\n\n    async def get_llm(self):\n        if not isinstance(self.agent_llm, str):\n            return self.agent_llm, None\n\n        try:\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if not provider_info:\n                msg = f\"Invalid model provider: {self.agent_llm}\"\n                raise ValueError(msg)\n\n            component_class = provider_info.get(\"component_class\")\n            display_name = component_class.display_name\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\", \"\")\n\n            return self._build_llm_model(component_class, inputs, prefix), display_name\n\n        except (AttributeError, ValueError, TypeError, RuntimeError) as e:\n            await logger.aerror(f\"Error building {self.agent_llm} language model: {e!s}\")\n            msg = f\"Failed to initialize language model: {e!s}\"\n            raise ValueError(msg) from e\n\n    def _build_llm_model(self, component, inputs, prefix=\"\"):\n        model_kwargs = {}\n        for input_ in inputs:\n            if hasattr(self, f\"{prefix}{input_.name}\"):\n                model_kwargs[input_.name] = getattr(self, f\"{prefix}{input_.name}\")\n        return component.set(**model_kwargs).build_model()\n\n    def set_component_params(self, component):\n        provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n        if provider_info:\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\")\n            # Filter out json_mode and only use attributes that exist on this component\n            model_kwargs = {}\n            for input_ in inputs:\n                if hasattr(self, f\"{prefix}{input_.name}\"):\n                    model_kwargs[input_.name] = getattr(self, f\"{prefix}{input_.name}\")\n\n            return component.set(**model_kwargs)\n        return component\n\n    def delete_fields(self, build_config: dotdict, fields: dict | list[str]) -> None:\n        \"\"\"Delete specified fields from build_config.\"\"\"\n        for field in fields:\n            build_config.pop(field, None)\n\n    def update_input_types(self, build_config: dotdict) -> dotdict:\n        \"\"\"Update input types for all fields in build_config.\"\"\"\n        for key, value in build_config.items():\n            if isinstance(value, dict):\n                if value.get(\"input_types\") is None:\n                    build_config[key][\"input_types\"] = []\n            elif hasattr(value, \"input_types\") and value.input_types is None:\n                value.input_types = []\n        return build_config\n\n    async def update_build_config(\n        self, build_config: dotdict, field_value: str, field_name: str | None = None\n    ) -> dotdict:\n        # Iterate over all providers in the MODEL_PROVIDERS_DICT\n        # Existing logic for updating build_config\n        if field_name in (\"agent_llm\",):\n            build_config[\"agent_llm\"][\"value\"] = field_value\n            provider_info = MODEL_PROVIDERS_DICT.get(field_value)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call the component class's update_build_config method\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n\n            provider_configs: dict[str, tuple[dict, list[dict]]] = {\n                provider: (\n                    MODEL_PROVIDERS_DICT[provider][\"fields\"],\n                    [\n                        MODEL_PROVIDERS_DICT[other_provider][\"fields\"]\n                        for other_provider in MODEL_PROVIDERS_DICT\n                        if other_provider != provider\n                    ],\n                )\n                for provider in MODEL_PROVIDERS_DICT\n            }\n            if field_value in provider_configs:\n                fields_to_add, fields_to_delete = provider_configs[field_value]\n\n                # Delete fields from other providers\n                for fields in fields_to_delete:\n                    self.delete_fields(build_config, fields)\n\n                # Add provider-specific fields\n                if field_value == \"OpenAI\" and not any(field in build_config for field in fields_to_add):\n                    build_config.update(fields_to_add)\n                else:\n                    build_config.update(fields_to_add)\n                # Reset input types for agent_llm\n                build_config[\"agent_llm\"][\"input_types\"] = []\n                build_config[\"agent_llm\"][\"display_name\"] = \"Model Provider\"\n            elif field_value == \"connect_other_models\":\n                # Delete all provider fields\n                self.delete_fields(build_config, ALL_PROVIDER_FIELDS)\n                # # Update with custom component\n                custom_component = DropdownInput(\n                    name=\"agent_llm\",\n                    display_name=\"Language Model\",\n                    info=\"The provider of the language model that the agent will use to generate responses.\",\n                    options=[*MODEL_PROVIDERS_LIST],\n                    real_time_refresh=True,\n                    refresh_button=False,\n                    input_types=[\"LanguageModel\"],\n                    placeholder=\"Awaiting model input.\",\n                    options_metadata=[MODELS_METADATA[key] for key in MODEL_PROVIDERS_LIST],\n                    external_options={\n                        \"fields\": {\n                            \"data\": {\n                                \"node\": {\n                                    \"name\": \"connect_other_models\",\n                                    \"display_name\": \"Connect other models\",\n                                    \"icon\": \"CornerDownLeft\",\n                                },\n                            }\n                        },\n                    },\n                )\n                build_config.update({\"agent_llm\": custom_component.to_dict()})\n            # Update input types for all fields\n            build_config = self.update_input_types(build_config)\n\n            # Validate required keys\n            default_keys = [\n                \"code\",\n                \"_type\",\n                \"agent_llm\",\n                \"tools\",\n                \"input_value\",\n                \"add_current_date_tool\",\n                \"system_prompt\",\n                \"agent_description\",\n                \"max_iterations\",\n                \"handle_parsing_errors\",\n                \"verbose\",\n            ]\n            missing_keys = [key for key in default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n        if (\n            isinstance(self.agent_llm, str)\n            and self.agent_llm in MODEL_PROVIDERS_DICT\n            and field_name in MODEL_DYNAMIC_UPDATE_FIELDS\n        ):\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                component_class = self.set_component_params(component_class)\n                prefix = provider_info.get(\"prefix\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call each component class's update_build_config method\n                    # remove the prefix from the field_name\n                    if isinstance(field_name, str) and isinstance(prefix, str):\n                        field_name = field_name.replace(prefix, \"\")\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n        return dotdict({k: v.to_dict() if hasattr(v, \"to_dict\") else v for k, v in build_config.items()})\n\n    async def _get_tools(self) -> list[Tool]:\n        component_toolkit = _get_component_toolkit()\n        tools_names = self._build_tools_names()\n        agent_description = self.get_tool_description()\n        # TODO: Agent Description Depreciated Feature to be removed\n        description = f\"{agent_description}{tools_names}\"\n        tools = component_toolkit(component=self).get_tools(\n            tool_name=\"Call_Agent\",\n            tool_description=description,\n            callbacks=self.get_langchain_callbacks(),\n        )\n        if hasattr(self, \"tools_metadata\"):\n            tools = component_toolkit(component=self, metadata=self.tools_metadata).update_tools_metadata(tools=tools)\n        return tools\n"
+              },
+              "format_instructions": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Output Format Instructions",
+                "dynamic": false,
+                "info": "Generic Template for structured output formatting. Valid only with Structured response.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "format_instructions",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "You are an AI that extracts structured JSON objects from unstructured text. Use a predefined schema with expected types (str, int, float, bool, dict). Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. Fill missing or ambiguous values with defaults: null for missing values. Remove exact duplicates but keep variations that have different field values. Always return valid JSON in the expected format, never throw errors. If multiple objects can be extracted, return them all in the structured format."
+              },
+              "handle_parsing_errors": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Handle Parse Errors",
+                "dynamic": false,
+                "info": "Should the Agent fix errors when reading user input for better processing?",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "handle_parsing_errors",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "input_value": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The input provided by the user for the agent to process.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of attempts the agent can make to complete its task before it stops.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 15
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Chat History Messages",
+                "dynamic": false,
+                "info": "Number of chat history messages to retrieve.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "n_messages",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 0
+              },
+              "output_schema": {
+                "_input_type": "TableInput",
+                "advanced": true,
+                "display_name": "Output Schema",
+                "dynamic": false,
+                "info": "Schema Validation: Define the structure and data types for structured output. No validation if no output schema.",
+                "input_types": [],
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "output_schema",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "table_icon": "Table",
+                "table_schema": {
+                  "columns": [
+                    {
+                      "default": "field",
+                      "description": "Specify the name of the output field.",
+                      "disable_edit": false,
+                      "display_name": "Name",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "name",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "description of field",
+                      "description": "Describe the purpose of the output field.",
+                      "disable_edit": false,
+                      "display_name": "Description",
+                      "edit_mode": "popover",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "description",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "str",
+                      "description": "Indicate the data type of the output field (e.g., str, int, float, bool, dict).",
+                      "disable_edit": false,
+                      "display_name": "Type",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "type",
+                      "options": [
+                        "str",
+                        "int",
+                        "float",
+                        "bool",
+                        "dict"
+                      ],
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": false,
+                      "description": "Set to True if this output field should be a list of the specified type.",
+                      "disable_edit": false,
+                      "display_name": "As List",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "boolean",
+                      "hidden": false,
+                      "name": "multiple",
+                      "sortable": true,
+                      "type": "boolean"
+                    }
+                  ]
+                },
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "trigger_icon": "Table",
+                "trigger_text": "Open table",
+                "type": "table",
+                "value": []
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Agent Instructions",
+                "dynamic": false,
+                "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ты — финансовый ассистент, специализирующийся на анализе курсов валют. Тебе необходимо ВСЕГДА вызывать инструмент get_historical_rate, в него необходимо передавать поля base_currency, target_currency, year, month и day. Если передано количество, например, сколько долларов к рублю нужно сконвертировать, то передавай ещё и количество. Base currency – базовая валюта, из которой нужно получить целевую — target. То есть если доллары к рублю, то base = usd, если рубли к доллару, то Base = RUB. currency соответствуют ISO 4217 кодам валюты. Например, российский рубль будет RUB, американский доллар будет USD.  Если валюты, названной пользователем, не существует — скажи ему об этом.  ТОЛЬКО в том случае, если функция выдала ответ, что одна из валют была не найдена, попробуй вызвать файл со списком валют, чтобы понять, может, код был использован неверный. В другом случае не вызывай функцию с файлом. Если указана только одна валюта, то по умолчанию находи курс этой валюты к рублю. Тебе нужно возвращать то, что выдала функция, если там корректный ответ без ошибок. Если есть ошибки, попробуй снова. Если пользователь не указал день, то считай, что это 1 день. Если не указал месяц, то 1 месяц. Если не указал год, то считай, что это 2025 год. Если не указал target валюту, то считай, что к рублю. Если пользователь пишет курс не в абсолютном значении, а относительно сегодня, например, неделю назад, то вызови инструмент с текущей датой и вычисли. \nПример ввода: \"Какой курс доллара к рублю был 10 января 2025 года?\"\nОтвет как в функции:  например, если информация не найдена: \"На 10 января информация не найдена, вот информация на 7 января 2025: курс доллара к рублю: 82.2\"\n\n\n\n\n"
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "These are the tools that the agent can use to help with tasks.",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "input_value": {
+                        "default": "",
+                        "description": "The input provided by the user for the agent to process.",
+                        "title": "Input Value",
+                        "type": "string"
+                      }
+                    },
+                    "description": "Агент для получения исторического курса валют. Передавай дату, исходную и целевую валюту, и количество: сколько чего во что нужно перевести",
+                    "display_description": "Агент для получения исторического курса валют",
+                    "display_name": "message_response",
+                    "name": "get_history_rate",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "Call_Agent"
+                    ]
+                  }
+                ]
+              },
+              "verbose": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Verbose",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "verbose",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": true
+          },
+          "selected_output": "response",
+          "showNode": true,
+          "type": "Agent"
+        },
+        "dragging": false,
+        "id": "Agent-sHSk5",
+        "measured": {
+          "height": 425,
+          "width": 320
+        },
+        "position": {
+          "x": 4212.691193775047,
+          "y": -125.30230973907254
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "MCP-hjuwn",
+          "node": {
+            "base_classes": [
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "MCP",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Connect to an MCP server to use its tools.",
+            "display_name": "MCP Tools",
+            "documentation": "https://docs.langflow.org/mcp-client",
+            "edited": false,
+            "field_order": [
+              "mcp_server",
+              "tool",
+              "tool_placeholder"
+            ],
+            "frozen": false,
+            "icon": "Mcp",
+            "key": "mcp_exchange_api_usage",
+            "last_updated": "2025-10-10T13:07:35.727Z",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "mcpServerName": "exchange_api_usage",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from __future__ import annotations\n\nimport asyncio\nimport uuid\nfrom typing import Any\n\nfrom langchain_core.tools import StructuredTool  # noqa: TC002\n\nfrom langflow.api.v2.mcp import get_server\nfrom langflow.base.agents.utils import maybe_unflatten_dict, safe_cache_get, safe_cache_set\nfrom langflow.base.mcp.util import (\n    MCPSseClient,\n    MCPStdioClient,\n    create_input_schema_from_json_schema,\n    update_tools,\n)\nfrom langflow.custom.custom_component.component_with_cache import ComponentWithCache\nfrom langflow.inputs.inputs import InputTypes  # noqa: TC001\nfrom langflow.io import DropdownInput, McpInput, MessageTextInput, Output\nfrom langflow.io.schema import flatten_schema, schema_to_langflow_inputs\nfrom langflow.logging import logger\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\n\n# Import get_server from the backend API\nfrom langflow.services.database.models.user.crud import get_user_by_id\nfrom langflow.services.deps import get_settings_service, get_storage_service, session_scope\n\n\nclass MCPToolsComponent(ComponentWithCache):\n    schema_inputs: list = []\n    tools: list[StructuredTool] = []\n    _not_load_actions: bool = False\n    _tool_cache: dict = {}\n    _last_selected_server: str | None = None  # Cache for the last selected server\n\n    def __init__(self, **data) -> None:\n        super().__init__(**data)\n        # Initialize cache keys to avoid CacheMiss when accessing them\n        self._ensure_cache_structure()\n\n        # Initialize clients with access to the component cache\n        self.stdio_client: MCPStdioClient = MCPStdioClient(component_cache=self._shared_component_cache)\n        self.sse_client: MCPSseClient = MCPSseClient(component_cache=self._shared_component_cache)\n\n    def _ensure_cache_structure(self):\n        \"\"\"Ensure the cache has the required structure.\"\"\"\n        # Check if servers key exists and is not CacheMiss\n        servers_value = safe_cache_get(self._shared_component_cache, \"servers\")\n        if servers_value is None:\n            safe_cache_set(self._shared_component_cache, \"servers\", {})\n\n        # Check if last_selected_server key exists and is not CacheMiss\n        last_server_value = safe_cache_get(self._shared_component_cache, \"last_selected_server\")\n        if last_server_value is None:\n            safe_cache_set(self._shared_component_cache, \"last_selected_server\", \"\")\n\n    default_keys: list[str] = [\n        \"code\",\n        \"_type\",\n        \"tool_mode\",\n        \"tool_placeholder\",\n        \"mcp_server\",\n        \"tool\",\n    ]\n\n    display_name = \"MCP Tools\"\n    description = \"Connect to an MCP server to use its tools.\"\n    documentation: str = \"https://docs.langflow.org/mcp-client\"\n    icon = \"Mcp\"\n    name = \"MCPTools\"\n\n    inputs = [\n        McpInput(\n            name=\"mcp_server\",\n            display_name=\"MCP Server\",\n            info=\"Select the MCP Server that will be used by this component\",\n            real_time_refresh=True,\n        ),\n        DropdownInput(\n            name=\"tool\",\n            display_name=\"Tool\",\n            options=[],\n            value=\"\",\n            info=\"Select the tool to execute\",\n            show=False,\n            required=True,\n            real_time_refresh=True,\n        ),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            info=\"Placeholder for the tool\",\n            value=\"\",\n            show=False,\n            tool_mode=False,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Response\", name=\"response\", method=\"build_output\"),\n    ]\n\n    async def _validate_schema_inputs(self, tool_obj) -> list[InputTypes]:\n        \"\"\"Validate and process schema inputs for a tool.\"\"\"\n        try:\n            if not tool_obj or not hasattr(tool_obj, \"args_schema\"):\n                msg = \"Invalid tool object or missing input schema\"\n                raise ValueError(msg)\n\n            flat_schema = flatten_schema(tool_obj.args_schema.schema())\n            input_schema = create_input_schema_from_json_schema(flat_schema)\n            if not input_schema:\n                msg = f\"Empty input schema for tool '{tool_obj.name}'\"\n                raise ValueError(msg)\n\n            schema_inputs = schema_to_langflow_inputs(input_schema)\n            if not schema_inputs:\n                msg = f\"No input parameters defined for tool '{tool_obj.name}'\"\n                await logger.awarning(msg)\n                return []\n\n        except Exception as e:\n            msg = f\"Error validating schema inputs: {e!s}\"\n            await logger.aexception(msg)\n            raise ValueError(msg) from e\n        else:\n            return schema_inputs\n\n    async def update_tool_list(self, mcp_server_value=None):\n        # Accepts mcp_server_value as dict {name, config} or uses self.mcp_server\n        mcp_server = mcp_server_value if mcp_server_value is not None else getattr(self, \"mcp_server\", None)\n        server_name = None\n        server_config_from_value = None\n        if isinstance(mcp_server, dict):\n            server_name = mcp_server.get(\"name\")\n            server_config_from_value = mcp_server.get(\"config\")\n        else:\n            server_name = mcp_server\n        if not server_name:\n            self.tools = []\n            return [], {\"name\": server_name, \"config\": server_config_from_value}\n\n        # Use shared cache if available\n        servers_cache = safe_cache_get(self._shared_component_cache, \"servers\", {})\n        cached = servers_cache.get(server_name) if isinstance(servers_cache, dict) else None\n\n        if cached is not None:\n            self.tools = cached[\"tools\"]\n            self.tool_names = cached[\"tool_names\"]\n            self._tool_cache = cached[\"tool_cache\"]\n            server_config_from_value = cached[\"config\"]\n            return self.tools, {\"name\": server_name, \"config\": server_config_from_value}\n\n        try:\n            async with session_scope() as db:\n                if not self.user_id:\n                    msg = \"User ID is required for fetching MCP tools.\"\n                    raise ValueError(msg)\n                current_user = await get_user_by_id(db, self.user_id)\n\n                # Try to get server config from DB/API\n                server_config = await get_server(\n                    server_name,\n                    current_user,\n                    db,\n                    storage_service=get_storage_service(),\n                    settings_service=get_settings_service(),\n                )\n\n            # If get_server returns empty but we have a config, use it\n            if not server_config and server_config_from_value:\n                server_config = server_config_from_value\n\n            if not server_config:\n                self.tools = []\n                return [], {\"name\": server_name, \"config\": server_config}\n\n            _, tool_list, tool_cache = await update_tools(\n                server_name=server_name,\n                server_config=server_config,\n                mcp_stdio_client=self.stdio_client,\n                mcp_sse_client=self.sse_client,\n            )\n\n            self.tool_names = [tool.name for tool in tool_list if hasattr(tool, \"name\")]\n            self._tool_cache = tool_cache\n            self.tools = tool_list\n            # Cache the result using shared cache\n            cache_data = {\n                \"tools\": tool_list,\n                \"tool_names\": self.tool_names,\n                \"tool_cache\": tool_cache,\n                \"config\": server_config,\n            }\n\n            # Safely update the servers cache\n            current_servers_cache = safe_cache_get(self._shared_component_cache, \"servers\", {})\n            if isinstance(current_servers_cache, dict):\n                current_servers_cache[server_name] = cache_data\n                safe_cache_set(self._shared_component_cache, \"servers\", current_servers_cache)\n\n        except (TimeoutError, asyncio.TimeoutError) as e:\n            msg = f\"Timeout updating tool list: {e!s}\"\n            await logger.aexception(msg)\n            raise TimeoutError(msg) from e\n        except Exception as e:\n            msg = f\"Error updating tool list: {e!s}\"\n            await logger.aexception(msg)\n            raise ValueError(msg) from e\n        else:\n            return tool_list, {\"name\": server_name, \"config\": server_config}\n\n    async def update_build_config(self, build_config: dict, field_value: str, field_name: str | None = None) -> dict:\n        \"\"\"Toggle the visibility of connection-specific fields based on the selected mode.\"\"\"\n        try:\n            if field_name == \"tool\":\n                try:\n                    if len(self.tools) == 0:\n                        try:\n                            self.tools, build_config[\"mcp_server\"][\"value\"] = await self.update_tool_list()\n                            build_config[\"tool\"][\"options\"] = [tool.name for tool in self.tools]\n                            build_config[\"tool\"][\"placeholder\"] = \"Select a tool\"\n                        except (TimeoutError, asyncio.TimeoutError) as e:\n                            msg = f\"Timeout updating tool list: {e!s}\"\n                            await logger.aexception(msg)\n                            if not build_config[\"tools_metadata\"][\"show\"]:\n                                build_config[\"tool\"][\"show\"] = True\n                                build_config[\"tool\"][\"options\"] = []\n                                build_config[\"tool\"][\"value\"] = \"\"\n                                build_config[\"tool\"][\"placeholder\"] = \"Timeout on MCP server\"\n                            else:\n                                build_config[\"tool\"][\"show\"] = False\n                        except ValueError:\n                            if not build_config[\"tools_metadata\"][\"show\"]:\n                                build_config[\"tool\"][\"show\"] = True\n                                build_config[\"tool\"][\"options\"] = []\n                                build_config[\"tool\"][\"value\"] = \"\"\n                                build_config[\"tool\"][\"placeholder\"] = \"Error on MCP Server\"\n                            else:\n                                build_config[\"tool\"][\"show\"] = False\n\n                    if field_value == \"\":\n                        return build_config\n                    tool_obj = None\n                    for tool in self.tools:\n                        if tool.name == field_value:\n                            tool_obj = tool\n                            break\n                    if tool_obj is None:\n                        msg = f\"Tool {field_value} not found in available tools: {self.tools}\"\n                        await logger.awarning(msg)\n                        return build_config\n                    await self._update_tool_config(build_config, field_value)\n                except Exception as e:\n                    build_config[\"tool\"][\"options\"] = []\n                    msg = f\"Failed to update tools: {e!s}\"\n                    raise ValueError(msg) from e\n                else:\n                    return build_config\n            elif field_name == \"mcp_server\":\n                if not field_value:\n                    build_config[\"tool\"][\"show\"] = False\n                    build_config[\"tool\"][\"options\"] = []\n                    build_config[\"tool\"][\"value\"] = \"\"\n                    build_config[\"tool\"][\"placeholder\"] = \"\"\n                    build_config[\"tool_placeholder\"][\"tool_mode\"] = False\n                    self.remove_non_default_keys(build_config)\n                    return build_config\n\n                build_config[\"tool_placeholder\"][\"tool_mode\"] = True\n\n                current_server_name = field_value.get(\"name\") if isinstance(field_value, dict) else field_value\n                _last_selected_server = safe_cache_get(self._shared_component_cache, \"last_selected_server\", \"\")\n\n                # To avoid unnecessary updates, only proceed if the server has actually changed\n                if (_last_selected_server in (current_server_name, \"\")) and build_config[\"tool\"][\"show\"]:\n                    if current_server_name:\n                        servers_cache = safe_cache_get(self._shared_component_cache, \"servers\", {})\n                        if isinstance(servers_cache, dict):\n                            cached = servers_cache.get(current_server_name)\n                            if cached is not None and cached.get(\"tool_names\"):\n                                cached_tools = cached[\"tool_names\"]\n                                current_tools = build_config[\"tool\"][\"options\"]\n                                if current_tools == cached_tools:\n                                    return build_config\n                    else:\n                        return build_config\n\n                # Determine if \"Tool Mode\" is active by checking if the tool dropdown is hidden.\n                is_in_tool_mode = build_config[\"tools_metadata\"][\"show\"]\n                safe_cache_set(self._shared_component_cache, \"last_selected_server\", current_server_name)\n\n                # Check if tools are already cached for this server before clearing\n                cached_tools = None\n                if current_server_name:\n                    servers_cache = safe_cache_get(self._shared_component_cache, \"servers\", {})\n                    if isinstance(servers_cache, dict):\n                        cached = servers_cache.get(current_server_name)\n                        if cached is not None:\n                            cached_tools = cached[\"tools\"]\n                            self.tools = cached_tools\n                            self.tool_names = cached[\"tool_names\"]\n                            self._tool_cache = cached[\"tool_cache\"]\n\n                # Only clear tools if we don't have cached tools for the current server\n                if not cached_tools:\n                    self.tools = []  # Clear previous tools only if no cache\n\n                self.remove_non_default_keys(build_config)  # Clear previous tool inputs\n\n                # Only show the tool dropdown if not in tool_mode\n                if not is_in_tool_mode:\n                    build_config[\"tool\"][\"show\"] = True\n                    if cached_tools:\n                        # Use cached tools to populate options immediately\n                        build_config[\"tool\"][\"options\"] = [tool.name for tool in cached_tools]\n                        build_config[\"tool\"][\"placeholder\"] = \"Select a tool\"\n                    else:\n                        # Show loading state only when we need to fetch tools\n                        build_config[\"tool\"][\"placeholder\"] = \"Loading tools...\"\n                        build_config[\"tool\"][\"options\"] = []\n                    build_config[\"tool\"][\"value\"] = uuid.uuid4()\n                else:\n                    # Keep the tool dropdown hidden if in tool_mode\n                    self._not_load_actions = True\n                    build_config[\"tool\"][\"show\"] = False\n\n            elif field_name == \"tool_mode\":\n                build_config[\"tool\"][\"placeholder\"] = \"\"\n                build_config[\"tool\"][\"show\"] = not bool(field_value) and bool(build_config[\"mcp_server\"])\n                self.remove_non_default_keys(build_config)\n                self.tool = build_config[\"tool\"][\"value\"]\n                if field_value:\n                    self._not_load_actions = True\n                else:\n                    build_config[\"tool\"][\"value\"] = uuid.uuid4()\n                    build_config[\"tool\"][\"options\"] = []\n                    build_config[\"tool\"][\"show\"] = True\n                    build_config[\"tool\"][\"placeholder\"] = \"Loading tools...\"\n            elif field_name == \"tools_metadata\":\n                self._not_load_actions = False\n\n        except Exception as e:\n            msg = f\"Error in update_build_config: {e!s}\"\n            await logger.aexception(msg)\n            raise ValueError(msg) from e\n        else:\n            return build_config\n\n    def get_inputs_for_all_tools(self, tools: list) -> dict:\n        \"\"\"Get input schemas for all tools.\"\"\"\n        inputs = {}\n        for tool in tools:\n            if not tool or not hasattr(tool, \"name\"):\n                continue\n            try:\n                flat_schema = flatten_schema(tool.args_schema.schema())\n                input_schema = create_input_schema_from_json_schema(flat_schema)\n                langflow_inputs = schema_to_langflow_inputs(input_schema)\n                inputs[tool.name] = langflow_inputs\n            except (AttributeError, ValueError, TypeError, KeyError) as e:\n                msg = f\"Error getting inputs for tool {getattr(tool, 'name', 'unknown')}: {e!s}\"\n                logger.exception(msg)\n                continue\n        return inputs\n\n    def remove_input_schema_from_build_config(\n        self, build_config: dict, tool_name: str, input_schema: dict[list[InputTypes], Any]\n    ):\n        \"\"\"Remove the input schema for the tool from the build config.\"\"\"\n        # Keep only schemas that don't belong to the current tool\n        input_schema = {k: v for k, v in input_schema.items() if k != tool_name}\n        # Remove all inputs from other tools\n        for value in input_schema.values():\n            for _input in value:\n                if _input.name in build_config:\n                    build_config.pop(_input.name)\n\n    def remove_non_default_keys(self, build_config: dict) -> None:\n        \"\"\"Remove non-default keys from the build config.\"\"\"\n        for key in list(build_config.keys()):\n            if key not in self.default_keys:\n                build_config.pop(key)\n\n    async def _update_tool_config(self, build_config: dict, tool_name: str) -> None:\n        \"\"\"Update tool configuration with proper error handling.\"\"\"\n        if not self.tools:\n            self.tools, build_config[\"mcp_server\"][\"value\"] = await self.update_tool_list()\n\n        if not tool_name:\n            return\n\n        tool_obj = next((tool for tool in self.tools if tool.name == tool_name), None)\n        if not tool_obj:\n            msg = f\"Tool {tool_name} not found in available tools: {self.tools}\"\n            self.remove_non_default_keys(build_config)\n            build_config[\"tool\"][\"value\"] = \"\"\n            await logger.awarning(msg)\n            return\n\n        try:\n            # Store current values before removing inputs\n            current_values = {}\n            for key, value in build_config.items():\n                if key not in self.default_keys and isinstance(value, dict) and \"value\" in value:\n                    current_values[key] = value[\"value\"]\n\n            # Get all tool inputs and remove old ones\n            input_schema_for_all_tools = self.get_inputs_for_all_tools(self.tools)\n            self.remove_input_schema_from_build_config(build_config, tool_name, input_schema_for_all_tools)\n\n            # Get and validate new inputs\n            self.schema_inputs = await self._validate_schema_inputs(tool_obj)\n            if not self.schema_inputs:\n                msg = f\"No input parameters to configure for tool '{tool_name}'\"\n                await logger.ainfo(msg)\n                return\n\n            # Add new inputs to build config\n            for schema_input in self.schema_inputs:\n                if not schema_input or not hasattr(schema_input, \"name\"):\n                    msg = \"Invalid schema input detected, skipping\"\n                    await logger.awarning(msg)\n                    continue\n\n                try:\n                    name = schema_input.name\n                    input_dict = schema_input.to_dict()\n                    input_dict.setdefault(\"value\", None)\n                    input_dict.setdefault(\"required\", True)\n\n                    build_config[name] = input_dict\n\n                    # Preserve existing value if the parameter name exists in current_values\n                    if name in current_values:\n                        build_config[name][\"value\"] = current_values[name]\n\n                except (AttributeError, KeyError, TypeError) as e:\n                    msg = f\"Error processing schema input {schema_input}: {e!s}\"\n                    await logger.aexception(msg)\n                    continue\n        except ValueError as e:\n            msg = f\"Schema validation error for tool {tool_name}: {e!s}\"\n            await logger.aexception(msg)\n            self.schema_inputs = []\n            return\n        except (AttributeError, KeyError, TypeError) as e:\n            msg = f\"Error updating tool config: {e!s}\"\n            await logger.aexception(msg)\n            raise ValueError(msg) from e\n\n    async def build_output(self) -> DataFrame:\n        \"\"\"Build output with improved error handling and validation.\"\"\"\n        try:\n            self.tools, _ = await self.update_tool_list()\n            if self.tool != \"\":\n                # Set session context for persistent MCP sessions using Langflow session ID\n                session_context = self._get_session_context()\n                if session_context:\n                    self.stdio_client.set_session_context(session_context)\n                    self.sse_client.set_session_context(session_context)\n\n                exec_tool = self._tool_cache[self.tool]\n                tool_args = self.get_inputs_for_all_tools(self.tools)[self.tool]\n                kwargs = {}\n                for arg in tool_args:\n                    value = getattr(self, arg.name, None)\n                    if value is not None:\n                        if isinstance(value, Message):\n                            kwargs[arg.name] = value.text\n                        else:\n                            kwargs[arg.name] = value\n\n                unflattened_kwargs = maybe_unflatten_dict(kwargs)\n\n                output = await exec_tool.coroutine(**unflattened_kwargs)\n\n                tool_content = []\n                for item in output.content:\n                    item_dict = item.model_dump()\n                    tool_content.append(item_dict)\n                return DataFrame(data=tool_content)\n            return DataFrame(data=[{\"error\": \"You must select a tool\"}])\n        except Exception as e:\n            msg = f\"Error in build_output: {e!s}\"\n            await logger.aexception(msg)\n            raise ValueError(msg) from e\n\n    def _get_session_context(self) -> str | None:\n        \"\"\"Get the Langflow session ID for MCP session caching.\"\"\"\n        # Try to get session ID from the component's execution context\n        if hasattr(self, \"graph\") and hasattr(self.graph, \"session_id\"):\n            session_id = self.graph.session_id\n            # Include server name to ensure different servers get different sessions\n            server_name = \"\"\n            mcp_server = getattr(self, \"mcp_server\", None)\n            if isinstance(mcp_server, dict):\n                server_name = mcp_server.get(\"name\", \"\")\n            elif mcp_server:\n                server_name = str(mcp_server)\n            return f\"{session_id}_{server_name}\" if session_id else None\n        return None\n\n    async def _get_tools(self):\n        \"\"\"Get cached tools or update if necessary.\"\"\"\n        mcp_server = getattr(self, \"mcp_server\", None)\n        if not self._not_load_actions:\n            tools, _ = await self.update_tool_list(mcp_server)\n            return tools\n        return []\n"
+              },
+              "mcp_server": {
+                "_input_type": "McpInput",
+                "advanced": false,
+                "display_name": "MCP Server",
+                "dynamic": false,
+                "info": "Select the MCP Server that will be used by this component",
+                "name": "mcp_server",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "mcp",
+                "value": {
+                  "config": {
+                    "url": "http://localhost:7860/api/v1/mcp/sse"
+                  },
+                  "name": "exchange_api_usage"
+                }
+              },
+              "tool": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Tool",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Select the tool to execute",
+                "name": "tool",
+                "options": [
+                  "get_latest_rate",
+                  "financial_agent"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": true,
+                "show": false,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "get_latest_rate"
+              },
+              "tool_placeholder": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Tool Placeholder",
+                "dynamic": false,
+                "info": "Placeholder for the tool",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_placeholder",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {},
+                    "description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_description": "6f5e21fe-07da-45b9-ae17-8ed1e867c775: Получение исторического курса валют",
+                    "display_name": "get_historical_rate",
+                    "name": "get_historical_rate",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "get_historical_rate"
+                    ]
+                  },
+                  {
+                    "args": {},
+                    "description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
+                    "display_description": "a3b14e55-2b60-4c65-9384-026183ce1929: Get latest exchange rate for the currency",
+                    "display_name": "get_latest_rate",
+                    "name": "get_latest_rate",
+                    "readonly": false,
+                    "status": false,
+                    "tags": [
+                      "get_latest_rate"
+                    ]
+                  },
+                  {
+                    "args": {
+                      "input_value": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Text to be passed as input.",
+                        "title": "Input Value"
+                      }
+                    },
+                    "description": "30746180-930b-47b8-97c1-48d5a1433794: Financial agent",
+                    "display_description": "30746180-930b-47b8-97c1-48d5a1433794: Financial agent",
+                    "display_name": "financial_agent",
+                    "name": "financial_agent",
+                    "readonly": false,
+                    "status": false,
+                    "tags": [
+                      "financial_agent"
+                    ]
+                  }
+                ]
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "MCP"
+        },
+        "dragging": false,
+        "id": "MCP-hjuwn",
+        "measured": {
+          "height": 283,
+          "width": 320
+        },
+        "position": {
+          "x": 3655.7250778063303,
+          "y": -476.15403302918673
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-Y6wzv",
+          "node": {
+            "base_classes": [
+              "LanguageModel"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Language model using local API",
+            "display_name": "API Model",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "base_url",
+              "model_name",
+              "api_key",
+              "temperature",
+              "max_tokens"
+            ],
+            "frozen": false,
+            "icon": "brain",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Language Model",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "build_model",
+                "name": "model",
+                "options": null,
+                "required_inputs": null,
+                "selected": "LanguageModel",
+                "tool_mode": true,
+                "types": [
+                  "LanguageModel"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "API Key",
+                "dynamic": false,
+                "info": "API key (use 'dummy' for local Copilot API)",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "api_key",
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "base_url": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "API Base URL",
+                "dynamic": false,
+                "info": "API endpoint URL",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "base_url",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "http://host.docker.internal:4141/v1"
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom import Component\r\nfrom langflow.io import StrInput, SecretStrInput, IntInput, FloatInput, Output\r\nfrom langflow.schema import Message\r\nfrom langchain_openai import ChatOpenAI\r\nfrom langflow.field_typing import LanguageModel\r\n\r\nclass APIComponent(Component):\r\n    display_name = \"API Model\"\r\n    description = \"Language model using local API\"\r\n    icon = \"brain\"\r\n    name = \"APIModel\"\r\n\r\n    inputs = [\r\n        StrInput(\r\n            name=\"base_url\",\r\n            display_name=\"API Base URL\",\r\n            value=\"http://localhost:4141/v1\",\r\n            info=\"API endpoint URL\"\r\n        ),\r\n        StrInput(\r\n            name=\"model_name\",\r\n            display_name=\"Model Name\",\r\n            value=\"gpt-4.1\",\r\n            info=\"Model to use\"\r\n        ),\r\n        SecretStrInput(\r\n            name=\"api_key\",\r\n            display_name=\"API Key\",\r\n            value=\"dummy\",\r\n            info=\"API key (use 'dummy' for local Copilot API)\"\r\n        ),\r\n        FloatInput(\r\n            name=\"temperature\",\r\n            display_name=\"Temperature\",\r\n            value=0.7,\r\n            info=\"Sampling temperature (0.0 to 2.0)\"\r\n        ),\r\n        IntInput(\r\n            name=\"max_tokens\",\r\n            display_name=\"Max Tokens\",\r\n            value=2048,\r\n            info=\"Maximum tokens to generate\",\r\n            advanced=True\r\n        )\r\n    ]\r\n\r\n    outputs = [\r\n        Output(\r\n            name=\"model\",\r\n            display_name=\"Language Model\",\r\n            method=\"build_model\"\r\n        )\r\n    ]\r\n\r\n    def build_model(self) -> LanguageModel:\r\n        \"\"\"Build and return ChatOpenAI instance configured for Copilot API\"\"\"\r\n        \r\n        model = ChatOpenAI(\r\n            base_url=self.base_url,\r\n            api_key=self.api_key,\r\n            model=self.model_name,\r\n            temperature=self.temperature,\r\n            max_tokens=self.max_tokens\r\n        )\r\n        \r\n        self.status = f\"Connected to Copilot API: {self.model_name}\"\r\n        return model\r\n"
+              },
+              "max_tokens": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Tokens",
+                "dynamic": false,
+                "info": "Maximum tokens to generate",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_tokens",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 2048
+              },
+              "model_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Model Name",
+                "dynamic": false,
+                "info": "Model to use",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "model_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "gpt-4.1"
+              },
+              "temperature": {
+                "_input_type": "FloatInput",
+                "advanced": false,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "Sampling temperature (0.0 to 2.0)",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "temperature",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "float",
+                "value": 0.7
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "APIModel"
+        },
+        "dragging": false,
+        "id": "CustomComponent-Y6wzv",
+        "measured": {
+          "height": 449,
+          "width": 320
+        },
+        "position": {
+          "x": 1277.1361756964197,
+          "y": 61.822405037908496
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "StructuredOutput-1sSFY",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Uses an LLM to generate structured data. Ideal for extraction and consistency.",
+            "display_name": "Structured Output",
+            "documentation": "https://docs.langflow.org/components-processing#structured-output",
+            "edited": false,
+            "field_order": [
+              "llm",
+              "input_value",
+              "system_prompt",
+              "schema_name",
+              "output_schema"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "StructuredOutput",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Structured Output",
+                "group_outputs": false,
+                "method": "build_structured_output",
+                "name": "structured_output",
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Structured Output",
+                "group_outputs": false,
+                "method": "build_structured_dataframe",
+                "name": "dataframe_output",
+                "selected": null,
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.007568328950209746,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from pydantic import BaseModel, Field, create_model\nfrom trustcall import create_extractor\n\nfrom langflow.base.models.chat_result import get_chat_result\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.helpers.base_model import build_model_from_schema\nfrom langflow.io import (\n    HandleInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n    TableInput,\n)\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.table import EditMode\n\n\nclass StructuredOutputComponent(Component):\n    display_name = \"Structured Output\"\n    description = \"Uses an LLM to generate structured data. Ideal for extraction and consistency.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#structured-output\"\n    name = \"StructuredOutput\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"llm\",\n            display_name=\"Language Model\",\n            info=\"The language model to use to generate the structured output.\",\n            input_types=[\"LanguageModel\"],\n            required=True,\n        ),\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Input Message\",\n            info=\"The input message to the language model.\",\n            tool_mode=True,\n            required=True,\n        ),\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Format Instructions\",\n            info=\"The instructions to the language model for formatting the output.\",\n            value=(\n                \"You are an AI that extracts structured JSON objects from unstructured text. \"\n                \"Use a predefined schema with expected types (str, int, float, bool, dict). \"\n                \"Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. \"\n                \"Fill missing or ambiguous values with defaults: null for missing values. \"\n                \"Remove exact duplicates but keep variations that have different field values. \"\n                \"Always return valid JSON in the expected format, never throw errors. \"\n                \"If multiple objects can be extracted, return them all in the structured format.\"\n            ),\n            required=True,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"schema_name\",\n            display_name=\"Schema Name\",\n            info=\"Provide a name for the output data schema.\",\n            advanced=True,\n        ),\n        TableInput(\n            name=\"output_schema\",\n            display_name=\"Output Schema\",\n            info=\"Define the structure and data types for the model's output.\",\n            required=True,\n            # TODO: remove deault value\n            table_schema=[\n                {\n                    \"name\": \"name\",\n                    \"display_name\": \"Name\",\n                    \"type\": \"str\",\n                    \"description\": \"Specify the name of the output field.\",\n                    \"default\": \"field\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n                {\n                    \"name\": \"description\",\n                    \"display_name\": \"Description\",\n                    \"type\": \"str\",\n                    \"description\": \"Describe the purpose of the output field.\",\n                    \"default\": \"description of field\",\n                    \"edit_mode\": EditMode.POPOVER,\n                },\n                {\n                    \"name\": \"type\",\n                    \"display_name\": \"Type\",\n                    \"type\": \"str\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate the data type of the output field (e.g., str, int, float, bool, dict).\"),\n                    \"options\": [\"str\", \"int\", \"float\", \"bool\", \"dict\"],\n                    \"default\": \"str\",\n                },\n                {\n                    \"name\": \"multiple\",\n                    \"display_name\": \"As List\",\n                    \"type\": \"boolean\",\n                    \"description\": \"Set to True if this output field should be a list of the specified type.\",\n                    \"default\": \"False\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n            ],\n            value=[\n                {\n                    \"name\": \"field\",\n                    \"description\": \"description of field\",\n                    \"type\": \"str\",\n                    \"multiple\": \"False\",\n                }\n            ],\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"structured_output\",\n            display_name=\"Structured Output\",\n            method=\"build_structured_output\",\n        ),\n        Output(\n            name=\"dataframe_output\",\n            display_name=\"Structured Output\",\n            method=\"build_structured_dataframe\",\n        ),\n    ]\n\n    def build_structured_output_base(self):\n        schema_name = self.schema_name or \"OutputModel\"\n\n        if not hasattr(self.llm, \"with_structured_output\"):\n            msg = \"Language model does not support structured output.\"\n            raise TypeError(msg)\n        if not self.output_schema:\n            msg = \"Output schema cannot be empty\"\n            raise ValueError(msg)\n\n        output_model_ = build_model_from_schema(self.output_schema)\n\n        output_model = create_model(\n            schema_name,\n            __doc__=f\"A list of {schema_name}.\",\n            objects=(list[output_model_], Field(description=f\"A list of {schema_name}.\")),  # type: ignore[valid-type]\n        )\n\n        try:\n            llm_with_structured_output = create_extractor(self.llm, tools=[output_model])\n        except NotImplementedError as exc:\n            msg = f\"{self.llm.__class__.__name__} does not support structured output.\"\n            raise TypeError(msg) from exc\n\n        config_dict = {\n            \"run_name\": self.display_name,\n            \"project_name\": self.get_project_name(),\n            \"callbacks\": self.get_langchain_callbacks(),\n        }\n        result = get_chat_result(\n            runnable=llm_with_structured_output,\n            system_message=self.system_prompt,\n            input_value=self.input_value,\n            config=config_dict,\n        )\n\n        # OPTIMIZATION NOTE: Simplified processing based on trustcall response structure\n        # Handle non-dict responses (shouldn't happen with trustcall, but defensive)\n        if not isinstance(result, dict):\n            return result\n\n        # Extract first response and convert BaseModel to dict\n        responses = result.get(\"responses\", [])\n        if not responses:\n            return result\n\n        # Convert BaseModel to dict (creates the \"objects\" key)\n        first_response = responses[0]\n        structured_data = first_response.model_dump() if isinstance(first_response, BaseModel) else first_response\n\n        # Extract the objects array (guaranteed to exist due to our Pydantic model structure)\n        return structured_data.get(\"objects\", structured_data)\n\n    def build_structured_output(self) -> Data:\n        output = self.build_structured_output_base()\n        if not isinstance(output, list) or not output:\n            # handle empty or unexpected type case\n            msg = \"No structured output returned\"\n            raise ValueError(msg)\n        if len(output) == 1:\n            return Data(data=output[0])\n        if len(output) > 1:\n            # Multiple outputs - wrap them in a results container\n            return Data(data={\"results\": output})\n        return Data()\n\n    def build_structured_dataframe(self) -> DataFrame:\n        output = self.build_structured_output_base()\n        if not isinstance(output, list) or not output:\n            # handle empty or unexpected type case\n            msg = \"No structured output returned\"\n            raise ValueError(msg)\n        if len(output) == 1:\n            # For single dictionary, wrap in a list to create DataFrame with one row\n            return DataFrame([output[0]])\n        if len(output) > 1:\n            # Multiple outputs - convert to DataFrame directly\n            return DataFrame(output)\n        return DataFrame()\n"
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Input Message",
+                "dynamic": false,
+                "info": "The input message to the language model.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "llm": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Language Model",
+                "dynamic": false,
+                "info": "The language model to use to generate the structured output.",
+                "input_types": [
+                  "LanguageModel"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "llm",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "output_schema": {
+                "_input_type": "TableInput",
+                "advanced": false,
+                "display_name": "Output Schema",
+                "dynamic": false,
+                "info": "Define the structure and data types for the model's output.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "output_schema",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "table_icon": "Table",
+                "table_schema": {
+                  "columns": [
+                    {
+                      "default": "field",
+                      "description": "Specify the name of the output field.",
+                      "disable_edit": false,
+                      "display_name": "Name",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "name",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "description of field",
+                      "description": "Describe the purpose of the output field.",
+                      "disable_edit": false,
+                      "display_name": "Description",
+                      "edit_mode": "popover",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "description",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "str",
+                      "description": "Indicate the data type of the output field (e.g., str, int, float, bool, dict).",
+                      "disable_edit": false,
+                      "display_name": "Type",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "type",
+                      "options": [
+                        "str",
+                        "int",
+                        "float",
+                        "bool",
+                        "dict"
+                      ],
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": false,
+                      "description": "Set to True if this output field should be a list of the specified type.",
+                      "disable_edit": false,
+                      "display_name": "As List",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "boolean",
+                      "hidden": false,
+                      "name": "multiple",
+                      "sortable": true,
+                      "type": "boolean"
+                    }
+                  ]
+                },
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "trigger_icon": "Table",
+                "trigger_text": "Open table",
+                "type": "table",
+                "value": [
+                  {
+                    "description": "Что хотел спросить пользователь",
+                    "multiple": "False",
+                    "name": "query",
+                    "type": "str"
+                  },
+                  {
+                    "description": "Разрешено или запрещено общаться дальше.",
+                    "multiple": false,
+                    "name": "is_allowed",
+                    "type": "str"
+                  }
+                ]
+              },
+              "schema_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Schema Name",
+                "dynamic": false,
+                "info": "Provide a name for the output data schema.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "schema_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Format Instructions",
+                "dynamic": false,
+                "info": "The instructions to the language model for formatting the output.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "You are an AI that extracts structured JSON objects from unstructured text. Use a predefined schema with expected types (str, int, float, bool, dict). Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. Fill missing or ambiguous values with defaults: null for missing values. Remove exact duplicates but keep variations that have different field values. Always return valid JSON in the expected format, never throw errors. If multiple objects can be extracted, return them all in the structured format."
+              }
+            },
+            "tool_mode": false
+          },
+          "selected_output": "structured_output",
+          "showNode": true,
+          "type": "StructuredOutput"
+        },
+        "dragging": false,
+        "id": "StructuredOutput-1sSFY",
+        "measured": {
+          "height": 429,
+          "width": 320
+        },
+        "position": {
+          "x": -195.11643573164923,
+          "y": 1752.1069987213943
+        },
+        "selected": false,
+        "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 647.9708176974841,
-      "y": 229.90587831046065,
-      "zoom": 0.25
+      "x": -208.29764408489177,
+      "y": 248.28248326285484,
+      "zoom": 0.43527528164806223
     }
   },
   "description": "Financial agent",

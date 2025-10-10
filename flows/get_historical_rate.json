@@ -177,35 +177,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "DateValidator",
-            "id": "CustomComponent-k8AUT",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_data",
-            "id": "ParserComponent-LO6Cp",
-            "inputTypes": [
-              "DataFrame",
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ParserComponent-LO6Cp{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-LO6Cpœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CustomComponent-k8AUT",
-        "sourceHandle": "{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "ParserComponent-LO6Cp",
-        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-LO6Cpœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "ParserComponent",
             "id": "ParserComponent-LO6Cp",
             "name": "parsed_text",
@@ -257,34 +228,6 @@
         "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-rdWpUœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}",
         "target": "CustomComponent-4L37T",
         "targetHandle": "{œfieldNameœ:œif_else_inputœ,œidœ:œCustomComponent-4L37Tœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "DateValidator",
-            "id": "CustomComponent-k8AUT",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "result_data",
-            "id": "CustomComponent-4L37T",
-            "inputTypes": [
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-4L37T{œfieldNameœ:œresult_dataœ,œidœ:œCustomComponent-4L37Tœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CustomComponent-k8AUT",
-        "sourceHandle": "{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "CustomComponent-4L37T",
-        "targetHandle": "{œfieldNameœ:œresult_dataœ,œidœ:œCustomComponent-4L37Tœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -520,350 +463,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-XCoyO",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "base_currency",
-            "id": "CustomComponent-UuzJ9",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ParserComponent-XCoyO{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-UuzJ9{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ParserComponent-XCoyO",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-UuzJ9",
-        "targetHandle": "{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-47fqI",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "target_currency",
-            "id": "CustomComponent-UuzJ9",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ParserComponent-47fqI{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-UuzJ9{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ParserComponent-47fqI",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-UuzJ9",
-        "targetHandle": "{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "LoadJSON",
-            "id": "LoadJSON-yTqey",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "currency_dict",
-            "id": "CheckCurrency-2vIKv",
-            "inputTypes": [
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__LoadJSON-yTqey{œdataTypeœ:œLoadJSONœ,œidœ:œLoadJSON-yTqeyœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CheckCurrency-2vIKv{œfieldNameœ:œcurrency_dictœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "LoadJSON-yTqey",
-        "sourceHandle": "{œdataTypeœ:œLoadJSONœ,œidœ:œLoadJSON-yTqeyœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "CheckCurrency-2vIKv",
-        "targetHandle": "{œfieldNameœ:œcurrency_dictœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "CheckCurrency",
-            "id": "CheckCurrency-2vIKv",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_data",
-            "id": "ParserComponent-tvjJG",
-            "inputTypes": [
-              "DataFrame",
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CheckCurrency-2vIKv{œdataTypeœ:œCheckCurrencyœ,œidœ:œCheckCurrency-2vIKvœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ParserComponent-tvjJG{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-tvjJGœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CheckCurrency-2vIKv",
-        "sourceHandle": "{œdataTypeœ:œCheckCurrencyœ,œidœ:œCheckCurrency-2vIKvœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "ParserComponent-tvjJG",
-        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-tvjJGœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-tvjJG",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_text",
-            "id": "ConditionalRouter-X8rbm",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ParserComponent-tvjJG{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-tvjJGœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-ConditionalRouter-X8rbm{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-X8rbmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ParserComponent-tvjJG",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-tvjJGœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ConditionalRouter-X8rbm",
-        "targetHandle": "{œfieldNameœ:œinput_textœ,œidœ:œConditionalRouter-X8rbmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ConditionalRouter",
-            "id": "ConditionalRouter-X8rbm",
-            "name": "false_result",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "if_else_input",
-            "id": "ParserComponent-SDoVq",
-            "inputTypes": [
-              "str",
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ConditionalRouter-X8rbm{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-X8rbmœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}-ParserComponent-SDoVq{œfieldNameœ:œif_else_inputœ,œidœ:œParserComponent-SDoVqœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ConditionalRouter-X8rbm",
-        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-X8rbmœ,œnameœ:œfalse_resultœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ParserComponent-SDoVq",
-        "targetHandle": "{œfieldNameœ:œif_else_inputœ,œidœ:œParserComponent-SDoVqœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "CheckCurrency",
-            "id": "CheckCurrency-2vIKv",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_data",
-            "id": "ParserComponent-SDoVq",
-            "inputTypes": [
-              "DataFrame",
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CheckCurrency-2vIKv{œdataTypeœ:œCheckCurrencyœ,œidœ:œCheckCurrency-2vIKvœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ParserComponent-SDoVq{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-SDoVqœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CheckCurrency-2vIKv",
-        "sourceHandle": "{œdataTypeœ:œCheckCurrencyœ,œidœ:œCheckCurrency-2vIKvœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "ParserComponent-SDoVq",
-        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-SDoVqœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-SDoVq",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "ChatOutput-g2K5j",
-            "inputTypes": [
-              "Data",
-              "DataFrame",
-              "Message"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__ParserComponent-SDoVq{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-SDoVqœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-g2K5j{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-g2K5jœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "ParserComponent-SDoVq",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-SDoVqœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-g2K5j",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-g2K5jœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-XCoyO",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "base_currency",
-            "id": "CheckCurrency-2vIKv",
-            "inputTypes": [
-              "str",
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ParserComponent-XCoyO{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CheckCurrency-2vIKv{œfieldNameœ:œbase_currencyœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ParserComponent-XCoyO",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CheckCurrency-2vIKv",
-        "targetHandle": "{œfieldNameœ:œbase_currencyœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ParserComponent",
-            "id": "ParserComponent-47fqI",
-            "name": "parsed_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "target_currency",
-            "id": "CheckCurrency-2vIKv",
-            "inputTypes": [
-              "str",
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ParserComponent-47fqI{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CheckCurrency-2vIKv{œfieldNameœ:œtarget_currencyœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ParserComponent-47fqI",
-        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CheckCurrency-2vIKv",
-        "targetHandle": "{œfieldNameœ:œtarget_currencyœ,œidœ:œCheckCurrency-2vIKvœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "ConditionalRouter",
-            "id": "ConditionalRouter-X8rbm",
-            "name": "true_result",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "if_else_input_2",
-            "id": "CustomComponent-UuzJ9",
-            "inputTypes": [
-              "str",
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ConditionalRouter-X8rbm{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-X8rbmœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-UuzJ9{œfieldNameœ:œif_else_input_2œ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ConditionalRouter-X8rbm",
-        "sourceHandle": "{œdataTypeœ:œConditionalRouterœ,œidœ:œConditionalRouter-X8rbmœ,œnameœ:œtrue_resultœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-UuzJ9",
-        "targetHandle": "{œfieldNameœ:œif_else_input_2œ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "DateValidator",
-            "id": "CustomComponent-k8AUT",
-            "name": "output",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "CustomComponent-cAc43",
-            "inputTypes": [
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-cAc43{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-cAc43œ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "CustomComponent-k8AUT",
-        "sourceHandle": "{œdataTypeœ:œDateValidatorœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
-        "target": "CustomComponent-cAc43",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-cAc43œ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "extract_ymd",
             "id": "CustomComponent-cAc43",
             "name": "date",
@@ -1062,6 +661,319 @@
         "sourceHandle": "{œdataTypeœ:œCBRMessageFormatterœ,œidœ:œCustomComponent-IdtOyœ,œnameœ:œoutputœ,œoutput_typesœ:[œMessageœ]}",
         "target": "ChatOutput-TKTFg",
         "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-TKTFgœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-XCoyO",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "base_currency",
+            "id": "CustomComponent-k8AUT",
+            "inputTypes": [
+              "str",
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-XCoyO{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-k8AUT{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-XCoyO",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-XCoyOœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CustomComponent-k8AUT",
+        "targetHandle": "{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-47fqI",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "target_currency",
+            "id": "CustomComponent-k8AUT",
+            "inputTypes": [
+              "str",
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-47fqI{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-k8AUT{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-47fqI",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-47fqIœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CustomComponent-k8AUT",
+        "targetHandle": "{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œstrœ,œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CheckCurrencyAndDate",
+            "id": "CustomComponent-k8AUT",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "ParserComponent-LO6Cp",
+            "inputTypes": [
+              "DataFrame",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-ParserComponent-LO6Cp{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-LO6Cpœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-k8AUT",
+        "sourceHandle": "{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "ParserComponent-LO6Cp",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-LO6Cpœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "LoadJSON",
+            "id": "LoadJSON-yTqey",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "currency_dict",
+            "id": "CustomComponent-k8AUT",
+            "inputTypes": [
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__LoadJSON-yTqey{œdataTypeœ:œLoadJSONœ,œidœ:œLoadJSON-yTqeyœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-k8AUT{œfieldNameœ:œcurrency_dictœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "LoadJSON-yTqey",
+        "sourceHandle": "{œdataTypeœ:œLoadJSONœ,œidœ:œLoadJSON-yTqeyœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-k8AUT",
+        "targetHandle": "{œfieldNameœ:œcurrency_dictœ,œidœ:œCustomComponent-k8AUTœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CheckCurrencyAndDate",
+            "id": "CustomComponent-k8AUT",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "CustomComponent-cAc43",
+            "inputTypes": [
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-cAc43{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-cAc43œ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-k8AUT",
+        "sourceHandle": "{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-cAc43",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-cAc43œ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CheckCurrencyAndDate",
+            "id": "CustomComponent-k8AUT",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "CustomComponent-ttERH",
+            "inputTypes": [
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-ttERH{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-ttERHœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-k8AUT",
+        "sourceHandle": "{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-ttERH",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œCustomComponent-ttERHœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "extract_codes",
+            "id": "CustomComponent-ttERH",
+            "name": "date",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "ParserComponent-Cwab2",
+            "inputTypes": [
+              "DataFrame",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-ttERH{œdataTypeœ:œextract_codesœ,œidœ:œCustomComponent-ttERHœ,œnameœ:œdateœ,œoutput_typesœ:[œDataœ]}-ParserComponent-Cwab2{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-Cwab2œ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-ttERH",
+        "sourceHandle": "{œdataTypeœ:œextract_codesœ,œidœ:œCustomComponent-ttERHœ,œnameœ:œdateœ,œoutput_typesœ:[œDataœ]}",
+        "target": "ParserComponent-Cwab2",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-Cwab2œ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "extract_codes",
+            "id": "CustomComponent-ttERH",
+            "name": "date",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "ParserComponent-cWwBx",
+            "inputTypes": [
+              "DataFrame",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-ttERH{œdataTypeœ:œextract_codesœ,œidœ:œCustomComponent-ttERHœ,œnameœ:œdateœ,œoutput_typesœ:[œDataœ]}-ParserComponent-cWwBx{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-cWwBxœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-ttERH",
+        "sourceHandle": "{œdataTypeœ:œextract_codesœ,œidœ:œCustomComponent-ttERHœ,œnameœ:œdateœ,œoutput_typesœ:[œDataœ]}",
+        "target": "ParserComponent-cWwBx",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-cWwBxœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-cWwBx",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "base_currency",
+            "id": "CustomComponent-UuzJ9",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-cWwBx{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-cWwBxœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-UuzJ9{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-cWwBx",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-cWwBxœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CustomComponent-UuzJ9",
+        "targetHandle": "{œfieldNameœ:œbase_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-Cwab2",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "target_currency",
+            "id": "CustomComponent-UuzJ9",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-Cwab2{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-Cwab2œ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-UuzJ9{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-Cwab2",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-Cwab2œ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CustomComponent-UuzJ9",
+        "targetHandle": "{œfieldNameœ:œtarget_currencyœ,œidœ:œCustomComponent-UuzJ9œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CheckCurrencyAndDate",
+            "id": "CustomComponent-k8AUT",
+            "name": "output",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "result_data",
+            "id": "CustomComponent-4L37T",
+            "inputTypes": [
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__CustomComponent-k8AUT{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}-CustomComponent-4L37T{œfieldNameœ:œresult_dataœ,œidœ:œCustomComponent-4L37Tœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "CustomComponent-k8AUT",
+        "sourceHandle": "{œdataTypeœ:œCheckCurrencyAndDateœ,œidœ:œCustomComponent-k8AUTœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataœ]}",
+        "target": "CustomComponent-4L37T",
+        "targetHandle": "{œfieldNameœ:œresult_dataœ,œidœ:œCustomComponent-4L37Tœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
@@ -1138,7 +1050,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "2"
+                "value": "1"
               },
               "base_currency": {
                 "_input_type": "MessageTextInput",
@@ -1202,7 +1114,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "01"
+                "value": "03"
               },
               "month": {
                 "_input_type": "MessageTextInput",
@@ -1225,7 +1137,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "9"
+                "value": "10"
               },
               "target_currency": {
                 "_input_type": "MessageTextInput",
@@ -1308,7 +1220,6 @@
             "edited": true,
             "field_order": [
               "if_else_input",
-              "if_else_input_2",
               "day",
               "month",
               "year",
@@ -1322,7 +1233,6 @@
             "frozen": false,
             "icon": "Currencies",
             "legacy": false,
-            "lf_version": "1.6.3",
             "metadata": {},
             "minimized": false,
             "output_types": [],
@@ -1410,7 +1320,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict, Optional\r\nimport requests\r\nfrom datetime import date, timedelta\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    StrInput,\r\n    IntInput,\r\n    FloatInput,\r\n    BoolInput,\r\n    MessageTextInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\n\r\n\r\ndef _to_float(x: Optional[str | float | int]) -> Optional[float]:\r\n    if x is None:\r\n        return None\r\n    try:\r\n        return float(str(x).replace(\",\", \".\").strip())\r\n    except Exception:\r\n        return None\r\n\r\n\r\nclass CBRHistoricalConverter(Component):\r\n    display_name = \"CBR GetCursOnDate Converter\"\r\n    description = \"Курс ЦБ РФ на дату и конвертация base→target через кросс‑курс.\"\r\n    documentation = \"https://www.cbr.ru/development/dws/\"\r\n    icon = \"Currencies\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        StrInput(name=\"if_else_input_2\", display_name=\"If-else input_2\", input_types=[\"str\", \"Message\"]),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\", value=\"10\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\", value=\"1\"),\r\n        MessageTextInput(name=\"year\", display_name=\"Year\", value=\"2025\"),\r\n        MessageTextInput(name=\"base_currency\", display_name=\"Base ISO (e.g., EUR)\", value=\"EUR\"),\r\n        MessageTextInput(name=\"target_currency\", display_name=\"Target ISO (e.g., USD)\", value=\"RUB\"),\r\n        MessageTextInput(name=\"amount\", display_name=\"Amount\", value=\"1.0\"),\r\n        BoolInput(name=\"fallback_previous\", display_name=\"Fallback previous day\", value=True),\r\n        IntInput(name=\"fallback_days\", display_name=\"Max fallback days\", value=7),\r\n        FloatInput(name=\"timeout_sec\", display_name=\"Timeout (s)\", value=30.0),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Result\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    def _log(self, msg: str, name: str = \"CBR-JSON\"):\r\n        try:\r\n            self.log(msg, name)\r\n        except Exception:\r\n            pass\r\n\r\n    def _json_get_curs_on_date(self, when: date, timeout: float) -> Dict[str, Dict[str, Any]]:\r\n        y, m, d = when.year, when.month, when.day\r\n        url = f\"https://www.cbr-xml-daily.ru/archive/{y:04d}/{m:02d}/{d:02d}/daily_json.js\"\r\n        try:\r\n            self._log(f\"GET {url} timeout={timeout}s\")\r\n            r = requests.get(url, timeout=timeout)\r\n            self._log(f\"HTTP {r.status_code} CT={r.headers.get('Content-Type')}\")\r\n            if r.status_code != 200:\r\n                return {}\r\n            js = r.json()\r\n        except Exception as e:\r\n            self._log(f\"JSON fetch/parse error: {e}\")\r\n            return {}\r\n        val = js.get(\"Valute\") or {}\r\n        rows: Dict[str, Dict[str, Any]] = {}\r\n        for code, rec in val.items():\r\n            nominal = _to_float(rec.get(\"Nominal\")) or 1.0\r\n            value = _to_float(rec.get(\"Value\"))\r\n            unit = (value / nominal) if (value is not None and nominal) else None\r\n            if code and unit:\r\n                rows[str(code).upper()] = {\r\n                    \"name\": rec.get(\"Name\") or \"\",\r\n                    \"nominal\": nominal,\r\n                    \"rate_per_nominal\": value,\r\n                    \"rate_per_unit\": unit,\r\n                }\r\n        self._log(f\"Collected {len(rows)} codes; sample={list(rows.keys())[:8]}\")\r\n        return rows\r\n\r\n    def _find_unit_rate_rub(self, mapping: Dict[str, Dict[str, Any]], iso_code: str) -> Optional[float]:\r\n        iso = iso_code.strip().upper()\r\n        if iso == \"RUB\":\r\n            return 1.0\r\n        row = mapping.get(iso)\r\n        return None if row is None else row.get(\"rate_per_unit\")\r\n\r\n    def build_output(self) -> Data:\r\n        # read inputs\r\n        y, m, d = int(self.year), int(self.month), int(self.day)\r\n        base = (self.base_currency or \"EUR\").strip().upper()\r\n        target = (self.target_currency or \"RUB\").strip().upper()\r\n        amount = float(self.amount or 1.0)\r\n        timeout = float(self.timeout_sec or 30.0)\r\n        max_back = max(0, int(self.fallback_days or 0))\r\n        use_back = bool(self.fallback_previous)\r\n\r\n        when = date(y, m, d)\r\n        matched = when\r\n\r\n        mapping = self._json_get_curs_on_date(when, timeout)\r\n\r\n        # fallback to previous available day if not found\r\n        steps = 0\r\n        while (base != \"RUB\" and base not in mapping) or (target != \"RUB\" and target not in mapping):\r\n            if not use_back or steps >= max_back:\r\n                break\r\n            matched = matched - timedelta(days=1)\r\n            self._log(f\"Fallback step {steps+1} → {matched.isoformat()}\")\r\n            mapping = self._json_get_curs_on_date(matched, timeout)\r\n            steps += 1\r\n\r\n        base_rub = self._find_unit_rate_rub(mapping, base)\r\n        target_rub = self._find_unit_rate_rub(mapping, target)\r\n\r\n        if base_rub is None or target_rub is None:\r\n            return Data(\r\n                data={\r\n                    \"error\": \"rate_not_found\",\r\n                    \"date_requested\": when.isoformat(),\r\n                    \"matched_date\": matched.isoformat(),\r\n                    \"base\": base,\r\n                    \"target\": target,\r\n                    \"have_base\": base in mapping or base == \"RUB\",\r\n                    \"have_target\": target in mapping or target == \"RUB\",\r\n                    \"codes\": list(mapping.keys()),\r\n                },\r\n                text=f\"Cannot find rates for {base}->{target} on {when} (matched {matched})\",\r\n            )\r\n\r\n        rate = base_rub / target_rub  # target per 1 base\r\n        converted = amount * rate\r\n\r\n        return Data(\r\n            data={\r\n                \"date_requested\": when.isoformat(),\r\n                \"matched_date\": matched.isoformat(),\r\n                \"base\": base,\r\n                \"target\": target,\r\n                \"amount\": amount,\r\n                \"rate\": rate,\r\n                \"converted_amount\": converted,\r\n                \"source\": \"cbr-xml-daily:daily_json.js\",\r\n            },\r\n            text=f\"{amount:.2f} {base} = {converted:.4f} {target} (rate {rate:.6f} on {matched})\",\r\n        )\r\n"
+                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict, Optional\r\nimport requests\r\nfrom datetime import date, timedelta, datetime\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    StrInput,\r\n    IntInput,\r\n    FloatInput,\r\n    BoolInput,\r\n    MessageTextInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\nimport xml.etree.ElementTree as ET\r\n\r\n\r\ndef _to_float(x: Optional[str | float | int]) -> Optional[float]:\r\n    if x is None:\r\n        return None\r\n    try:\r\n        return float(str(x).replace(\",\", \".\").strip())\r\n    except Exception:\r\n        return None\r\n\r\n\r\nclass CBRHistoricalConverter(Component):\r\n    display_name = \"CBR GetCursOnDate Converter\"\r\n    description = \"Курс ЦБ РФ на дату и конвертация base→target через кросс‑курс.\"\r\n    documentation = \"https://www.cbr.ru/development/dws/\"\r\n    icon = \"Currencies\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\", value=\"10\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\", value=\"1\"),\r\n        MessageTextInput(name=\"year\", display_name=\"Year\", value=\"2025\"),\r\n        MessageTextInput(name=\"base_currency\", display_name=\"Base ISO (e.g., EUR)\", value=\"EUR\"),\r\n        MessageTextInput(name=\"target_currency\", display_name=\"Target ISO (e.g., USD)\", value=\"RUB\"),\r\n        MessageTextInput(name=\"amount\", display_name=\"Amount\", value=\"1.0\"),\r\n        BoolInput(name=\"fallback_previous\", display_name=\"Fallback previous day\", value=True),\r\n        IntInput(name=\"fallback_days\", display_name=\"Max fallback days\", value=7),\r\n        FloatInput(name=\"timeout_sec\", display_name=\"Timeout (s)\", value=30.0),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Result\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    def _log(self, msg: str, name: str = \"CBR-LOG\"):\r\n        try:\r\n            self.log(msg, name)\r\n        except Exception:\r\n            pass\r\n\r\n    # JSON архив cbr-xml-daily: YYYY/MM/DD/daily_json.js\r\n    def _json_get_curs_on_date(self, when: date, timeout: float) -> Dict[str, Dict[str, Any]]:\r\n        y, m, d = when.year, when.month, when.day\r\n        url = f\"https://www.cbr-xml-daily.ru/archive/{y:04d}/{m:02d}/{d:02d}/daily_json.js\"\r\n        try:\r\n            self._log(f\"GET {url} timeout={timeout}s\")\r\n            r = requests.get(url, timeout=timeout)\r\n            self._log(f\"HTTP {r.status_code} CT={r.headers.get('Content-Type')}\")\r\n            if r.status_code != 200:\r\n                return {}\r\n            js = r.json()\r\n        except Exception as e:\r\n            self._log(f\"JSON fetch/parse error: {e}\")\r\n            return {}\r\n        val = js.get(\"Valute\") or {}\r\n        rows: Dict[str, Dict[str, Any]] = {}\r\n        for code, rec in val.items():\r\n            nominal = _to_float(rec.get(\"Nominal\")) or 1.0\r\n            value = _to_float(rec.get(\"Value\"))\r\n            unit = (value / nominal) if (value is not None and nominal) else None\r\n            if code and unit:\r\n                rows[str(code).upper()] = {\r\n                    \"name\": rec.get(\"Name\") or \"\",\r\n                    \"nominal\": nominal,\r\n                    \"rate_per_nominal\": value,\r\n                    \"rate_per_unit\": unit,\r\n                }\r\n        self._log(f\"Collected {len(rows)} codes (JSON); sample={list(rows.keys())[:8]}\")\r\n        return rows\r\n\r\n    # Официальный XML дневной курс: XML_daily.asp?date_req=DD/MM/YYYY\r\n    def _xml_get_curs_on_date(self, when: date, timeout: float) -> Dict[str, Dict[str, Any]]:\r\n        url = \"https://www.cbr.ru/scripts/XML_daily.asp\"\r\n        params = {\"date_req\": when.strftime(\"%d/%m/%Y\")}\r\n        try:\r\n            self._log(f\"GET {url} params={params} timeout={timeout}s\")\r\n            r = requests.get(url, params=params, timeout=timeout)\r\n            self._log(f\"HTTP {r.status_code} CT={r.headers.get('Content-Type')}\")\r\n            if r.status_code != 200:\r\n                return {}\r\n            root = ET.fromstring(r.content)\r\n        except Exception as e:\r\n            self._log(f\"XML fetch/parse error: {e}\")\r\n            return {}\r\n\r\n        rows: Dict[str, Dict[str, Any]] = {}\r\n        for v in root.findall(\"Valute\"):\r\n            code_el = v.find(\"CharCode\")\r\n            name_el = v.find(\"Name\")\r\n            nominal_el = v.find(\"Nominal\")\r\n            value_el = v.find(\"Value\")\r\n            if code_el is None or value_el is None or nominal_el is None:\r\n                continue\r\n            code = (code_el.text or \"\").strip().upper()\r\n            nominal = _to_float(nominal_el.text) or 1.0\r\n            value = _to_float(value_el.text)\r\n            unit = (value / nominal) if (value is not None and nominal) else None\r\n            if code and unit:\r\n                rows[code] = {\r\n                    \"name\": (name_el.text or \"\") if name_el is not None else \"\",\r\n                    \"nominal\": nominal,\r\n                    \"rate_per_nominal\": value,\r\n                    \"rate_per_unit\": unit,\r\n                }\r\n        self._log(f\"Collected {len(rows)} codes (XML); sample={list(rows.keys())[:8]}\")\r\n        return rows\r\n\r\n    def _find_unit_rate_rub(self, mapping: Dict[str, Dict[str, Any]], iso_code: str) -> Optional[float]:\r\n        iso = iso_code.strip().upper()\r\n        if iso == \"RUB\":\r\n            return 1.0\r\n        row = mapping.get(iso)\r\n        return None if row is None else row.get(\"rate_per_unit\")\r\n\r\n    def _should_use_xml(self, dt: date) -> bool:\r\n        today = date.today()\r\n        month_ago = today - timedelta(days=31)\r\n        return dt > month_ago\r\n\r\n    def _get_mapping(self, dt: date, timeout: float) -> tuple[Dict[str, Dict[str, Any]], str]:\r\n        return self._xml_get_curs_on_date(dt, timeout), \"cbr:XML_daily.asp\"\r\n        # раньше должен был выбирать, сейчас всегда использует xml\r\n        # if self._should_use_xml(dt):\r\n        #     return self._xml_get_curs_on_date(dt, timeout), \"cbr:XML_daily.asp\"\r\n        # else:\r\n        #     return self._json_get_curs_on_date(dt, timeout), \"cbr-xml-daily:daily_json.js\"\r\n\r\n    def build_output(self) -> Data:\r\n        # read inputs\r\n        y, m, d = int(self.year), int(self.month), int(self.day)\r\n        base = (self.base_currency or \"EUR\").strip().upper()\r\n        target = (self.target_currency or \"RUB\").strip().upper()\r\n        amount = float(self.amount or 1.0)\r\n        timeout = float(self.timeout_sec or 30.0)\r\n        max_back = max(0, int(self.fallback_days or 0))\r\n        use_back = bool(self.fallback_previous)\r\n\r\n        when = date(y, m, d)\r\n        matched = when\r\n\r\n        mapping, source = self._get_mapping(when, timeout)\r\n\r\n        # fallback to previous available day if not found\r\n        steps = 0\r\n        while (base != \"RUB\" and base not in mapping) or (target != \"RUB\" and target not in mapping):\r\n            if not use_back or steps >= max_back:\r\n                break\r\n            matched = matched - timedelta(days=1)\r\n            self._log(f\"Fallback step {steps+1} → {matched.isoformat()}\")\r\n            mapping, source = self._get_mapping(matched, timeout)\r\n            steps += 1\r\n\r\n        base_rub = self._find_unit_rate_rub(mapping, base)\r\n        target_rub = self._find_unit_rate_rub(mapping, target)\r\n\r\n        if base_rub is None or target_rub is None:\r\n            return Data(\r\n                data={\r\n                    \"error\": \"rate_not_found\",\r\n                    \"date_requested\": when.isoformat(),\r\n                    \"matched_date\": matched.isoformat(),\r\n                    \"base\": base,\r\n                    \"target\": target,\r\n                    \"have_base\": base in mapping or base == \"RUB\",\r\n                    \"have_target\": target in mapping or target == \"RUB\",\r\n                    \"codes\": list(mapping.keys()),\r\n                },\r\n                text=f\"Cannot find rates for {base}->{target} on {when} (matched {matched})\",\r\n            )\r\n\r\n        rate = base_rub / target_rub  # target per 1 base\r\n        converted = amount * rate\r\n\r\n        return Data(\r\n            data={\r\n                \"date_requested\": when.isoformat(),\r\n                \"matched_date\": matched.isoformat(),\r\n                \"base\": base,\r\n                \"target\": target,\r\n                \"amount\": amount,\r\n                \"rate\": rate,\r\n                \"converted_amount\": converted,\r\n                \"source\": source,\r\n            },\r\n            text=f\"{amount:.2f} {base} = {converted:.4f} {target} (rate {rate:.6f} on {matched})\",\r\n        )\r\n"
               },
               "day": {
                 "_input_type": "MessageTextInput",
@@ -1452,7 +1362,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "int",
-                "value": 14
+                "value": 30
               },
               "fallback_previous": {
                 "_input_type": "BoolInput",
@@ -1486,29 +1396,6 @@
                 "list_add_label": "Add More",
                 "load_from_db": false,
                 "name": "if_else_input",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "if_else_input_2": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "If-else input_2",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "if_else_input_2",
                 "placeholder": "",
                 "required": false,
                 "show": true,
@@ -1614,7 +1501,7 @@
         "dragging": false,
         "id": "CustomComponent-UuzJ9",
         "measured": {
-          "height": 999,
+          "height": 917,
           "width": 320
         },
         "position": {
@@ -1810,19 +1697,23 @@
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Проверяет YYYY-MM-DD: корректность и что дата не позже текущей (Europe/Moscow).",
-            "display_name": "Date Validator (Moscow TZ)",
+            "description": "Единая валидация: ISO валют (base/target) и даты (YYYY-MM-DD, TZ, allow_today).",
+            "display_name": "Check Currency & Date",
             "documentation": "",
             "edited": true,
             "field_order": [
+              "currency_dict",
+              "base_currency",
+              "target_currency",
               "year",
               "month",
               "day",
               "timezone",
-              "allow_today"
+              "allow_today",
+              "include_rub"
             ],
             "frozen": false,
-            "icon": "Calendar",
+            "icon": "Check",
             "legacy": false,
             "lf_version": "1.6.3",
             "metadata": {},
@@ -1832,7 +1723,7 @@
               {
                 "allows_loop": false,
                 "cache": true,
-                "display_name": "Valid?",
+                "display_name": "Result (Data)",
                 "group_outputs": false,
                 "hidden": null,
                 "method": "build_output",
@@ -1868,6 +1759,29 @@
                 "type": "bool",
                 "value": true
               },
+              "base_currency": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Base Currency",
+                "dynamic": false,
+                "info": "ISO 4217, напр., USD",
+                "input_types": [
+                  "str",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "base_currency",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
               "code": {
                 "advanced": true,
                 "dynamic": true,
@@ -1884,7 +1798,29 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from langflow.custom import Component\r\nfrom langflow.io import Output\r\nfrom langflow.inputs.inputs import IntInput, StrInput, BoolInput\r\nfrom langflow.schema import Data\r\nfrom datetime import date, datetime\r\nfrom zoneinfo import ZoneInfo\r\n\r\nclass DateValidator(Component):\r\n    display_name = \"Date Validator (Moscow TZ)\"\r\n    description = \"Проверяет YYYY-MM-DD: корректность и что дата не позже текущей (Europe/Moscow).\"\r\n    icon = \"Calendar\"\r\n\r\n    inputs = [\r\n        MessageTextInput(name=\"year\", display_name=\"Year\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\"),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\"),\r\n        StrInput(name=\"timezone\", display_name=\"Timezone\", value=\"Europe/Moscow\", advanced=True),\r\n        BoolInput(name=\"allow_today\", display_name=\"Allow today\", value=True, advanced=True),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Valid?\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    def build_output(self) -> Data:\r\n        tz = self.timezone or \"Europe/Moscow\"\r\n        try:\r\n            y = int(self.year); m = int(self.month); d = int(self.day)\r\n        except ValueError:\r\n            self.log(\"One of the value is not integer\")\r\n            return Data(\r\n            data={\"ok\": False, \"reason\": \"parse_error\", \"input\": {}, \"timezone\": tz},\r\n            text=str(False).lower()\r\n        )\r\n        \r\n        allow_today = bool(self.allow_today)\r\n\r\n        ok = True\r\n        reason = None\r\n\r\n        if not (1 <= y <= 9999 and 1 <= m <= 12 and 1 <= d <= 31):\r\n            ok, reason = False, \"out_of_range\"\r\n        else:\r\n            try:\r\n                dt = date(y, m, d)\r\n            except ValueError:\r\n                ok, reason = False, \"invalid_calendar_date\"\r\n            else:\r\n                today = datetime.now(ZoneInfo(tz)).date()\r\n                if (dt > today) or (dt == today and not allow_today):\r\n                    ok, reason = False, \"future_date\"\r\n\r\n        return Data(\r\n            data={\"ok\": ok, \"reason\": reason, \"input\": {\"year\": y, \"month\": m, \"day\": d}, \"timezone\": tz},\r\n            text=str(ok).lower()\r\n        )\r\n"
+                "value": "from __future__ import annotations\r\nfrom typing import Any, Dict, List, Tuple\r\nfrom datetime import date, datetime\r\nfrom zoneinfo import ZoneInfo\r\n\r\nfrom langflow.custom import Component\r\nfrom langflow.io import (\r\n    DataInput,\r\n    StrInput,\r\n    MessageTextInput,\r\n    BoolInput,\r\n    Output,\r\n)\r\nfrom langflow.schema import Data\r\n\r\n\r\nclass CheckCurrencyAndDate(Component):\r\n    display_name = \"Check Currency & Date\"\r\n    description = \"Единая валидация: ISO валют (base/target) и даты (YYYY-MM-DD, TZ, allow_today).\"\r\n    icon = \"Check\"\r\n    name = \"CheckCurrencyAndDate\"\r\n\r\n    inputs = [\r\n        DataInput(\r\n            name=\"currency_dict\",\r\n            display_name=\"Allowed Codes (Data)\",\r\n            info=\"JSON Data с допустимыми валютами (ключи — ISO 4217)\",\r\n            input_types=[\"Data\"],\r\n        ),\r\n        StrInput(\r\n            name=\"base_currency\",\r\n            display_name=\"Base Currency\",\r\n            info=\"ISO 4217, напр., USD\",\r\n            value=\"USD\",\r\n            input_types=[\"str\", \"Message\"],\r\n        ),\r\n        StrInput(\r\n            name=\"target_currency\",\r\n            display_name=\"Target Currency\",\r\n            info=\"ISO 4217, напр., RUB\",\r\n            value=\"RUB\",\r\n            input_types=[\"str\", \"Message\"],\r\n        ),\r\n        MessageTextInput(name=\"year\", display_name=\"Year\"),\r\n        MessageTextInput(name=\"month\", display_name=\"Month\"),\r\n        MessageTextInput(name=\"day\", display_name=\"Day\"),\r\n        StrInput(name=\"timezone\", display_name=\"Timezone\", value=\"Europe/Moscow\", advanced=True),\r\n        BoolInput(name=\"allow_today\", display_name=\"Allow today\", value=True, advanced=True),\r\n        BoolInput(name=\"include_rub\", display_name=\"Always allow RUB\", value=True, advanced=True),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Result (Data)\", name=\"output\", method=\"build_output\", type=\"Data\"),\r\n    ]\r\n\r\n    # --- helpers ---\r\n    def _get_text(self, v: Any) -> str:\r\n        try:\r\n            if hasattr(v, \"text\"):\r\n                return str(getattr(v, \"text\") or \"\")\r\n        except Exception:\r\n            pass\r\n        if isinstance(v, dict) and \"TEXT\" in v:\r\n            return str(v.get(\"TEXT\") or \"\")\r\n        return str(v or \"\")\r\n\r\n    def _normalize(self, s: Any) -> str:\r\n        return self._get_text(s).strip().upper()\r\n\r\n    def _allowed_codes(self) -> List[str]:\r\n        payload = self.currency_dict.data if hasattr(self.currency_dict, \"data\") else self.currency_dict\r\n        keys = []\r\n        if isinstance(payload, dict):\r\n            for k in payload.keys():\r\n                if isinstance(k, str):\r\n                    keys.append(k.strip().upper())\r\n        if bool(getattr(self, \"include_rub\", True)) and \"RUB\" not in keys:\r\n            keys.append(\"RUB\")\r\n        return keys\r\n\r\n    def _validate_date(self) -> Tuple[bool, str | None, Dict[str, int], str]:\r\n        tz = self.timezone or \"Europe/Moscow\"\r\n        try:\r\n            y = int(self.year); m = int(self.month); d = int(self.day)\r\n        except Exception:\r\n            return False, \"parse_error\", {}, tz\r\n\r\n        if not (1 <= y <= 9999 and 1 <= m <= 12 and 1 <= d <= 31):\r\n            return False, \"out_of_range\", {\"year\": y, \"month\": m, \"day\": d}, tz\r\n\r\n        try:\r\n            dt = date(y, m, d)\r\n        except ValueError:\r\n            return False, \"invalid_calendar_date\", {\"year\": y, \"month\": m, \"day\": d}, tz\r\n\r\n        allow_today = bool(getattr(self, \"allow_today\", True))\r\n        today = datetime.now(ZoneInfo(tz)).date()\r\n        if (dt > today) or (dt == today and not allow_today):\r\n            return False, \"future_date\", {\"year\": y, \"month\": m, \"day\": d}, tz\r\n\r\n        return True, None, {\"year\": y, \"month\": m, \"day\": d}, tz\r\n\r\n    # --- main ---\r\n    def build_output(self) -> Data:\r\n        base = self._normalize(self.base_currency)\r\n        target = self._normalize(self.target_currency)\r\n        allowed = set(self._allowed_codes())\r\n\r\n        errors: List[str] = []\r\n        warnings: List[str] = []\r\n\r\n        if not base:\r\n            errors.append(\"Требуется base_currency\")\r\n        if not target:\r\n            errors.append(\"Требуется target_currency\")\r\n\r\n        if base and base not in allowed:\r\n            errors.append(f\"Base валюта не поддерживается: {base}\")\r\n        if target and target not in allowed:\r\n            errors.append(f\"Target валюта не поддерживается: {target}\")\r\n\r\n        ok_date, reason, input_dt, tz = self._validate_date()\r\n        if not ok_date:\r\n            errors.append(f\"Некорректная дата ({reason})\")\r\n\r\n        ok = len(errors) == 0\r\n\r\n        data: Dict[str, Any] = {\r\n            \"ok\": ok,\r\n            \"base\": base,\r\n            \"target\": target,\r\n            \"input\": {\r\n                \"year\": input_dt.get(\"year\") if input_dt else None,\r\n                \"month\": input_dt.get(\"month\") if input_dt else None,\r\n                \"day\": input_dt.get(\"day\") if input_dt else None,\r\n            },\r\n            \"timezone\": tz,\r\n            \"errors\": errors,\r\n            \"warnings\": warnings,\r\n            \"normalized\": {\"base\": base, \"target\": target},\r\n        }\r\n\r\n        data_text = \"true\" if ok else \"false\"\r\n        return Data(data=data, text=data_text)\r\n"
+              },
+              "currency_dict": {
+                "_input_type": "DataInput",
+                "advanced": false,
+                "display_name": "Allowed Codes (Data)",
+                "dynamic": false,
+                "info": "JSON Data с допустимыми валютами (ключи — ISO 4217)",
+                "input_types": [
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "currency_dict",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
               },
               "day": {
                 "_input_type": "MessageTextInput",
@@ -1909,6 +1845,24 @@
                 "type": "str",
                 "value": ""
               },
+              "include_rub": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Always allow RUB",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "include_rub",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
               "month": {
                 "_input_type": "MessageTextInput",
                 "advanced": false,
@@ -1928,6 +1882,29 @@
                 "title_case": false,
                 "tool_mode": false,
                 "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "target_currency": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Target Currency",
+                "dynamic": false,
+                "info": "ISO 4217, напр., RUB",
+                "input_types": [
+                  "str",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "target_currency",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "str",
                 "value": ""
@@ -1978,12 +1955,12 @@
             "tool_mode": false
           },
           "showNode": true,
-          "type": "DateValidator"
+          "type": "CheckCurrencyAndDate"
         },
         "dragging": false,
         "id": "CustomComponent-k8AUT",
         "measured": {
-          "height": 383,
+          "height": 591,
           "width": 320
         },
         "position": {
@@ -3043,7 +3020,7 @@
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Форматирует словарь ошибки из Data в единый Message для ответа MCP-сервера.",
+            "description": "Форматирует ошибки/предупреждения из Data в единую строку для ответа MCP-сервера.",
             "display_name": "MCP Error Formatter (to Message)",
             "documentation": "",
             "edited": true,
@@ -3096,7 +3073,7 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "from langflow.custom import Component\r\nfrom langflow.io import Output\r\nfrom langflow.inputs.inputs import DataInput\r\nfrom langflow.schema import Data, Message\r\nfrom typing import Any, Dict\r\n\r\nclass MCPErrorFormatterMessage(Component):\r\n    display_name = \"MCP Error Formatter (to Message)\"\r\n    description = \"Форматирует словарь ошибки из Data в единый Message для ответа MCP-сервера.\"\r\n    icon = \"Alert\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        DataInput(\r\n            name=\"result_data\",\r\n            display_name=\"Validator Result (Data)\",\r\n            info=\"Ожидает Data-объект, содержащий результат валидации.\",\r\n        ),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Error Message\", name=\"output\", method=\"build_output\", type=\"Message\"),\r\n    ]\r\n\r\n    def _safe_int_str(self, x: Any, width: int) -> str:\r\n        try:\r\n            return f\"{int(x):0{width}d}\"\r\n        except (ValueError, TypeError):\r\n            return \"??\" * (width // 2)\r\n\r\n    def _hint(self, code: str) -> str:\r\n        code = (code or \"\").strip() or \"unknown_reason\"\r\n        hints = {\r\n            \"out_of_range\": \"Диапазон полей неверен: год 1-9999, месяц 1-12, день 1-31;\",\r\n            \"invalid_calendar_date\": \"Такой даты не существует (проверьте число месяца и високосность);\",\r\n            \"future_date\": \"Дата не может быть из будущего относительно текущей даты в заданной таймзоне.\",\r\n            \"parse_error\": \"Неверный тип/формат параметров; ожидаются целые числа для года, месяца и дня.\",\r\n            \"unknown_reason\": \"Проверьте корректность полей даты\",\r\n        }\r\n        return hints.get(code, hints[\"unknown_reason\"])\r\n\r\n    def build_output(self) -> Message:\r\n        res: Dict[str, Any] = {}\r\n        # Вход является объектом Data, его содержимое находится в атрибуте .data\r\n        if isinstance(self.result_data, Data):\r\n            res = self.result_data.data\r\n        elif isinstance(self.result_data, dict): # На случай, если на вход подан чистый dict\r\n            res = self.result_data\r\n\r\n        if not res:\r\n             return Message(text=\"status=error; code=input_missing; message=Данные от валидатора не получены.\")\r\n\r\n        reason = (res.get(\"reason\") or \"unknown_reason\").strip() or \"unknown_reason\"\r\n\r\n        inp = res.get(\"input\") or {}\r\n        y = self._safe_int_str(inp.get(\"year\"), 4)\r\n        m = self._safe_int_str(inp.get(\"month\"), 2)\r\n        d = self._safe_int_str(inp.get(\"day\"), 2)\r\n        tz = (res.get(\"timezone\") or \"Europe/Moscow\").strip()\r\n\r\n        date_req = res.get(\"date_requested\")\r\n        matched = res.get(\"matched_date\")\r\n\r\n        opt_parts = []\r\n        if date_req:\r\n            opt_parts.append(f\"; date_requested={date_req}\")\r\n        if matched:\r\n            opt_parts.append(f\"; matched_date={matched}\")\r\n        opt = \"\".join(opt_parts)\r\n\r\n        message_hint = self._hint(reason)\r\n        summary = f\"status=error; code={reason}; date={y}-{m}-{d}; tz={tz}; message={message_hint}{opt}\"\r\n\r\n        # Возвращаем объект Message\r\n        return Message(text=summary)\r\n\r\n"
+                "value": "import re\r\nfrom typing import Any, Dict, List\r\nfrom langflow.custom import Component\r\nfrom langflow.io import Output, StrInput, DataInput\r\nfrom langflow.schema import Data, Message\r\n\r\n\r\nclass MCPErrorFormatterMessage(Component):\r\n    display_name = \"MCP Error Formatter (to Message)\"\r\n    description = \"Форматирует ошибки/предупреждения из Data в единую строку для ответа MCP-сервера.\"\r\n    icon = \"Alert\"\r\n\r\n    inputs = [\r\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\r\n        DataInput(\r\n            name=\"result_data\",\r\n            display_name=\"Validator/Processor Result (Data)\",\r\n            info=\"Ожидает Data-объект с полями: ok, errors[], warnings[], input{year,month,day}, timezone, base, target и/или error, reason.\",\r\n            input_types=[\"Data\"],\r\n        ),\r\n    ]\r\n\r\n    outputs = [\r\n        Output(display_name=\"Error Message\", name=\"output\", method=\"build_output\", type=\"Message\"),\r\n    ]\r\n    \r\n    def _extract_code(self, s: str) -> str | None:\r\n        m = re.search(r\"\\(([^)]+)\\)\\s*$\", s or \"\")\r\n        return m.group(1).strip() if m else None\r\n\r\n    def _safe_int_str(self, x: Any, width: int) -> str:\r\n        try:\r\n            return f\"{int(x):0{width}d}\"\r\n        except (ValueError, TypeError):\r\n            return \"?\" * width\r\n\r\n    def _normalize_str(self, s: Any) -> str:\r\n        return str(s or \"\").replace(\"\\n\", \" \").strip()\r\n\r\n    def _as_list(self, v: Any) -> List[str]:\r\n        if isinstance(v, list):\r\n            return [self._normalize_str(x) for x in v if self._normalize_str(x)]\r\n        if v is None:\r\n            return []\r\n        txt = self._normalize_str(v)\r\n        return [txt] if txt else []\r\n\r\n    def _hint(self, code: str) -> str:\r\n        code = (code or \"\").strip() or \"unknown_reason\"\r\n        hints = {\r\n            \"out_of_range\": \"Диапазон полей неверен: год 1-9999, месяц 1-12, день 1-31.\",\r\n            \"invalid_calendar_date\": \"Такой даты не существует (проверьте число месяца и високосность).\",\r\n            \"future_date\": \"Дата не может быть из будущего относительно текущей даты в заданной таймзоне.\",\r\n            \"parse_error\": \"Неверный тип/формат параметров; ожидаются целые числа для года, месяца и дня.\",\r\n            \"rate_not_found\": \"Курс не найден на выбранную дату (проверьте ISO коды и доступность публикации).\",\r\n            \"validation_error\": \"Обнаружены ошибки валидации входных параметров.\",\r\n            \"unknown_reason\": \"Проверьте корректность входных данных и доступность источника.\",\r\n        }\r\n        return hints.get(code, hints[\"unknown_reason\"])\r\n\r\n    def build_output(self) -> Message:\r\n        res: Dict[str, Any] = {}\r\n        if isinstance(self.result_data, Data):\r\n            res = res or (self.result_data.data or {})\r\n        elif isinstance(self.result_data, dict):\r\n            res = self.result_data\r\n\r\n        if not res:\r\n            return Message(text=\"status=error; code=input_missing; message=Данные предыдущего этапа не получены.\")\r\n\r\n        ok = bool(res.get(\"ok\")) if res.get(\"ok\") is not None else None\r\n        base = self._normalize_str(res.get(\"base\"))\r\n        target = self._normalize_str(res.get(\"target\"))\r\n        tz = self._normalize_str(res.get(\"timezone\") or \"Europe/Moscow\")\r\n\r\n        inp = res.get(\"input\") or {}\r\n        y = self._safe_int_str(inp.get(\"year\"), 4) if isinstance(inp, dict) else \"????\"\r\n        m = self._safe_int_str(inp.get(\"month\"), 2) if isinstance(inp, dict) else \"??\"\r\n        d = self._safe_int_str(inp.get(\"day\"), 2) if isinstance(inp, dict) else \"??\"\r\n\r\n        date_requested = self._normalize_str(res.get(\"date_requested\")) if res.get(\"date_requested\") else \"\"\r\n        matched_date = self._normalize_str(res.get(\"matched_date\")) if res.get(\"matched_date\") else \"\"\r\n\r\n        errors = self._as_list(res.get(\"errors\"))\r\n        warnings = self._as_list(res.get(\"warnings\"))\r\n\r\n        reason = self._normalize_str(res.get(\"reason\"))\r\n        top_error = self._normalize_str(res.get(\"error\"))\r\n        if top_error and top_error not in errors:\r\n            errors.append(top_error)\r\n        error_codes_from_text = []\r\n        for e in errors:\r\n            c = self._extract_code(e)\r\n            if c:\r\n                error_codes_from_text.append(c)\r\n        if errors or (ok is False) or top_error or reason:\r\n            status = \"error\"\r\n            code = (\r\n                top_error or\r\n                reason or\r\n                (error_codes_from_text[0] if error_codes_from_text else \"validation_error\")\r\n            )\r\n        elif warnings:\r\n            status = \"warning\"\r\n            code = \"warnings_present\"\r\n        else:\r\n            status = \"ok\"\r\n            code = \"ok\"\r\n\r\n        hint_text = self._hint(code) if status != \"ok\" else \"OK\"\r\n\r\n        errs_str = \"[\" + \" | \".join(errors) + \"]\" if errors else \"[]\"\r\n        warns_str = \"[\" + \" | \".join(warnings) + \"]\" if warnings else \"[]\"\r\n\r\n        opt_parts = []\r\n        if base:\r\n            opt_parts.append(f\"base={base}\")\r\n        if target:\r\n            opt_parts.append(f\"target={target}\")\r\n        if date_requested:\r\n            opt_parts.append(f\"date_requested={date_requested}\")\r\n        if matched_date:\r\n            opt_parts.append(f\"matched_date={matched_date}\")\r\n\r\n        opt_suffix = (\"; \" + \"; \".join(opt_parts)) if opt_parts else \"\"\r\n\r\n        summary = (\r\n            f\"status={status}; code={code}; date={y}-{m}-{d}; tz={tz}; \"\r\n            f\"errors={errs_str}; warnings={warns_str}; message={hint_text}{opt_suffix}\"\r\n        )\r\n\r\n        return Message(text=summary)\r\n"
               },
               "if_else_input": {
                 "_input_type": "StrInput",
@@ -3124,9 +3101,9 @@
               "result_data": {
                 "_input_type": "DataInput",
                 "advanced": false,
-                "display_name": "Validator Result (Data)",
+                "display_name": "Validator/Processor Result (Data)",
                 "dynamic": false,
-                "info": "Ожидает Data-объект, содержащий результат валидации.",
+                "info": "Ожидает Data-объект с полями: ok, errors[], warnings[], input{year,month,day}, timezone, base, target и/или error, reason.",
                 "input_types": [
                   "Data"
                 ],
@@ -4151,645 +4128,6 @@
       },
       {
         "data": {
-          "id": "CheckCurrency-2vIKv",
-          "node": {
-            "base_classes": [
-              "Data"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Validates base and target currency codes against an allow",
-            "display_name": "Check Currency",
-            "documentation": "",
-            "edited": true,
-            "field_order": [
-              "currency_dict",
-              "base_currency",
-              "target_currency"
-            ],
-            "frozen": false,
-            "icon": "check",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Result (Data)",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "build_output",
-                "name": "output",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Data",
-                "tool_mode": true,
-                "types": [
-                  "Data"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "base_currency": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "Base Currency",
-                "dynamic": false,
-                "info": "ISO 4217 code, e.g., USD",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "base_currency",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "# from langflow.field_typing import Data\nfrom typing import Dict, Any, List\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.io import MessageTextInput, Output, StrInput, DataInput\nfrom langflow.schema import Data\n\n\nclass CheckCurrency(Component):\n    display_name = \"Check Currency\"\n    description = \"Validates base and target currency codes against an allow\"\n    icon = \"check\"\n    name = \"CheckCurrency\"\n\n    inputs = [\n        DataInput(\n            name=\"currency_dict\",\n            display_name=\"Allowed Codes (Data)\",\n            info=\"JSON Data from file with currency\",\n            input_types=[\"Data\"],\n        ),\n        StrInput(\n            name=\"base_currency\",\n            display_name=\"Base Currency\",\n            info=\"ISO 4217 code, e.g., USD\",\n            value=\"USD\",\n            input_types=[\"str\", \"Message\"], \n        ),\n        StrInput(\n            name=\"target_currency\",\n            display_name=\"Target Currency\",\n            info=\"ISO 4217 code, e.g., RUB\",\n            value=\"RUB\",\n            input_types=[\"str\", \"Message\"],\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Result (Data)\", name=\"output\", method=\"build_output\"),\n    ]\n    \n    def _normalize(self, s: Any) -> str:\n        return self._get_text(s).strip().upper()\n    \n    def _get_keys(self) -> List[str]:\n        \"\"\"\n        Возвращает список допустимых кодов в верхнем регистре.\n        \"\"\"\n        payload = self.currency_dict.data if hasattr(self.currency_dict, \"data\") else self.currency_dict\n        if not isinstance(payload, dict):\n            return []\n        \n        result = []\n        for key in payload.keys():\n            if isinstance(key, str):\n                normalized_key = self._normalize(key)\n                result.append(normalized_key)\n                \n        return result\n    \n    def _get_text(self, v: Any) -> str:\n        try:\n            if isinstance(v, Message):\n                return v.text or \"\"\n        except Exception:\n            pass\n        if isinstance(v, dict) and \"TEXT\" in v:\n            return str(v.get(\"TEXT\") or \"\")\n        return str(v or \"\")\n\n\n    def build_output(self) -> Data:\n        base = self._normalize(self.base_currency)\n        target = self._normalize(self.target_currency)\n        allowed_keys = self._get_keys()\n        final_message = \"\"\n        if not base:\n            final_message += \"Требуется base_currency\\n\"\n        if not target:\n           final_message += \"Требуется target_currency\\n\"\n        if base and base not in allowed_keys:\n             final_message += f\"Base Валюта не поддерживается: {base}\\n\"\n        if target and target not in allowed_keys:\n             final_message += f\"target валюта не поддерживается: {target}\\n\"\n        \n        if final_message != \"\":\n            structured = {\n            \"ok\": False,\n            \"text\": final_message\n            }\n            return Data(\n                data=structured\n            )\n\n        payload = {\n            \"ok\": True,\n        }\n        result = Data(data=payload)\n        self.status = result\n        return result\n\n"
-              },
-              "currency_dict": {
-                "_input_type": "DataInput",
-                "advanced": false,
-                "display_name": "Allowed Codes (Data)",
-                "dynamic": false,
-                "info": "JSON Data from file with currency",
-                "input_types": [
-                  "Data"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "currency_dict",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "target_currency": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "Target Currency",
-                "dynamic": false,
-                "info": "ISO 4217 code, e.g., RUB",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "target_currency",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "CheckCurrency"
-        },
-        "id": "CheckCurrency-2vIKv",
-        "measured": {
-          "height": 345,
-          "width": 320
-        },
-        "position": {
-          "x": 1439.95227574218,
-          "y": 503.9616466122088
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "ParserComponent-tvjJG",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "category": "processing",
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Extracts text using a template.",
-            "display_name": "Parser",
-            "documentation": "https://docs.langflow.org/components-processing#parser",
-            "edited": false,
-            "field_order": [
-              "input_data",
-              "mode",
-              "pattern",
-              "sep"
-            ],
-            "frozen": false,
-            "icon": "braces",
-            "key": "ParserComponent",
-            "last_updated": "2025-10-06T16:13:01.394Z",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Parsed Text",
-                "group_outputs": false,
-                "method": "parse_combined_text",
-                "name": "parsed_text",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "score": 0.045603691595129614,
-            "template": {
-              "_type": "Component",
-              "clean_data": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Clean Data",
-                "dynamic": false,
-                "info": "Enable to clean the data by removing empty rows and lines in each cell of the DataFrame/ Data object.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "clean_data",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
-              },
-              "input_data": {
-                "_input_type": "HandleInput",
-                "advanced": false,
-                "display_name": "Data or DataFrame",
-                "dynamic": false,
-                "info": "Accepts either a DataFrame or a Data object.",
-                "input_types": [
-                  "DataFrame",
-                  "Data"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "input_data",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "mode": {
-                "_input_type": "TabInput",
-                "advanced": false,
-                "display_name": "Mode",
-                "dynamic": false,
-                "info": "Convert into raw string instead of using a template.",
-                "name": "mode",
-                "options": [
-                  "Parser",
-                  "Stringify"
-                ],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "tab",
-                "value": "Parser"
-              },
-              "pattern": {
-                "_input_type": "MultilineInput",
-                "advanced": false,
-                "copy_field": false,
-                "display_name": "Template",
-                "dynamic": true,
-                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "multiline": true,
-                "name": "pattern",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "{ok}"
-              },
-              "sep": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Separator",
-                "dynamic": false,
-                "info": "String used to separate rows/items.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "sep",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "\n"
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "ParserComponent"
-        },
-        "dragging": false,
-        "id": "ParserComponent-tvjJG",
-        "measured": {
-          "height": 327,
-          "width": 320
-        },
-        "position": {
-          "x": 1821.6854390005337,
-          "y": 390.6418368696298
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "ConditionalRouter-X8rbm",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "category": "logic",
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Routes an input message to a corresponding output based on text comparison.",
-            "display_name": "If-Else",
-            "documentation": "https://docs.langflow.org/components-logic#conditional-router-if-else-component",
-            "edited": false,
-            "field_order": [
-              "input_text",
-              "operator",
-              "match_text",
-              "case_sensitive",
-              "true_case_message",
-              "false_case_message",
-              "max_iterations",
-              "default_route"
-            ],
-            "frozen": false,
-            "icon": "split",
-            "key": "ConditionalRouter",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "True",
-                "group_outputs": true,
-                "method": "true_response",
-                "name": "true_result",
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              },
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "False",
-                "group_outputs": true,
-                "method": "false_response",
-                "name": "false_result",
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "score": 0.001,
-            "template": {
-              "_type": "Component",
-              "case_sensitive": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Case Sensitive",
-                "dynamic": false,
-                "info": "If true, the comparison will be case sensitive.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "case_sensitive",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              },
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "import re\n\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.io import BoolInput, DropdownInput, IntInput, MessageInput, MessageTextInput, Output\nfrom langflow.schema.message import Message\n\n\nclass ConditionalRouterComponent(Component):\n    display_name = \"If-Else\"\n    description = \"Routes an input message to a corresponding output based on text comparison.\"\n    documentation: str = \"https://docs.langflow.org/components-logic#conditional-router-if-else-component\"\n    icon = \"split\"\n    name = \"ConditionalRouter\"\n\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.__iteration_updated = False\n\n    inputs = [\n        MessageTextInput(\n            name=\"input_text\",\n            display_name=\"Text Input\",\n            info=\"The primary text input for the operation.\",\n            required=True,\n        ),\n        DropdownInput(\n            name=\"operator\",\n            display_name=\"Operator\",\n            options=[\n                \"equals\",\n                \"not equals\",\n                \"contains\",\n                \"starts with\",\n                \"ends with\",\n                \"regex\",\n                \"less than\",\n                \"less than or equal\",\n                \"greater than\",\n                \"greater than or equal\",\n            ],\n            info=\"The operator to apply for comparing the texts.\",\n            value=\"equals\",\n            real_time_refresh=True,\n        ),\n        MessageTextInput(\n            name=\"match_text\",\n            display_name=\"Match Text\",\n            info=\"The text input to compare against.\",\n            required=True,\n        ),\n        BoolInput(\n            name=\"case_sensitive\",\n            display_name=\"Case Sensitive\",\n            info=\"If true, the comparison will be case sensitive.\",\n            value=True,\n            advanced=True,\n        ),\n        MessageInput(\n            name=\"true_case_message\",\n            display_name=\"Case True\",\n            info=\"The message to pass if the condition is True.\",\n            advanced=True,\n        ),\n        MessageInput(\n            name=\"false_case_message\",\n            display_name=\"Case False\",\n            info=\"The message to pass if the condition is False.\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"max_iterations\",\n            display_name=\"Max Iterations\",\n            info=\"The maximum number of iterations for the conditional router.\",\n            value=10,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"default_route\",\n            display_name=\"Default Route\",\n            options=[\"true_result\", \"false_result\"],\n            info=\"The default route to take when max iterations are reached.\",\n            value=\"false_result\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"True\", name=\"true_result\", method=\"true_response\", group_outputs=True),\n        Output(display_name=\"False\", name=\"false_result\", method=\"false_response\", group_outputs=True),\n    ]\n\n    def _pre_run_setup(self):\n        self.__iteration_updated = False\n\n    def evaluate_condition(self, input_text: str, match_text: str, operator: str, *, case_sensitive: bool) -> bool:\n        if not case_sensitive and operator != \"regex\":\n            input_text = input_text.lower()\n            match_text = match_text.lower()\n\n        if operator == \"equals\":\n            return input_text == match_text\n        if operator == \"not equals\":\n            return input_text != match_text\n        if operator == \"contains\":\n            return match_text in input_text\n        if operator == \"starts with\":\n            return input_text.startswith(match_text)\n        if operator == \"ends with\":\n            return input_text.endswith(match_text)\n        if operator == \"regex\":\n            try:\n                return bool(re.match(match_text, input_text))\n            except re.error:\n                return False  # Return False if the regex is invalid\n        if operator in [\"less than\", \"less than or equal\", \"greater than\", \"greater than or equal\"]:\n            try:\n                input_num = float(input_text)\n                match_num = float(match_text)\n                if operator == \"less than\":\n                    return input_num < match_num\n                if operator == \"less than or equal\":\n                    return input_num <= match_num\n                if operator == \"greater than\":\n                    return input_num > match_num\n                if operator == \"greater than or equal\":\n                    return input_num >= match_num\n            except ValueError:\n                return False  # Invalid number format for comparison\n        return False\n\n    def iterate_and_stop_once(self, route_to_stop: str):\n        \"\"\"Handles cycle iteration counting and branch exclusion.\n\n        Uses two complementary mechanisms:\n        1. stop() - ACTIVE/INACTIVE state for cycle management (gets reset each iteration)\n        2. exclude_branch_conditionally() - Persistent exclusion for conditional routing\n\n        When max_iterations is reached, breaks the cycle by allowing the default_route to execute.\n        \"\"\"\n        if not self.__iteration_updated:\n            self.update_ctx({f\"{self._id}_iteration\": self.ctx.get(f\"{self._id}_iteration\", 0) + 1})\n            self.__iteration_updated = True\n            current_iteration = self.ctx.get(f\"{self._id}_iteration\", 0)\n\n            # Check if max iterations reached and we're trying to stop the default route\n            if current_iteration >= self.max_iterations and route_to_stop == self.default_route:\n                # Clear ALL conditional exclusions to allow default route to execute\n                if self._id in self.graph.conditional_exclusion_sources:\n                    previous_exclusions = self.graph.conditional_exclusion_sources[self._id]\n                    self.graph.conditionally_excluded_vertices -= previous_exclusions\n                    del self.graph.conditional_exclusion_sources[self._id]\n\n                # Switch which route to stop - stop the NON-default route to break the cycle\n                route_to_stop = \"true_result\" if route_to_stop == \"false_result\" else \"false_result\"\n\n                # Call stop to break the cycle\n                self.stop(route_to_stop)\n                # Don't apply conditional exclusion when breaking cycle\n                return\n\n            # Normal case: Use BOTH mechanisms\n            # 1. stop() for cycle management (marks INACTIVE, updates run manager, gets reset)\n            self.stop(route_to_stop)\n\n            # 2. Conditional exclusion for persistent routing (doesn't get reset except by this router)\n            self.graph.exclude_branch_conditionally(self._id, output_name=route_to_stop)\n\n    def true_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n\n        # Check if we should force output due to max_iterations on default route\n        current_iteration = self.ctx.get(f\"{self._id}_iteration\", 0)\n        force_output = current_iteration >= self.max_iterations and self.default_route == \"true_result\"\n\n        if result or force_output:\n            self.status = self.true_case_message\n            if not force_output:  # Only stop the other branch if not forcing due to max iterations\n                self.iterate_and_stop_once(\"false_result\")\n            return self.true_case_message\n        self.iterate_and_stop_once(\"true_result\")\n        return Message(content=\"\")\n\n    def false_response(self) -> Message:\n        result = self.evaluate_condition(\n            self.input_text, self.match_text, self.operator, case_sensitive=self.case_sensitive\n        )\n\n        if not result:\n            self.status = self.false_case_message\n            self.iterate_and_stop_once(\"true_result\")\n            return self.false_case_message\n\n        self.iterate_and_stop_once(\"false_result\")\n        return Message(content=\"\")\n\n    def update_build_config(self, build_config: dict, field_value: str, field_name: str | None = None) -> dict:\n        if field_name == \"operator\":\n            if field_value == \"regex\":\n                build_config.pop(\"case_sensitive\", None)\n            elif \"case_sensitive\" not in build_config:\n                case_sensitive_input = next(\n                    (input_field for input_field in self.inputs if input_field.name == \"case_sensitive\"), None\n                )\n                if case_sensitive_input:\n                    build_config[\"case_sensitive\"] = case_sensitive_input.to_dict()\n        return build_config\n"
-              },
-              "default_route": {
-                "_input_type": "DropdownInput",
-                "advanced": true,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Default Route",
-                "dynamic": false,
-                "external_options": {},
-                "info": "The default route to take when max iterations are reached.",
-                "name": "default_route",
-                "options": [
-                  "true_result",
-                  "false_result"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "false_result"
-              },
-              "false_case_message": {
-                "_input_type": "MessageInput",
-                "advanced": true,
-                "display_name": "Case False",
-                "dynamic": false,
-                "info": "The message to pass if the condition is False.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "false_case_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "input_text": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Text Input",
-                "dynamic": false,
-                "info": "The primary text input for the operation.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "input_text",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "match_text": {
-                "_input_type": "MessageTextInput",
-                "advanced": false,
-                "display_name": "Match Text",
-                "dynamic": false,
-                "info": "The text input to compare against.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "match_text",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "True"
-              },
-              "max_iterations": {
-                "_input_type": "IntInput",
-                "advanced": true,
-                "display_name": "Max Iterations",
-                "dynamic": false,
-                "info": "The maximum number of iterations for the conditional router.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "max_iterations",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "int",
-                "value": 10
-              },
-              "operator": {
-                "_input_type": "DropdownInput",
-                "advanced": false,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Operator",
-                "dynamic": false,
-                "external_options": {},
-                "info": "The operator to apply for comparing the texts.",
-                "name": "operator",
-                "options": [
-                  "equals",
-                  "not equals",
-                  "contains",
-                  "starts with",
-                  "ends with",
-                  "regex",
-                  "less than",
-                  "less than or equal",
-                  "greater than",
-                  "greater than or equal"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "equals"
-              },
-              "true_case_message": {
-                "_input_type": "MessageInput",
-                "advanced": true,
-                "display_name": "Case True",
-                "dynamic": false,
-                "info": "The message to pass if the condition is True.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "true_case_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "ConditionalRouter"
-        },
-        "id": "ConditionalRouter-X8rbm",
-        "measured": {
-          "height": 427,
-          "width": 320
-        },
-        "position": {
-          "x": 2235.313266721593,
-          "y": 160.07577222237157
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
           "id": "LoadJSON-yTqey",
           "node": {
             "base_classes": [
@@ -4875,432 +4213,15 @@
           "showNode": true,
           "type": "LoadJSON"
         },
+        "dragging": false,
         "id": "LoadJSON-yTqey",
         "measured": {
           "height": 175,
           "width": 320
         },
         "position": {
-          "x": 834.5041580814855,
-          "y": 542.6095997889715
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "ChatOutput-g2K5j",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Display a chat message in the Playground.",
-            "display_name": "Chat Output",
-            "documentation": "https://docs.langflow.org/components-io#chat-output",
-            "edited": false,
-            "field_order": [
-              "input_value",
-              "should_store_message",
-              "sender",
-              "sender_name",
-              "session_id",
-              "data_template"
-            ],
-            "frozen": false,
-            "icon": "MessagesSquare",
-            "legacy": false,
-            "metadata": {},
-            "minimized": true,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Output Message",
-                "group_outputs": false,
-                "method": "message_response",
-                "name": "message",
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.template.field.base import Output\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/components-io#chat-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
-              },
-              "data_template": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Data Template",
-                "dynamic": false,
-                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "data_template",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "{text}"
-              },
-              "input_value": {
-                "_input_type": "HandleInput",
-                "advanced": false,
-                "display_name": "Inputs",
-                "dynamic": false,
-                "info": "Message to be passed as output.",
-                "input_types": [
-                  "Data",
-                  "DataFrame",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "input_value",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "sender": {
-                "_input_type": "DropdownInput",
-                "advanced": true,
-                "combobox": false,
-                "dialog_inputs": {},
-                "display_name": "Sender Type",
-                "dynamic": false,
-                "external_options": {},
-                "info": "Type of sender.",
-                "name": "sender",
-                "options": [
-                  "Machine",
-                  "User"
-                ],
-                "options_metadata": [],
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "toggle": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "Machine"
-              },
-              "sender_name": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Sender Name",
-                "dynamic": false,
-                "info": "Name of the sender.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "sender_name",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "AI"
-              },
-              "session_id": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Session ID",
-                "dynamic": false,
-                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "session_id",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "should_store_message": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Store Messages",
-                "dynamic": false,
-                "info": "Store the message in the history.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "should_store_message",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "bool",
-                "value": true
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": false,
-          "type": "ChatOutput"
-        },
-        "dragging": false,
-        "id": "ChatOutput-g2K5j",
-        "measured": {
-          "height": 48,
-          "width": 192
-        },
-        "position": {
-          "x": 3467.1813271027027,
-          "y": 794.038686534672
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "ParserComponent-SDoVq",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "Extracts text using a template.",
-            "display_name": "Parser",
-            "documentation": "https://docs.langflow.org/components-processing#parser",
-            "edited": true,
-            "field_order": [
-              "input_data",
-              "if_else_input",
-              "mode",
-              "pattern",
-              "sep"
-            ],
-            "frozen": false,
-            "icon": "braces",
-            "legacy": false,
-            "lf_version": "1.6.3",
-            "metadata": {},
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Parsed Text",
-                "group_outputs": false,
-                "hidden": null,
-                "method": "parse_combined_text",
-                "name": "parsed_text",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        StrInput(name=\"if_else_input\", display_name=\"If-else input\", input_types=[\"str\", \"Message\"]),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
-              },
-              "if_else_input": {
-                "_input_type": "StrInput",
-                "advanced": false,
-                "display_name": "If-else input",
-                "dynamic": false,
-                "info": "",
-                "input_types": [
-                  "str",
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "if_else_input",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": ""
-              },
-              "input_data": {
-                "_input_type": "HandleInput",
-                "advanced": false,
-                "display_name": "Data or DataFrame",
-                "dynamic": false,
-                "info": "Accepts either a DataFrame or a Data object.",
-                "input_types": [
-                  "DataFrame",
-                  "Data"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "input_data",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "trace_as_metadata": true,
-                "type": "other",
-                "value": ""
-              },
-              "mode": {
-                "_input_type": "TabInput",
-                "advanced": false,
-                "display_name": "Mode",
-                "dynamic": false,
-                "info": "Convert into raw string instead of using a template.",
-                "name": "mode",
-                "options": [
-                  "Parser",
-                  "Stringify"
-                ],
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "type": "tab",
-                "value": "Parser"
-              },
-              "pattern": {
-                "_input_type": "MultilineInput",
-                "advanced": false,
-                "copy_field": false,
-                "display_name": "Template",
-                "dynamic": true,
-                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "multiline": true,
-                "name": "pattern",
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "{text}"
-              },
-              "sep": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Separator",
-                "dynamic": false,
-                "info": "String used to separate rows/items.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "sep",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "type": "str",
-                "value": "\n"
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "ParserComponent"
-        },
-        "dragging": false,
-        "id": "ParserComponent-SDoVq",
-        "measured": {
-          "height": 409,
-          "width": 320
-        },
-        "position": {
-          "x": 2928.1345213624963,
-          "y": 417.6581954885986
+          "x": -121.30140819841242,
+          "y": 608.6960281873255
         },
         "selected": false,
         "type": "genericNode"
@@ -5405,8 +4326,8 @@
           "width": 320
         },
         "position": {
-          "x": 622.8783042302653,
-          "y": 1619.766046770761
+          "x": 685.8572123337435,
+          "y": 1626.2254219608612
         },
         "selected": false,
         "type": "genericNode"
@@ -5609,6 +4530,7 @@
             "frozen": false,
             "icon": "Message",
             "legacy": false,
+            "lf_version": "1.6.3",
             "metadata": {},
             "minimized": false,
             "output_types": [],
@@ -5733,7 +4655,7 @@
           "x": 2706.0611153731315,
           "y": 1538.589773339669
         },
-        "selected": true,
+        "selected": false,
         "type": "genericNode"
       },
       {
@@ -5953,12 +4875,469 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-ttERH",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Принимает Data со структурой {'normalized': {'base': ..., 'target': ...}} и возвращает Data.",
+            "display_name": "Extract base and target codes",
+            "documentation": "https://docs.langflow.org/components-custom-components",
+            "edited": true,
+            "field_order": [
+              "input_value"
+            ],
+            "frozen": false,
+            "icon": "calendar",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "date",
+                "group_outputs": false,
+                "hidden": null,
+                "method": "extract_ymd",
+                "name": "date",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any, Dict, Optional, Tuple\r\nfrom langflow.custom.custom_component.component import Component\r\nfrom langflow.io import Output, DataInput\r\nfrom langflow.schema.data import Data\r\n\r\nclass ExtractCodes(Component):\r\n    display_name = \"Extract base and target codes\"\r\n    description = \"Принимает Data со структурой {'normalized': {'base': ..., 'target': ...}} и возвращает Data.\"  # noqa: E501\r\n    documentation: str = \"https://docs.langflow.org/components-custom-components\"\r\n    icon = \"calendar\"\r\n    name = \"extract_codes\"\r\n\r\n\r\n    inputs = [\r\n         DataInput(\r\n             name=\"input_value\",\r\n             display_name=\"Input Data\",\r\n             info=\"Объект Data , где value — это dict из примера.\",\r\n             required=True,\r\n         ),\r\n     ]\r\n\r\n\r\n\r\n    outputs = [\r\n        Output(display_name=\"date\", name=\"date\", method=\"extract_ymd\"),\r\n    ]\r\n\r\n\r\n    def extract_ymd(self) -> Data:\r\n        obj = self.input_value.data\r\n        if not isinstance(obj, dict):\r\n            self.log(\"Invalid Data to input\")\r\n            return {}\r\n        try:\r\n            date = obj.get(\"normalized\", {})\r\n            self.log(date)\r\n            if date == {}:\r\n                self.log(\"Invalid Data structure\")\r\n                return {}\r\n            base = date.get(\"base\")\r\n            target = date.get(\"target\")\r\n        except Exception as E:\r\n            self.log(f\"Get error: {E}\")\r\n            return {}\r\n        \r\n        self.status = {\"base\": base, \"target\": target}\r\n        return Data(data={\"base\": base, \"target\": target})\r\n\r\n"
+              },
+              "input_value": {
+                "_input_type": "DataInput",
+                "advanced": false,
+                "display_name": "Input Data",
+                "dynamic": false,
+                "info": "Объект Data , где value — это dict из примера.",
+                "input_types": [
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "extract_codes"
+        },
+        "dragging": false,
+        "id": "CustomComponent-ttERH",
+        "measured": {
+          "height": 181,
+          "width": 320
+        },
+        "position": {
+          "x": 811.462898962178,
+          "y": 820.3581199441875
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ParserComponent-Cwab2",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Extracts text using a template.",
+            "display_name": "Parser",
+            "documentation": "https://docs.langflow.org/components-processing#parser",
+            "edited": false,
+            "field_order": [
+              "input_data",
+              "mode",
+              "pattern",
+              "sep"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "ParserComponent",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Parsed Text",
+                "group_outputs": false,
+                "method": "parse_combined_text",
+                "name": "parsed_text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 2.220446049250313e-16,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
+              },
+              "input_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Data or DataFrame",
+                "dynamic": false,
+                "info": "Accepts either a DataFrame or a Data object.",
+                "input_types": [
+                  "DataFrame",
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_data",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "mode": {
+                "_input_type": "TabInput",
+                "advanced": false,
+                "display_name": "Mode",
+                "dynamic": false,
+                "info": "Convert into raw string instead of using a template.",
+                "name": "mode",
+                "options": [
+                  "Parser",
+                  "Stringify"
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tab",
+                "value": "Parser"
+              },
+              "pattern": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": true,
+                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "pattern",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{target}"
+              },
+              "sep": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Separator",
+                "dynamic": false,
+                "info": "String used to separate rows/items.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sep",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ParserComponent"
+        },
+        "dragging": false,
+        "id": "ParserComponent-Cwab2",
+        "measured": {
+          "height": 327,
+          "width": 320
+        },
+        "position": {
+          "x": 1381.6120777132182,
+          "y": 396.07100282957094
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ParserComponent-cWwBx",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Extracts text using a template.",
+            "display_name": "Parser",
+            "documentation": "https://docs.langflow.org/components-processing#parser",
+            "edited": false,
+            "field_order": [
+              "input_data",
+              "mode",
+              "pattern",
+              "sep"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "ParserComponent",
+            "legacy": false,
+            "lf_version": "1.6.3",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Parsed Text",
+                "group_outputs": false,
+                "method": "parse_combined_text",
+                "name": "parsed_text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 2.220446049250313e-16,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
+              },
+              "input_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Data or DataFrame",
+                "dynamic": false,
+                "info": "Accepts either a DataFrame or a Data object.",
+                "input_types": [
+                  "DataFrame",
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_data",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "mode": {
+                "_input_type": "TabInput",
+                "advanced": false,
+                "display_name": "Mode",
+                "dynamic": false,
+                "info": "Convert into raw string instead of using a template.",
+                "name": "mode",
+                "options": [
+                  "Parser",
+                  "Stringify"
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tab",
+                "value": "Parser"
+              },
+              "pattern": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": true,
+                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "pattern",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{base}"
+              },
+              "sep": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Separator",
+                "dynamic": false,
+                "info": "String used to separate rows/items.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sep",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ParserComponent"
+        },
+        "dragging": false,
+        "id": "ParserComponent-cWwBx",
+        "measured": {
+          "height": 327,
+          "width": 320
+        },
+        "position": {
+          "x": 1389.3756244892597,
+          "y": 755.6243051265674
+        },
+        "selected": false,
+        "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": -1517.3936384340482,
-      "y": -824.9181447510314,
-      "zoom": 0.9386149724409191
+      "x": 1108.2409854997463,
+      "y": -1025.07128808806,
+      "zoom": 0.9063938242922637
     }
   },
   "description": "Получение исторического курса валют",
