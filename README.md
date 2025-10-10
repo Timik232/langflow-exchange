@@ -90,7 +90,8 @@ graph TD
     D -->|Вызов инструмента| E[Агент актуальных курсов]
     D -->|Вызов инструмента| F[Агент исторических курсов]
     D -->|Вызов инструмента| G[Агент-калькулятор]
-    D -->|Вызов инструмента| H[ISO-коды валют]
+    E -->|Вызов инструмента| H[ISO-коды валют]
+    F -->|Вызов инструмента| H[ISO-коды валют]
 
     E -->|get_latest_rate| E1[MCP: Курсы валют]
     F -->|get_historical_rate| F1[MCP: Курсы валют]
@@ -167,6 +168,11 @@ LANGFLOW_MCP_PORT=8000
 POSTGRES_USER=langflow
 POSTGRES_PASSWORD=langflow
 POSTGRES_DB=langflow
+
+# настройка LangFuse, если нужно
+LANGFUSE_SECRET_KEY=langfuse_secret_key_if_needed
+LANGFUSE_PUBLIC_KEY=langfuse_public_key_if_needed
+LANGFUSE_HOST=https://cloud.langfuse.com
 ```
 
 ### 3. Запуск проекта
@@ -223,6 +229,9 @@ langflow-exchange/
 | `POSTGRES_USER` | Пользователь PostgreSQL | langflow |
 | `POSTGRES_PASSWORD` | Пароль PostgreSQL | langflow |
 | `POSTGRES_DB` | Имя базы данных | langflow |
+| `LANGFUSE_SECRET_KEY` | Секретный ключ для langfuse | - |
+| `LANGFUSE_PUBLIC_KEY` | Публичный ключ для langfuse | - |
+| `LANGFUSE_HOST` | host для langfuse | https://cloud.langfuse.com |
 
 ## 🎯 Доступные флоу
 
