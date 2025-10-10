@@ -1,4 +1,4 @@
-[README.md](Readme.md)
+[README.md](README.md)
 
 ### Компоненты
 
