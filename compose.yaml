@@ -34,6 +34,9 @@ services:
       - PYTHONPATH=/app
       - LANGFLOW_LOAD_FLOWS_PATH=/app/flows
       - LANGFLOW_DATABASE_URL=postgresql://${POSTGRES_USER:-langflow}:${POSTGRES_PASSWORD:-langflow}@postgres:5432/${POSTGRES_DB:-langflow}
+      - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY}
+      - LANGFUSE_PUBLIC_KEY=${LANGFUSE_PUBLIC_KEY}
+      - LANGFUSE_HOST=${LANGFUSE_HOST}
     volumes:
       - ./flows:/app/flows
       - langflow-data:/var/lib/langflow
